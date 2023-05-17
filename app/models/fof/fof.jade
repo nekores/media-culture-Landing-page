@@ -1,0 +1,15 @@
+mixin fof(icon,error,focuserror,discription)
+	.fof&attributes(attributes)
+		i.fa(class=icon)&attributes(attributes)
+		h2 #{error}&nbsp;
+			span #{focuserror}
+		p #{discription}
+mixin fof1(icon,error,focuserror,discription)
+	.fof1&attributes(attributes)
+		ul.list-inline
+			li
+				i.fa(class=icon)
+			li
+				h2 #{error}
+					span #{focuserror}
+				p #{discription}

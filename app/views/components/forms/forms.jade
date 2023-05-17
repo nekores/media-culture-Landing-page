@@ -1,0 +1,81 @@
+mixin form-basic()
+    .section
+        .container
+            .row
+                .col-md-8
+                    h2.comp-title forms
+                    hr
+                    h3.comp-titles basic examples
+                    //=== basic form input ===
+
+                    +basic-form-inputs("Enter your name", "text" , "Enter your name", "form-control input-lg ")
+                    +basic-form-inputs("Enter your password", "password" , "Enter your name", "form-control input-lg")
+                    +basic-form-inputs("File input", "file" , "Enter your name")
+                    +checkbox-form("check me out")
+                    br
+                    .mt20
+                    +btn-theme-lg("btn-c-primary","SUBMIT")
+
+                    hr
+
+                    //=== inline form starts here
+                    
+                    h3.comp-titles inline form
+
+                    +inline-form("text" , "Enter your name", "input-lg")
+                    +inline-form("text" , "Enter your name", "input-lg")
+                    +basic-form-inputs("Remembr me ", "checkbox" , "Enter your name","")
+                    br
+                    .mt20
+                    +btn-theme-lg("btn-c-primary","SUBMIT")
+                    hr
+
+                    h3.comp-titles text area
+                    +textarea("Message")
+
+                    hr
+                        
+                    h3.comp-titles Checkboxes and radios
+                    +checkbox()
+                    +checkbox-dissable()
+                    +radio()
+
+                    hr
+
+                    h3.comp-titles slects
+                    +slects()
+                    p.mv20 Add 
+                        span.clr-primary multiple 
+                        | to show multiple options at once.
+                    +slects-multiple()
+
+                    hr
+
+                    h3.comp-titles Validation states
+                    +validation-success()
+                    +validation-error()
+                    +validation-waring()
+
+                    hr
+                    
+                    h3.comp-titles With optional icons
+                    form.form-inline
+                        .form-group.m-v-10
+                            +validation-success-icon()
+                            .m-v-5
+                            br()
+                            +validation-waring-icon().m-v-10
+                            .m-v-5
+                            br()
+                            +validation-error-icon()
+                            .m-v-5
+                            br()
+                            +validation-success-group()
+                            .m-v-5
+                            br()
+                            .mb50
+
+
+
+                .col-md-4
+                    +component-nav()

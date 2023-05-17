@@ -1,0 +1,35 @@
+extends ../../../../../views/layout/main.jade
+block main_content
+	+csloader()
+	// Navbar
+	+construction_navbar()
+	// slider starts here
+	
+	+construction_static()
+
+	// ABOUT SECTION
+	+about-default("who we are", "about us")
+	
+	// team SECTION
+	+team-default("Behind Our Company", "Our Team")
+
+	// services starts here
+	+services("what we do", "services")
+
+	// quote starts here
+	+quote()
+
+	// features starts here
+	+features("why choose us", "features")
+
+	// GALLERY START HERE
+	+gallery("recent project done", "gallery")
+
+	// CONTACT START HERE
+	+contact("get in touch", "contact")
+
+	// CONTACT START HERE
+	+footer()
+	include ../../../../../models/back-to-top/back-to-top.jade
+	include ../../../../../models/loder/loder.jade
+	include ../../../../../models/switcher/switcher.jade

@@ -1,0 +1,36 @@
+mixin portfolio()
+	section()&attributes(attributes).bg-primary.pv50.mb20
+		.container
+			.col-md-4
+				.title
+					h1.text-uppercase Portfolio
+					p.lead.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore.
+			.col-md-8
+					// gallery
+					.row
+						+portfolio-images()
+						
+mixin portfolio-images()
+	+gallery('col-md-4 no-padding', 6, 'team')&attributes(attributes)
+
+
+
+mixin gallery2columnboxed()
+	section
+		.container
+			.row
+				+portfolioimg2column()
+
+mixin portfolio3columngrid()
+	section
+		.container
+			.row
+				+3columngrid()
+
+mixin portfolio4columngrid()
+	section
+		.container
+			.row
+				+4columngrid()

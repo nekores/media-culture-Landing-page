@@ -1,0 +1,32 @@
+mixin login-account1()
+	// === login account start here ====
+	.col-md-4.col-md-offset-4
+		.reg-page&attributes(attributes)
+			form(role="form" method="get")
+				.login-head
+					h2 login to your account
+					hr
+				.input-group.mb20
+					span.input-group-addon
+						i.fa.fa-user
+					input(type="text" placeholder="Username" class="form-control" required)
+				.input-group.mb20
+					span.input-group-addon
+						i.fa.fa-lock
+					input(type="password" placeholder="Password" class="form-control" required)
+				.row
+					.col-md-6
+						.checkbox
+							label 
+								input(type="checkbox" required)
+								|Stay sign in
+					.col-md-6
+						.text-right
+							+btn-theme-md("btn-c-primary","Login")
+			hr
+			.forget
+				h4 Forget your password ?
+				p no worries, 
+					a(href="") click here 
+					span to reset your password
+	// === login account end here ====

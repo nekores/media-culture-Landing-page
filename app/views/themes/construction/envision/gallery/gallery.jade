@@ -1,0 +1,96 @@
+mixin gallery(sec_desc, sec_title)
+	div()&attributes(attributes)#gallery-envision.gallery-envision
+		.container(style="margin-right:0px; padding-right:0px; overflow: hidden;")
+			.row.pos-r
+				.heading
+					.text
+						.upper
+							span #{sec_desc}
+						.lower
+							h3 #{sec_title}
+			.col-md-10.col-md-offset-2
+				.row.contain.pv80
+					nav.center-block.mt50
+						ul(class="portfolio-filter" id="filters").center-block
+							li
+								a(class="all filter active", data-filter="all") All
+							li
+								a(class="filter", data-filter=".metal") Branding
+							li
+								a(class="filter", data-filter=".transition") Marketing
+							li
+								a(class="filter", data-filter=".alkali, .alkaline-earth") Photography
+							li
+								a(class="filter", data-filter=":not(.transition)") Interface
+					#envision_gallery-mixitup.pr50
+						.row.no-padding.popup-gallery
+							.contain
+								.col-md-4.no-padding.mix.metal.col-sm-6.col-xs-12
+									figure
+										img(src="img/construction/works/0.jpg" class="img-responsive")
+										figcaption
+										.figcaption2
+											a(href="img/construction/works/0.jpg")
+												.table-1
+													.table-middle-row-1.text-center
+														i.fa.fa-plus.text-center
+										.figcaption1
+										.caption-hover
+								.col-md-4.no-padding.mix.metal.alkali.col-sm-6.col-xs-12
+									figure
+										img(src="img/construction/works/1.jpg" class="img-responsive")
+										figcaption
+										.figcaption2
+											a(href="img/construction/works/1.jpg")
+												.table-1
+													.table-middle-row-1.text-center
+														i.fa.fa-plus.text-center
+										.figcaption1
+										.caption-hover
+								.col-md-4.no-padding.mix.transition.alkali.col-sm-6.col-xs-12
+									figure
+										img(src="img/construction/works/2.jpg" class="img-responsive")
+										figcaption
+										.figcaption2
+											a(href="img/construction/works/2.jpg")
+												.table-1
+													.table-middle-row-1.text-center
+														i.fa.fa-plus.text-center
+										.figcaption1
+										.caption-hover
+								.col-md-4.no-padding.mix.metal.transition.col-sm-6.col-xs-12
+									figure
+										img(src="img/construction/works/3.jpg" class="img-responsive")
+										figcaption
+										.figcaption2
+											a(href="img/construction/works/3.jpg")
+												.table-1
+													.table-middle-row-1.text-center
+														i.fa.fa-plus.text-center
+										.figcaption1
+										.caption-hover
+								.col-md-4.no-padding.mix.metal.col-sm-6.col-xs-12
+									figure
+										img(src="img/construction/works/4.jpg" class="img-responsive")
+										figcaption
+										.figcaption2
+											a(href="img/construction/works/4.jpg")
+												.table-1
+													.table-middle-row-1.text-center
+														i.fa.fa-plus.text-center
+										.figcaption1
+										.caption-hover
+								.col-md-4.no-padding.mix.transition.alkali.col-sm-6.col-xs-12
+									figure
+										img(src="img/construction/works/5.jpg" class="img-responsive")
+										figcaption
+										.figcaption2
+											a(href="img/construction/works/5.jpg")
+												.table-1
+													.table-middle-row-1.text-center
+														i.fa.fa-plus.text-center
+										.figcaption1
+										.caption-hover
+		+widget6()
+
+

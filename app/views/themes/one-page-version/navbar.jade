@@ -1,0 +1,30 @@
+//- navbar one page
+mixin navbar1()
+	header.navbar-one-page
+		#navbar
+			nav.navbar.border-reset.navbar-appeen.navbar-fixed-top(role="navigation",data-spy="affix",data-offset-top="40")
+				.container
+					.row
+						.col-xs-12.col-sm-2.col-md-2
+							.navbar-header
+								button.bdr-clr-white(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+									span.sr-only Toggle navigation
+									span.icon-bar.bg-white
+									span.icon-bar.bg-white
+									span.icon-bar.bg-white
+								a(href="index.html").navbar-brand.center-block upack
+						.col-xs-12.col-sm-10.col-md-10
+							.collapse.navbar-collapse#bs-example-navbar-collapse-1
+								ul#nav.nav.navbar-nav.pull-right
+									li
+										a(href="#slider-onepage") home
+									li
+										a(href="#aboutus-onepage") about us
+									li
+										a(href="#portfolio-onepage") portfolio
+									li
+										a(href="#services-onepage") service
+									li
+										a(href="#testimonial-onepage") testimonials
+									li
+										a(href="#blog-onepage") blog

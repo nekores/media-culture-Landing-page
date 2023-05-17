@@ -1,0 +1,547 @@
+- date=["jan 11, 2015","jan 17, 2015","feb 7, 2015","december 17, 2015","jan 17, 2015","jan 17, 2015","jan 17, 2015","jan 17, 2015","jan 17, 2015"]
+- blogtitles = ['conferences', "business event", "business key notes","business event conferences","meetup conferences","business event 2016, " ,"keynote events 2015","company conference 2016","company conference 2016"]
+mixin blog-3-column()
+    //=== blog column start here ===
+    for i in [0,1,2,3,4,5,6,7,8]
+        .col-md-4
+            .team-blog
+                figure
+                    img(src="img/work/" + i + ".jpg" class="img-responsive")
+                    .img-hover
+                    a(href="#")
+                        i.fa.fa-plus
+                .team-blog-caption
+                    .lb-h4.mt20
+                        a(href="#")
+                            h4 #{blogtitles[i]}
+                    .lb-ul.mv20
+                        ul
+                            li
+                                span BY:  
+                                    a(href="#")
+                                        i.fa.fa-user
+                                        |#[+random_name()]
+                            li
+                                a(href="#")
+                                    i.fa.fa-clock-o
+                                    | #{date[i]}
+                    .lb-p
+                        p.mt40.
+                            Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .lb-btn.mb50
+                        a(href="blog-detail-post.html")
+                            | Read More ... 
+                            i(class="fa fa-angle-double-right")
+    //=== blog column end here ===
+
+mixin bloggrid-3-column(classes , max)
+    //=== blog column start here ===
+    div()&attributes(attributes).blog3column
+        - i = 1
+        while i <= max
+            div(class=classes)
+                .team-blog
+                    figure
+                        img(src="img/work/" + i + ".jpg" class="img-responsive")
+                        .img-hover
+                        a(href="#")
+                            i.fa.fa-plus
+                    .team-blog-caption
+                        .lb-h4.mt20
+                            a(href="#")
+                                h4 #{blogtitles[i]}
+                        .lb-ul.mv20
+                            ul
+                                li
+                                    span BY:  
+                                        a(href="#")
+                                            i.fa.fa-user
+                                            |#[+random_name()]
+                                li
+                                    a(href="#")
+                                        i.fa.fa-clock-o
+                                        | #{date[i]}
+                        .lb-p
+                            p.mt40.
+                                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .lb-btn.mb50
+                            a(href="blog-detail-post.html")
+                                | Read More ... 
+                                i(class="fa fa-angle-double-right")
+            - i = i + 1
+
+    //=== blog column end here ===
+
+
+
+- day = ['19',"22", "29","2","9","17"]
+
+mixin blog-2-column()
+    //=== blog column start here ===
+    for i in [0,1,2,3,4,5]
+        .col-md-6
+            .team-blog
+                .blog-2-sidebar
+                    ul
+                        li
+                            strong #{day[i]}
+                            br
+                            a(href="#")
+                                | jan-2015
+                        li
+                            strong
+                                i.fa.fa-comments-o
+                            a(href="#")
+                                | 69 - com
+                        li
+                            strong
+                                i.fa.fa-eye
+                            a(href="#")
+                                | 69 - view
+
+                .blog-2-image
+                    figure
+                        img(src="img/work/" + i + ".jpg" class="img-responsive")
+                        .img-hover
+                        a(href="#")
+                            i.fa.fa-plus
+
+                    .blog-2-caption
+                        
+                        h4 #{blogtitles[i]}
+                        p.mv40.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        button.btn.btn-c-primary.btn-lg view more
+                        .mb60
+
+        //=== blog column end here ===
+
+//- this mixins is duplicate of upper maxin.just change lopp of rquirment
+mixin bloggrid-2-column(classes , max)
+    //=== blog column start here ===
+    div()&attributes(attributes)
+        - i = 1
+            while i <= max
+                div(class=classes)
+                    .team-blog
+                        .blog-2-sidebar
+                            ul
+                                li
+                                    strong #{day[i]}
+                                    br
+                                    a(href="#")
+                                        | jan-2015
+                                li
+                                    strong
+                                        i.fa.fa-comments-o
+                                    a(href="#")
+                                        | 69 - com
+                                li
+                                    strong
+                                        i.fa.fa-eye
+                                    a(href="#")
+                                        | 69 - view
+
+                        .blog-2-image
+                            figure
+                                img(src="img/work/" + i + ".jpg" class="img-responsive")
+                                .img-hover
+                                a(href="#")
+                                    i.fa.fa-plus
+
+                            .blog-2-caption
+                                
+                                h4 #{blogtitles[i]}
+                                p.mv40.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                button.btn.btn-c-primary.btn-lg view more
+                                .mb60
+                - i = i + 1
+        //=== blog column end here ===
+
+- titlesheadings = ["International conference on wilde life", "All parties conference ", " local government issues", "Conferences on International life", "scholarships for bachelors students","education is power"]
+- postdate = ["14 aug", " 12 aug", " 11 aug", " 8 aug", " 6 aug", " 5 aug", " 2 aug", " 1 aug", " 26 jul"]
+
+    
+mixin blog-detail()
+    //=== blog dtail post start here ===
+    for i in [1]
+        .blog-detail
+            
+            div
+                .blog-detail-caption
+                    .bd-mh.mt20.mb15
+                        a(href="#")
+                            h1.text-uppercase #{blogtitles[i]}
+                    .bd-sh.mv5
+                        a(href="#")
+                            h5 #{titlesheadings[i]}
+                    .bd-ls.mv20
+                        ul.list-inline
+                            li
+                                a(href="#")
+                                    i(class="fa fa-user").mr5
+                                    span
+                                        |Lorem Shazad
+                            li
+                                a(href="#")
+                                    i(class="fa fa-heart").mr5
+                                    span.counter 28
+                            li
+                                a(href="#")
+                                    i(class="fa fa-comments-o").mr5
+                                    span.counter 21
+                            li
+                                a(href="#")
+                                    i(class="fa fa-tags").mr5
+                                    span.counter 5
+                            
+                            li
+                                a(href="#")
+                                    | investment
+                            li
+                                a(href="#")
+                                    | business
+                            li
+                                a(href="#")
+                                    | conferences
+                            li
+                                a(href="#")
+                                    | events
+
+                    .bd-para.mv40
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    .bd-rm
+                        a(href="blog-detail-post.html")
+                            | Read More ... 
+                            i(class="fa fa-angle-double-right")
+                    .bd-si.mb50
+                        ul
+                            li
+                                +icon-fa("fa-facebook", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-twitter", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-skype", "icon-xs icon-frame-inverse-primary dark-icon")    
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+    for i in [0]
+        .blog-detail
+            figure
+                a(href="#")
+                    img(src="img/work/" + i + ".jpg" class="img-responsive")
+                figcaption.blog-img-year
+                    a(href="#")
+                        | #{postdate[i]}
+            .blog-detail-caption
+                .bd-mh.mt20.mb15
+                    a(href="#")
+                        h1.text-uppercase #{blogtitles[i]}
+                .bd-sh.mv5
+                    a(href="#")
+                        h5 #{titlesheadings[i]}
+                .bd-ls.mv20
+                    ul.list-inline
+                        li
+                            a(href="#")
+                                i(class="fa fa-user").mr5
+                                span
+                                    |Lorem Shazad
+                        li
+                            a(href="#")
+                                i(class="fa fa-heart").mr5
+                                span.counter 28
+                        li
+                            a(href="#")
+                                i(class="fa fa-comments-o").mr5
+                                span.counter 21
+                        li
+                            a(href="#")
+                                i(class="fa fa-tags").mr5
+                                span.counter 5
+                        
+                        li
+                            a(href="#")
+                                | investment
+                        li
+                            a(href="#")
+                                | business
+                        li
+                            a(href="#")
+                                | conferences
+                        li
+                            a(href="#")
+                                | events
+
+                .bd-para.mv40
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                .bd-rm
+                    a(href="blog-detail-post.html")
+                        | Read More ... 
+                        i(class="fa fa-angle-double-right")
+                .bd-si.mb50
+                    ul
+                        li
+                            +icon-fa("fa-facebook", "icon-xs icon-frame-inverse-primary dark-icon")
+                        li
+                            +icon-fa("fa-twitter", "icon-xs icon-frame-inverse-primary dark-icon")
+                        li
+                            +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+                        li
+                            +icon-fa("fa-skype", "icon-xs icon-frame-inverse-primary dark-icon")
+                        li
+                            +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+
+    //=== blog dtail post end here ===
+
+    for i in [2]
+        .blog-detail
+            
+            div
+                div.owl-carousel(id="blog1")
+                    for i in [2,4,5,6]
+                        figure
+                            a(href="#")
+                                img.img-responsive(src="img/work/" + i + ".jpg")
+                            figcaption.blog-img-year
+                                a(href="#")
+                                 | #{postdate[i]}
+                .blog-detail-caption
+                    .bd-mh.mt20.mb15
+                        a(href="#")
+                            h1.text-uppercase #{blogtitles[i]}
+                    .bd-sh.mv5
+                        a(href="#")
+                            h5 #{titlesheadings[i]}
+                    .bd-ls.mv20
+                        ul.list-inline
+                            li
+                                a(href="#")
+                                    i(class="fa fa-user").mr5
+                                    span
+                                        |Lorem Shazad
+                            li
+                                a(href="#")
+                                    i(class="fa fa-heart").mr5
+                                    span.counter 28
+                            li
+                                a(href="#")
+                                    i(class="fa fa-comments-o").mr5
+                                    span.counter 21
+                            li
+                                a(href="#")
+                                    i(class="fa fa-tags").mr5
+                                    span.counter 5
+                            
+                            li
+                                a(href="#")
+                                    | investment
+                            li
+                                a(href="#")
+                                    | business
+                            li
+                                a(href="#")
+                                    | conferences
+                            li
+                                a(href="#")
+                                    | events
+
+                    .bd-para.mv40
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    .bd-rm
+                        a(href="#")
+                            | Read More ... 
+                            i(class="fa fa-angle-double-right")
+                    .bd-si.mb50
+                        ul
+                            li
+                                +icon-fa("fa-facebook", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-twitter", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-skype", "icon-xs icon-frame-inverse-primary dark-icon")    
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+
+               
+    for i in [4]
+        .blog-detail
+            
+            div
+                iframe(id="video" width="100%" height="500px" src="//www.youtube.com/embed/9B7te184ZpQ?rel=0" frameborder="0" allowfullscreen>)
+                    div
+                        figure
+                            figcaption.blog-img-year
+                                a(href="#")
+                                 | #{postdate[i]}
+                .blog-detail-caption
+                    .bd-mh.mt20.mb15
+                        a(href="#")
+                            h1.text-uppercase #{blogtitles[i]}
+                    .bd-sh.mv5
+                        a(href="#")
+                            h5 #{titlesheadings[i]}
+                    .bd-ls.mv20
+                        ul.list-inline
+                            li
+                                a(href="#")
+                                    i(class="fa fa-user").mr5
+                                    span
+                                        |Lorem Shazad
+                            li
+                                a(href="#")
+                                    i(class="fa fa-heart").mr5
+                                    span.counter 28
+                            li
+                                a(href="#")
+                                    i(class="fa fa-comments-o").mr5
+                                    span.counter 21
+                            li
+                                a(href="#")
+                                    i(class="fa fa-tags").mr5
+                                    span.counter 5
+                            
+                            li
+                                a(href="#")
+                                    | investment
+                            li
+                                a(href="#")
+                                    | business
+                            li
+                                a(href="#")
+                                    | conferences
+                            li
+                                a(href="#")
+                                    | events
+
+                    .bd-para.mv40
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    .bd-rm
+                        a(href="blog-detail-post.html")
+                            | Read More ... 
+                            i(class="fa fa-angle-double-right")
+                    .bd-si.mb50
+                        ul
+                            li
+                                +icon-fa("fa-facebook", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-twitter", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-skype", "icon-xs icon-frame-inverse-primary dark-icon")    
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+    for i in [5]
+        .blog-detail
+            
+            div
+                iframe(src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/145073083&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true" class="embed-responsive-item" style="width: 100%")
+                    div
+                        figure
+                            figcaption.blog-img-year
+                                a(href="#")
+                                 | #{postdate[i]}
+                .blog-detail-caption
+                    .bd-mh.mt20.mb15
+                        a(href="#")
+                            h1.text-uppercase #{blogtitles[i]}
+                    .bd-sh.mv5
+                        a(href="#")
+                            h5 #{titlesheadings[i]}
+                    .bd-ls.mv20
+                        ul.list-inline
+                            li
+                                a(href="#")
+                                    i(class="fa fa-user").mr5
+                                    span
+                                        |Lorem Shazad
+                            li
+                                a(href="#")
+                                    i(class="fa fa-heart").mr5
+                                    span.counter 28
+                            li
+                                a(href="#")
+                                    i(class="fa fa-comments-o").mr5
+                                    span.counter 21
+                            li
+                                a(href="#")
+                                    i(class="fa fa-tags").mr5
+                                    span.counter 5
+                            
+                            li
+                                a(href="#")
+                                    | investment
+                            li
+                                a(href="#")
+                                    | business
+                            li
+                                a(href="#")
+                                    | conferences
+                            li
+                                a(href="#")
+                                    | events
+
+                    .bd-para.mv40
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    .bd-rm
+                        a(href="blog-detail-post.html")
+                            | Read More ... 
+                            i(class="fa fa-angle-double-right")
+                    .bd-si.mb50
+                        ul
+                            li
+                                +icon-fa("fa-facebook", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-twitter", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+                            li
+                                +icon-fa("fa-skype", "icon-xs icon-frame-inverse-primary dark-icon")    
+                            li
+                                +icon-fa("fa-linkedin", "icon-xs icon-frame-inverse-primary dark-icon")
+             

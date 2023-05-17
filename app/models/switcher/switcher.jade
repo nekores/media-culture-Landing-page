@@ -1,0 +1,18 @@
+//=== switcher starts here ===
+section
+	.container
+		.row
+			.col-md-12
+				div.switcher-upack
+					.switcher-btn
+						i.fa.fa-cogs.hidden-xs
+
+					.switcher-content
+						p theme colors
+						hr
+
+						.colors
+							ul
+								for i in ['styles', 'emerald', 'peter', 'carot' ,'alizarin','Dionysus-Bright-4','Dragomir-2','wet-asphalt']
+									li(class='sw-clr switcher-' + i + '-bg', data-target= i)
+//=== switcher end here ===

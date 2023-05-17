@@ -1,0 +1,460 @@
+//- COOKING MENU CODED HERE
+.cook_menu
+	background url("../img/1.mp4")
+	.cooking-imgbox1
+		figure
+			position relative
+			overflow hidden
+			height 100%
+			width 100%
+			img
+				transition 0.5s all
+			figcaption
+				cursor pointer
+				transition 0.5s all
+				opacity 0
+				height 100%
+				width 100%
+				.layer1
+					position absolute
+					height 100%
+					width 100%
+					background-color alpha(black, 80%)
+					top 0
+					left 0
+				.layer2
+					position absolute
+					width 100%
+					bottom -100%
+					left 0
+					transition 0.7s all
+					h3
+						position relative
+						color white
+						width 100%
+						text-align center
+						text-transform uppercase
+						font-weight 400
+						letter-spacing 2px
+						background-color primary
+						padding 10px
+				.layer3
+					position absolute
+					left 0
+					top 40%
+					height 100%
+					width 100%
+					i
+						font-size 25px
+						height 100%
+						color white
+						width 100%
+						position relative
+						text-align center
+			&:hover
+				figcaption
+					opacity 1
+					.layer2
+						position absolute
+						// opacity 1
+						bottom 0
+				img
+					transform rotate(10deg) scale(1.5)
+		.contentt
+			.content-1, .content-2, .content-3
+				position relative
+				border 1px solid darken(white,5%)
+				background-color darken(white,3%)
+				h4
+					text-transform uppercase
+					font-weight 500
+					font-size 18px
+					color darken(white, 70%)
+					letter-spacing 2px
+				p
+					text-transform capitalize
+					color #333
+					letter-spacing 1px
+					font-size 14px
+					font-weight 300
+				hr
+					padding-top 3px
+					margin 0
+					border-top 1px solid primary
+					width 20%
+					display inline-block
+			.pricebox
+				position: absolute;
+				right: 0;
+				z-index: 2;
+				height: 80%;
+				top: 0;
+				background-color: primary;
+				width: 41px;
+				border-radius 0px 0px 25px 25px
+				&::before
+					content: "\f117";
+					position: relative;
+					left: 0px;
+					top -20px
+					font-family: Flaticon;
+					color #333
+					text-align: center;
+					width: 100%;
+					font-size: 43px;
+				h3
+					position relative
+					top -24px
+					color white
+					text-align center
+					width 100%
+
+//- COOKING ABOUT STARTS HRER
+.cooking_about
+	.team-box
+		margin-top 60px
+		margin-bottom 80px
+		figure
+			position relative
+			overflow hidden
+			transition 0.5s all
+			figcaption
+				transition 0.5s all
+				position absolute
+				width 100%
+				height 100%
+				left 0
+				bottom 100%
+				background-color alpha(primary, 30%)
+				border 1px solid alpha(primary, 40%)
+				cursor pointer
+			.layer1
+				transition 0.5s all
+				bottom 0
+				left 0
+				position absolute
+				h3
+					position relative
+					padding 5px
+					font-weight 500
+					letter-spacing 4px
+					font-size 12px
+					text-transform uppercase
+					font-weight 300
+					background-color primary
+					color white
+					text-align center
+			.layer2
+				transition 0.5s all
+				bottom 100%
+				left 0
+				width 100%
+				position absolute
+				h4
+					letter-spacing 4px
+					position relative
+					padding 5px
+					font-size 17px
+					text-transform uppercase
+					font-weight 500
+					background-color primary
+					color white
+					text-align center
+					width 100%
+		&:hover
+			figure
+				img
+					border-color primary
+				figcaption
+					bottom 0
+				.layer1
+					top 0
+				.layer2
+					bottom 0
+					opacity 1
+
+
+.quote-widget-cooking
+	overflow hidden
+	background: url('../img/cooking/slider/1.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.alpha
+		// padding-bottom 100px
+		background-color alpha(#333, 95%)
+	.author-name
+		p
+			color white
+			font-size 14px
+			font-weight 400
+	.img
+		img
+			height: 140px;
+			border: 8px solid white;
+			margin-top: 30px;
+			margin-bottom: 25px;
+	.text
+		p
+			letter-spacing 0.9px
+			font-size 15px
+			font-weight 100
+			color white
+	#owl-quotes-cooking
+		.owl-controls
+			.owl-pagination
+				.owl-page
+					padding-top 20px
+					span
+						border-radius 0
+				.owl-page.active
+					span
+						transition 1s all
+						border-radius 0
+						background-color transparent !important
+						border 1px solid primary
+
+//- COOKING PORTFOLIO CODED HERE
+.cooking_portfolio
+	#container1
+		nav
+			.nav
+				margin-bottom 30px
+				padding 0
+				li
+					a
+						padding 10px
+						background-color #333
+						color primary
+						transition 0.5s all
+						&.active
+							background-color primary
+							color white
+							cursor pointer !important
+						&:hover
+							background-color lighten(primary,20%)
+							color white
+							cursor pointer !important
+							text-decoration none
+						&:focus , &:visited, &:active
+							box-shadow none
+							text-decoration none
+							outline 0 none
+
+//-COOKING CLIENTS CODE HERE
+.cooking_client
+	background: url('../img/cooking/slider/1.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.alpha
+		padding-bottom 100px
+		background-color alpha(#333, 95%)
+	.widget6
+		background-color transparent !important
+	.owl-buttons
+		top: -60px;
+		position: relative;
+	.cooking-section_title
+		.heading
+			.text
+				.title
+					border-color white
+					h3
+						top -19px
+						background-color white
+						color #333
+						border-radius 0
+						padding-right 9px
+						padding-top 0px
+						padding-bottom 0px
+						padding-left 9px
+					h4
+						background-color white
+						color #333
+						border-radius 0
+						padding-right 9px
+						padding-left 9px
+						width 217px
+					.lower
+						// right 17px
+						.slogan
+							span
+								color primary
+	@media(max-width 400px)
+		.heading
+			.text
+				.title
+					width 100%
+					h3
+						position absolute
+						left 20px
+						top -10px !important
+						width 80px !important
+						font-size 14px
+						letter-spacing 2px
+					h4
+						right 20px
+						bottom -10px !important
+						width 100px !important
+						font-size 14px
+						letter-spacing 2px
+					.lower
+						.slogan
+							span
+								font-size 10px
+//- COOKING CONTACT SECTION CODED HERE
+.cooking_contact
+	form
+		h6.label
+			color #333
+			text-transform uppercase
+			font-size 14px
+			letter-spacing 2px
+		.form-control
+			background-color alpha(primary, 5%)
+			border 2px solid #333
+			color #333
+			&:focus
+				border-color primary
+		input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+			color #333
+		button
+			color white
+			transition 0.5s all
+			background-color primary
+			box-shadow: inset 0px 3px 5px darken(primary, 30%);
+			&:hover
+				color white
+				background-color lighten(primary, 10%)
+
+//- COOKING CALLCULATE SECTION
+.cooking_calculateform
+	background-color #333
+	.cooking-section_title
+		.heading
+			.text
+				.title
+					border-color white
+					h3
+						top -19px
+						background-color white
+						color #333
+						border-radius 0
+						padding-right 9px
+						padding-top 0px
+						padding-bottom 0px
+						padding-left 9px
+					h4
+						background-color white
+						color #333
+						border-radius 0
+						padding-right 9px
+						padding-left 9px
+						width 243px
+					.lower
+						.slogan
+							span
+								color primary
+	@media(max-width 400px)
+		.heading
+			.text
+				.title
+					width 100%
+					h3
+						position absolute
+						left 20px
+						top -10px !important
+						width 80px !important
+						font-size 14px
+						letter-spacing 2px
+					h4
+						right 20px
+						bottom -10px !important
+						width 100px !important
+						font-size 14px
+						padding-left 1px !important
+						letter-spacing 2px
+					.lower
+						.slogan
+							span
+								font-size 10px
+	.input-group
+		width: 100%;
+	label
+		width 100%
+		h6
+			color white
+		select
+			width: 100%;
+			padding: 7px;
+			border: 1px solid white;
+			background-color: transparent;
+			color white
+			cursor pointer
+			option
+				color white
+				background-color #333 !important
+				border 1px solid white
+					
+		input
+			width: 100%;
+			padding: 7px;
+			border: 1px solid white;
+			background-color: #333 !important
+			color: white;
+		input::-webkit-input-placeholder, textarea-webkit-input-placeholder
+			color white
+	.search_button>.btn
+		margin-top 20px
+		background-color transparent
+		color white
+		transition 0.5s all
+		border-radius 0
+		border 1px solid white
+		&:hover, &:focus
+			background-color white
+			color #333
+			outline none
+//- COOKING FOOTER CODED HERE
+.cooking_footer
+	background: url('../img/cooking/slider/1.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.alpha
+		background-color rgba(0, 0, 0, 0.92)
+	.col-md-4th
+		width: 25%;
+		margin-left: 48px;
+		float: left;
+		margin-right: 49px;;
+	@media(max-width: 1199px)
+		.col-md-4th
+			margin-left: 40px;
+			margin-right: 40px;
+	@media(max-width: 991px)
+		.col-md-4th
+			width 100%
+			margin-left: 0px;
+			margin-right: 0px;
+	.bgalpha
+		background-color: rgba(255, 255, 255, 0.08);
+	.partition1
+		.head
+			padding-top 7px
+			color #C3C0C0
+			text-transform uppercase
+			font-weight 400
+			font-size 16px
+		.para
+			line-height 20px
+			color #C3C0C0
+			font-size 14px
+		.blog-desc
+			position relative
+			top 8px
+	.footer-text
+		background-color #333
+		h5
+			font-size 14px
+			color #C3C0C0
+			span
+				font-weight 600 !important

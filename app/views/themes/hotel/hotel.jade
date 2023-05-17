@@ -1,0 +1,35 @@
+mixin hotel()
+	+slider-photography()
+	section
+		.resturent-bg
+			.bga-black-5
+				.container
+					.col-md-5
+
+						+peoplesay-testimonial("event expert ", "photographer expert", "bridal shoot expert")
+					.col-md-6
+						+brands-owl-carosel-swiper("brands","imgclasses")
+	section
+		.container
+			.col-md-12
+				.col-md-5
+					for i in [0,1,2]
+						.twitts
+							.media-left
+								.tweet-img
+									img.img-responsive(src="img/work/" + i + ".jpg")
+							.media-right
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								p.tweet-date.
+									jan,29 2016
+							
+				.col-md-7
+					div
+						div.owl-carousel(id="blog1")
+							for i in [1,2,3]
+								div
+									img(src="img/resturent/" + i + ".png").img-responsive
+
+
+	+footer-1()

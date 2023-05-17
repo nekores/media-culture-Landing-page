@@ -1,0 +1,36 @@
+mixin features-enthink(sec_desc, sec_title)
+	div()&attributes(attributes)#work-enthink.features-enthink.bg-fixed.no-repeat.bg-cover
+		.alpha
+			.container
+				.row
+					.col-md-12
+						div.s-title
+							+section_title("Our company provides extra features", "Our", "Features")
+					.col-md-8.col-md-offset-2
+						p.text-center.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+					.col-md-8
+						.row.pb80
+							- feature_titles = ["Corporation","Clients","Designs","Collaborate","Combine","Attraction","Beauty","Effort","Less Time"]
+							for i in [0,1,2,3]
+								.col-md-6.col-sm-6.mv20
+									div(class="media")
+										div(class="media-left")
+											+flat_icon("icon-frame-inverse-primary icon-flat-lg")
+										div(class="media-body")
+											.media-text.pr10
+												h4(class="media-heading").mb10 #{feature_titles[i]}
+												p.
+													Mutat definitionem id cum, nibh omittam.
+										.media-bottom-para
+											p.
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor etu aliqua.
+					.col-md-4
+						.row.pb80
+							div.owl-features.mr80
+								div.owl-carousel(id="enthink-features")
+									for i in [0,1,2]
+										.col-md-12
+											.img.center-block
+												img.mb20.center-block.img-responsive(src='img/construction/enthink/features'+ '/' + i + '.png')

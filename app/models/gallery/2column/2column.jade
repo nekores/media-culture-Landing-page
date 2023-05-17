@@ -1,0 +1,63 @@
+mixin portfolioimg2column()
+	// === gallery nav star here ===
+	section
+		.container-fluid#container1.no-padding
+			.row.mt30
+				.col-md-12.col-sm-12.col-xs-12
+					nav
+						ul(class="portfolio-filter-gallery" id="filters")
+							li
+								a(class="all filter active", data-filter="all") All
+							li
+								a(class="filter ", data-filter=".webdesign") Design
+							li
+								a(class="filter", data-filter=".places") places
+							li
+								a(class="filter", data-filter=".wedding") wedding
+						// === gallery nav star end ===
+
+						//=== gallery starts here ===
+					
+						for i in [0,1,2,3]
+							.col-md-6.mix.webdesign.col-sm-6.pv15
+								.img-box-portfolio
+									img(src="img/work/" + i + ".jpg" class="img-responsive")
+									.img-content
+									.font-icon
+										.table-1
+											.table-middle-row-1.text-center.center-block
+												ul.list-inline
+													li
+														+icon-fa('fa-link', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+													li.popup-gallery
+														+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/work/' + i + '.jpg')
+
+						for i in [0,1,2,3]
+							.col-md-6.mix.places.col-sm-6.pv15
+								.img-box-portfolio
+									a(href="img/work/" + i + ".jpg")
+										img(src="img/work/" + i + ".jpg" class="img-responsive")
+										.img-content
+										.font-icon
+											.table-1
+												.table-middle-row-1.text-center.center-block
+													ul.list-inline
+														li
+															+icon-fa('fa-link', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+														li.popup-gallery
+															+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/work/' + i + '.jpg')
+						for i in [1,2,3,4]
+							.col-md-6.mix.wedding.col-sm-6.pv15
+								.img-box-portfolio
+									a(href="img/wedding/" + i + ".jpg")
+										img(src="img/wedding/" + i + ".jpg" class="img-responsive")
+										.img-content
+										.font-icon
+											.table-1
+												.table-middle-row-1.text-center.center-block
+													ul.list-inline
+														li
+															+icon-fa('fa-link', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+														li.popup-gallery
+															+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/wedding/' + i + '.jpg')
+						//=== gallery starts end ===

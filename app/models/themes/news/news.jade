@@ -1,0 +1,10 @@
+mixin news(classes, max, folder)
+	div(class=classes)
+		for i in[1,2,3]
+			.image
+				a(href='img/' + folder + '/' + i + '.jpg', )
+					img.pv5(src='img/' + folder + '/' + i + '.jpg', class=imgclasses)
+			//- .title.mv10
+			//- 	p Lorem ipsum dolor sit  amet, consectetur adipisicing elit, sed do eiusmod nulla maecenas metus nulla
+			//- 	date june 29 2015
+			//- 	hr

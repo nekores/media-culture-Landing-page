@@ -1,0 +1,94 @@
+.contact-ethink
+	.text-heading
+		h4
+			top 0px
+			letter-spacing 0.5px
+			line-height 30px
+		p
+			letter-spacing 0.9px
+			line-height 30px
+	.contact-parent
+		border-color gray
+		position relative
+		.contact-field-heads
+			h5
+				color gray
+				font-weight 300
+				position: absolute;
+				top: 5px;
+				left: 0px;
+				width: 129px;
+				text-align: center;
+				transition 1s all
+		&:hover, &:focus
+			.contact-field-heads
+				h5
+					color gray
+					position: absolute;
+					top: -18px;
+					left: 30px;
+					width: 129px;
+					border: 1px solid gray;
+					text-align: center;
+					transition 1s all
+		&:active
+			.contact-field-heads
+				h5
+					font-weight 400
+					font-size 15px
+					color gray
+					position: absolute;
+					top: -18px;
+					left: 30px;
+					width: 129px;
+					border: 1px solid gray;
+					text-align: center;
+					transition 1s all
+		input
+			color gray
+			font-weight 400
+			font-size 14px
+			box-shadow none
+		textarea
+			color gray
+			font-weight 400
+			font-size 14px
+			box-shadow none
+	.btn
+		background-color primary
+		transition 0.5s all
+		color white
+		&:hover
+			background-color darken(primary, 30%)
+			color white
+			
+		&:focus, &:active
+			outline none
+	@media(max-width: 307px)
+		.heading
+			top 15px
+			padding-left: 30px;
+			padding-top: 40px;
+			height: 100px;
+			width: 210px;
+	@media(max-width: 1199px)
+		.heading
+			top 100px
+			marin auto 0
+			right 20px
+			center block
+			padding-left: 10px;
+			padding-top: 50px;
+			height: 120px;
+			width: 210px;
+	@media(max-width: 991px)
+		.heading
+			top 15px
+			marin auto 0
+			right 0px
+			center block
+			padding-left: 30px;
+			padding-top: 30px;
+			height: 100px;
+			width:100%;
+			

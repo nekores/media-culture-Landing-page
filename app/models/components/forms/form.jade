@@ -1,0 +1,160 @@
+mixin checkbox-form()
+	.checkbox
+		label
+			input(type="checkbox") 
+			p check me out
+
+//-=== BASIC FORM MAXINE START HERE===
+mixin basic-form-inputs(label, type , placeholder , clas)
+	form
+		label.mt10.fw400 #{label}
+		input.form-input(type="#{type}" placeholder="#{placeholder} :" class="#{clas}" )
+
+
+//-=== BASIC FORM MAXINE END HERE===
+
+
+
+//-=== INLINE FORM MAXINE START HERE===
+
+
+mixin inline-form(type , placeholder , clas , label)
+	input.inlineform(type="#{type}" placeholder="#{placeholder} :" class="#{clas}")
+
+
+//-=== INLINE FORM MAXINE END HERE===
+
+
+//-=== TEXTAREA FORM MIXIN START HERE===
+
+mixin textarea(label)
+	label.fw400 #{label}
+	textarea.textarea(input="text" class="form-control input-lg" rows="5")
+
+//-=== TEXTAREA MIXIN END HERE===
+
+
+//-=== CHECKBOX AND CHECKBOX-DISSABLED MIXIN START HERE===
+
+
+mixin checkbox()
+	.checkbox
+		label
+			input(type="checkbox") 
+			p Option one is this and that&mdash;be sure to include why it's great
+mixin checkbox-dissable()
+	.checkbox
+		label
+			input(type="checkbox" value="" disabled)
+			p Option two is disabled
+
+
+//-=== CHECKBOX AND CHECKBOX-DISSABLED MIXIN END HERE===
+
+
+
+
+//-=== RADIO MIXIN START HERE===
+mixin radio()
+	.radio
+		label
+			input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
+			p Option one is this and that—be sure to include why it's great
+		label
+			input(type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked)
+			p Option two can be something else and selecting it will deselect option one
+		br()
+		label
+			input(type="radio" name="optionsRadios" value="option3" id="optionsRadios3" disabled)
+			p Option three is disabled
+
+//-=== RADIO MIXIN END HERE===
+
+
+
+//-=== SELECTS AND MULTIPLE MIXIN START HERE===
+
+mixin slects()
+	select.slects1
+		option 1 
+		option 2 
+		option 3 
+		option 4
+		option 5
+mixin slectspeople()
+	select.slectsr
+		option 1 people
+		option 2 people
+		option 3 people
+		option 4 people
+		option 5 people
+		option 6 people
+		option 7 people
+		option 8 people
+		option 9 people
+mixin slects-multiple() 
+	select.slects2(multiple class="form-control")
+		option 1
+		option 2
+		option 3
+		option 4
+		option 5
+
+//-=== SELECTS AND MULTIPLE MIXIN END HERE ===
+
+
+//-===VALIDATION  MIXIN START HERE ===
+
+
+mixin validation-success()
+	.form-group.has-success
+		label(class="control-label" for="inputSuccess1") Input with success
+		input(type="text" class="form-control" id="inputSuccess1")
+mixin validation-error()
+	.form-group.has-error
+		label(class="control-label" for="inputSuccess1") Input with error
+		input(type="text" class="form-control" id="inputError1")
+mixin validation-waring()
+	.form-group.has-warning
+		label(class="control-label" for="inputWaring1") Input with waring
+		input(type="text" class="form-control" id="inputWaring1")
+
+
+//-===VALIDATION  MIXIN END HERE ===
+
+
+//-===VALIDATION ICON MIXIN START HERE ===
+
+
+mixin validation-waring-icon()
+	.form-group.has-warning.has-feedback
+		label(class="control-label" for="inputWaring1") Input with waring
+		input.bdr-rad-reset(type="text" class="form-control" id="inputWaring1")
+		span(class="glyphicon glyphicon-warning-sign form-control-feedback")
+
+
+mixin validation-success-icon()
+	.form-group.has-success.has-feedback
+		label(class="control-label" for="inputSuccess1") Input with success
+		input.bdr-rad-reset(type="text" class="form-control" id="inputSuccess1" aria-describedby="inputSuccess2Status")
+		span(class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true")
+
+
+mixin validation-error-icon()
+	.form-group.has-error.has-feedback
+		label(class="control-label" for="inputSuccess1") Input with error
+		input.bdr-rad-reset(type="text" class="form-control" id="inputError1")
+		span(class="glyphicon glyphicon-remove form-control-feedback")
+		span(id="inputError2Status" class="sr-only")
+
+
+mixin validation-success-group()
+	.form-group.has-success.has-feedback
+		label(class="control-label" for="inputSuccess1") Input group with success
+		.input-group
+			span(class="input-group-addon") @
+			input.bdr-rad-reset(type="text" class="form-control" id="inputSuccess1" aria-describedby="inputSuccess2Status")
+		span(class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true")
+
+
+//-===VALIDATION ICON MIXIN START HERE ===

@@ -1,0 +1,25 @@
+mixin features(sec_desc, sec_title)
+	div()&attributes(attributes)#work-envision.features-envision
+		.container(style="margin-left: 0px; padding-left:0px;")
+			.row.pos-r
+				.heading
+					.text
+						.upper
+							span #{sec_desc}
+						.lower
+							h3 #{sec_title}
+				.col-md-10
+					.contain
+						.row.pv80
+							- feature_titles = ["Corporation","Clients","Designs","Collaborate","Combine","Attraction","Beauty","Effort","Less Time"]
+							for i in [0,1,2,3,4,5,6,7]
+								.col-md-5.col-sm-4.mv20
+									div(class="media")
+										div(class="media-left")
+											+flat_icon("icon-frame-inverse-primary icon-flat-lg")
+										div(class="media-body")
+											.media-text.pr10
+												h4(class="media-heading").mb10 #{feature_titles[i]}
+												p.
+													Mutat definitionem id cum, nibh omittam delicatissimi ei eam ne vidit usu.
+		+widget3()

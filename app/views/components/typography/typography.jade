@@ -1,0 +1,35 @@
+mixin typo-main-heading()
+    section
+        .container
+            .row
+                .col-md-8
+                    h2.comp-title typography
+                    hr
+                    h2.comp-titles headdings
+
+                    +typo-heading()
+
+
+
+                    hr
+                    h2.comp-titles contextual colors
+                    +typo-contextual-color()
+                    hr
+                    h2.form-titles inline text element
+                    +inline-text-element()
+                    hr
+                    h2.comp-titles icon list
+                    +icon-text-elements()
+                    hr
+                .col-md-4.hidden-xs
+                    +component-nav()
+                .col-md-12
+                    h2.comp-titles block quotes
+                    +block-qotes()
+                    hr
+                    h2.comp-titles drop caps
+                    +dropcaps()
+                    hr
+                    h2.comp-titles bootstrap columns
+                    +bootstrap-columns()
+                    hr

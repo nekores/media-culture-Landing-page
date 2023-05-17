@@ -1,0 +1,107 @@
+mixin medicall()
+    +medical-slider()
+    section
+        .container
+            .row.mt60.mb50
+                .text-center
+                    .col-md-12
+                        +heading('our','services','people says about us', '')
+                    .col-md-12
+                        +medical-services()
+    section.staff-section
+        .container-fluid
+            .row.mt60.mb50
+                .text-center
+                    .col-md-12.mv30.mb70
+                        +heading('our','staff','most proffesional and experts',' Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+                        +staffnew()
+    section
+        .container
+            .row.mt60.mb50
+                .col-md-12.mv30
+                    .text-center
+                        +heading('helping','you','live your life')
+                        +help-tab()
+    section
+        .container-fluid
+            .row.no-padding
+                .col-md-12.no-padding
+                    .bga-black-6
+                        +medical-callout()
+    section
+        .container
+            .row.mt60.mb50
+                .col-md-12
+                    .text-center
+                        +heading('our','testmonials','what our patients said')
+            .row
+                .col-md-6
+                    +medical-testfinal('medical/team/7.jpg','Kate Perlstien')
+                .col-md-6
+                    +medical-testfinal('medical/team/3.jpg','Anthony Corponi')
+            .row
+                .col-md-6
+                    +medical-testfinal('medical/team/1.jpg','Maria Samuel')
+            
+                .col-md-6
+                    +medical-testfinal('medical/team/2.jpg','Lieam Patel')
+    section.appointment-news
+        .bga-black-6
+            .container
+                .row.mt60.mb50
+                    .col-md-12
+                        .text-center
+                            +heading('make an','appointment','its very easy and fast')
+                    .col-md-6.pb60
+                        .text-center
+                            +appointment()
+
+       section.medical-footer
+            .container
+                .row
+                    .col-md-2
+                        .main-head.mt70
+                            h4.mb20 PATIENTS
+                            hr.w40
+                            +medical-footer()
+                    .col-md-2
+                        .main-head.mt70
+                            h4.mb20 RESEARCH
+                            hr.w40
+                            +medical-footer1()
+                    .col-md-3
+                        .main-head.mt70
+                            h4.mb20 EDUCATION
+                            hr.w40
+                            +medical-footer2()
+                    .col-md-2
+                         .main-head.mt70
+                            h4.mb20 INSTITUTION
+                            hr.w40
+                            +medical-footer3()
+                    .col-md-3
+                        .border4
+                            .main-head.mt100
+                                +medical-footer4()
+                hr
+        section.lower-footer
+            .container
+                .row
+                    .col-md-9
+                        .row
+                            .col-md-5
+                                .row
+                                    .col-md-4.no-padding.ml10
+                                        a(href="#") Privacy Policy |
+                                    .col-md-4.no-padding
+                                        a(href="#") Terms of use |
+                                    .col-md-3.no-padding
+                                        a(href="#") Sitemap |
+                            .col-md-7
+                    .col-md-3
+                        .footer-para.no-padding.no-margin
+                            p For more information, please call us at
+                            P
+                                span(href="#").fa.fa-phone.pv10.inline-block.pr10
+                                a(href="#") +44-12-3456-7890
+                        +lower-footer()

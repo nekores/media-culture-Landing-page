@@ -1,0 +1,39 @@
+mixin login-account3()
+	//=== signin account start here ===
+	section.signup-section
+		.container
+			.row
+				.col-md-4.col-md-offset-4
+					.reg-page&attributes(attributes)
+						form(role="form" method="get")
+							.reg-header
+								h2 Sign In
+							ul.list-inline.text-center
+								li.no-padding
+									+icon-fa("fa-facebook","icon-sm icon-frame-inverse-primary rounded-circle")
+								li.no-padding
+									+icon-fa("fa-twitter","icon-sm icon-frame-inverse-primary rounded-circle")
+								li.no-padding
+									+icon-fa("fa-linkedin","icon-sm icon-frame-inverse-primary rounded-circle")
+								li.no-padding
+									+icon-fa("fa-youtube","icon-sm icon-frame-inverse-primary rounded-circle")
+								p.mv20 Dont you have account? Click 
+									a(href="") Sign up 
+									span to registration
+								hr
+							.input-group.mb20
+								span.input-group-addon
+									i.fa.fa-envelope
+								input(type="Email" placeholder="Email" class="form-control" required)
+
+							.input-group.mb20
+								span.input-group-addon
+									i.fa.fa-lock
+								input(type="password" placeholder="Password" class="form-control" required)
+							hr
+							.checkbox
+								label 
+									input(type="checkbox" required)
+									|Remember me
+							+btn-theme-lg("btn-c-primary btn-block","Log In")
+	//=== signin account end here ===

@@ -1,0 +1,23 @@
+mixin charts-page()
+    section()&attributes(attributes)
+        .container
+            .row
+                .col-md-8
+                    h2.comp-title charts
+                    hr
+                    h2.comp-titles Line & Area Charts
+                    +line-chart()
+
+
+
+                    .mt100
+                    h2.comp-titles Bar Charts
+                    +bar-chart()
+
+
+                    .mt100
+                    h2.comp-titles.mt80 Donut Charts
+                    +donut-charts()
+
+                .col-md-4.hidden-sm.hidden-xs
+                    +component-nav()

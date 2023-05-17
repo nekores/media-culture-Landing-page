@@ -1,0 +1,44 @@
+mixin gallery(classes, max, folder, imgclasses)
+	div()&attributes(attributes)
+		- i = 1
+		while i <= max
+			div(class=classes)
+				img.img-responsive(src='img/' + folder + '/' + i + '.jpg', class=imgclasses)
+			- i = i + 1
+
+
+mixin portfolionav()
+	// === gallery nav star here ===
+	section
+		.container-fluid#container1.no-padding
+			.row
+				.col-md-2.col-sm-2.col-xs-12
+					nav
+						ul(class=" portfolio-filter-photo" id="filters")
+							li
+								a(class="all filter active", data-filter="all") All
+							li
+								a(class="filter ", data-filter=".webdesign") Design
+							li
+								a(class="filter", data-filter=".places") places
+							li
+								a(class="filter", data-filter=".wedding") wedding
+							li
+								a(class="filter", data-filter=".portrait") portrait
+							li
+								a(class="filter", data-filter=".event") events
+							br
+							li
+								a(class="filter", data-filter=".food") food
+							br
+							li
+								a(class="filter", data-filter=".lifestyle") life style
+	// === gallery nav end here ===
+
+mixin portfolioimg(classes, max, folder, imgclasses)
+	div()&attributes(attributes)
+		- i = 1
+		while i <= max
+			div(class=classes)
+				img.img-responsive(src='img/' + folder + '/' + i + '.jpg', class=imgclasses)
+			- i = i + 1

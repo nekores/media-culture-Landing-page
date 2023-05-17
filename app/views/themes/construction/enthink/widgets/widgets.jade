@@ -1,0 +1,22 @@
+mixin quote-widget-enthink()
+	section&attributes(attributes)#widgets.quote-widget-enthink
+		.container
+			.row
+				.col-md-12
+					div.owl-tweeter.pv50
+						div.owl-carousel(id="owl-tweeter")
+							- author =['Corlos lengol', 'Mr. shahzaad', 'Mrs. Shakeela', 'Mr. Nekores']
+							for i in [0,1,2,3]
+								div.center-block
+									.col-md-12
+										a(href="#")
+											.img
+												img.center-block.img-responsive(src='img/construction/quote'+ '/' + i + '.jpg')
+									.col-md-12.col-md-12.col-xs-12
+										.center-block.author-name.bg-primary.text-center.text-uppercase.bs(style="width: 200px; height:37px;")
+											p.center-block.pt10.ts #{author[i]}
+									.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-12.text-center
+										.text.mt20
+											p.
+												"<i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."</i>

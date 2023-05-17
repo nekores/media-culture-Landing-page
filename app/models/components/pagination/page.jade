@@ -1,0 +1,178 @@
+mixin defaultpage()
+    // === pagination start here ===
+    nav&attributes(attributes)
+        ul.pagination
+            li
+                a(href="#" aria-label="Previous")
+                    span(aria-hidden="true") &laquo;
+            li
+                a(href="#") 1
+            li
+                a(href="#") 2
+            li
+                a(href="#") 3
+            li
+                a(href="#") 4
+            li
+                a(href="#") 5
+            li
+                a(href="#" aria-label="next")
+                    span(aria-hidden="true") &raquo;
+    // === pagination end here ===
+mixin activepagenew()
+    // === pagination start here ===
+    nav&attributes(attributes)
+        ul.pagination
+            li.disabled
+                a(href="#" aria-label="Previous")
+                    span(aria-hidden="true") &laquo;
+            li.active
+                a(href="#") 1
+                    span.sr-only
+            li
+                a(href="#") 2
+            li
+                a(href="#") 3
+            li
+                a(href="#") 4
+            li
+                a(href="#") 5
+            li
+                a(href="#" aria-label="next")
+                    span(aria-hidden="true") &raquo;
+    // === pagination end here ===
+mixin activepage()
+    // === pagination start here ===
+    nav&attributes(attributes).active-page
+        <ul class="pagination">
+        <li class="disabled"><a href="#">Prev</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">Next</a></li>
+    </ul>
+    // === pagination end here ===
+mixin sizing()
+    nav&attributes(attributes)
+        ul.pagination.pagination-lg.no-margin
+            li
+                a(href="#" aria-label="Previous")
+                    span(aria-hidden="true") &laquo;
+            li
+                a(href="#") 1
+            li
+                a(href="#") 2
+            li
+                a(href="#") 3
+            li
+                a(href="#") 4
+            li
+                a(href="#") 5
+            li
+                a(href="#" aria-label="next")
+                    span(aria-hidden="true") &raquo;
+    nav&attributes(attributes)
+        ul.pagination.no-margin
+            li
+                a(href="#" aria-label="Previous")
+                    span(aria-hidden="true") &laquo;
+            li
+                a(href="#") 1
+            li
+                a(href="#") 2
+            li
+                a(href="#") 3
+            li
+                a(href="#") 4
+            li
+                a(href="#") 5
+            li
+                a(href="#" aria-label="next")
+                    span(aria-hidden="true") &raquo;
+    nav&attributes(attributes)
+        ul.pagination.pagination-sm.no-margin
+            li
+                a(href="#" aria-label="Previous")
+                    span(aria-hidden="true") &laquo;
+            li
+                a(href="#") 1
+            li
+                a(href="#") 2
+            li
+                a(href="#") 3
+            li
+                a(href="#") 4
+            li
+                a(href="#") 5
+            li
+                a(href="#" aria-label="next")
+                    span(aria-hidden="true") &raquo;
+mixin pager()
+    // === pagination start here ===
+    nav&attributes(attributes)
+        ul.pager
+            li
+                a(href="#") Previous
+            li
+                a(href="#") Next
+    // === pagination end here ===
+mixin pager1()
+    // === pagination start here ===
+    nav&attributes(attributes)
+    .flat
+        ul.pager
+            li
+                a(href="#") Previous
+            li
+                a(href="#") Next
+    // === pagination end here ===
+
+mixin linked-pager()
+    // === pagination start here ===
+    nav&attributes(attributes)
+        ul.pager
+            li.Previous
+                a(href="#")
+                    span(aria-hidden="true") &larr; Older
+            li.next
+                a(href="#") Newer
+                    span(aria-hidden="true") &rarr;
+    // === pagination end here ===
+mixin linked-pager1()
+    // === pagination start here ===
+    .flat
+        nav&attributes(attributes)
+            ul.pager
+                li.Previous
+                    a(href="#")
+                        span(aria-hidden="true") &larr; Older
+                li.next
+                    a(href="#") Newer
+                        span(aria-hidden="true") &rarr;
+
+    // === pagination end here ===
+mixin disable-pager
+    // === pagination start here ===
+    nav&attributes(attributes)
+        ul.pager
+            li.Previous.disabled
+                a(href="#")
+                    span(aria-hidden="true") &larr; Older
+            li.next
+                a(href="#") Newer
+                    span(aria-hidden="true") &rarr;
+    // === pagination end here ===
+mixin disable-pager1()
+    // === pagination start here ===
+    .flat
+        nav&attributes(attributes)
+            ul.pager
+                li.Previous.disabled
+                    a(href="#")
+                        span(aria-hidden="true") &larr; Older
+                li.next
+                    a(href="#") Newer
+                        span(aria-hidden="true") &rarr;
+    // === pagination end here ===

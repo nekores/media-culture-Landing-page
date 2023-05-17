@@ -1,0 +1,7 @@
+mixin medical-services()
+	section()&attributes(attributes).medical-services
+
+		- titles=["THE SCOPE OF MEDICAL CARE", "NECK SPINE AND BACK","HAND AND UPPER EXTRIMITY","WHEEL CHAIR","AMBULANCE","SHOULDER"]
+		- icons=["fa-h-square", "fa-medkit", "fa-stethoscope","fa-wheelchair","fa-ambulance","fa-user-md"]
+		for i in [0,1,2]
+			+iconbox-5('col-md-4 pv40', 2)

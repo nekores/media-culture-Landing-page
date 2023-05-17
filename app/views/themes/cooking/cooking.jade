@@ -1,0 +1,288 @@
+mixin cooking_menu()
+	div()&attributes(attributes).cook_menu
+		.container
+			.row
+				.col-md-12
+					+cooking-section_title("main courses . deserts . drinks","delicious", "menu")
+				.owl-carousel.owl-cookingmenu
+					- text1 = ["udish", "graphso","Gilyaling"]
+					- text2 = ["hamburger", "meaten","Phitey"]
+					- text3 = ["panney", "sharbath","davdav"]
+					for i in [0,1,2,0,1]
+						.col-md-12
+							.cooking-imgbox1
+								figure.mv20
+									img(src="img/cooking/imgbox" + "/" + i + ".jpg" class="img-responsive")
+									figcaption
+										.layer1
+										.layer2
+											h3 main courses
+										.layer3
+											.table
+												.table-middle-row
+													i.fa.fa-plus
+								.contentt
+									.content-1.mv10.p10
+										.pricebox
+											h3 4$
+										h4 #{text1[i]}
+										hr
+										p.pt5 Olives, Tomato, Greek Cheese, Oil
+									.content-2.mv10.p10
+										.pricebox
+											h3 8$
+										h4 #{text2[i]}
+										hr
+										p.pt5 Olives, Tomato, Greek Cheese, Oil
+									.content-3.mv10.p10
+										.pricebox
+											h3 12$
+										h4 #{text3[i]}
+										hr
+										p.pt5 Olives, Tomato, Greek Cheese, Oil
+
+mixin cooking_about()
+	div()&attributes(attributes).cooking_about
+		.container
+			.row
+				.col-md-12
+					+cooking-section_title("we are . ours . team","about", "cookee")
+					- chefranks =[" Executive chef", "saus chef", "standard chef", "prep cook"]
+					- chefname =[" Alan zengi", "Nekores singo", "shahzu sher", "navee nav"]
+				.owl-carousel
+					.owl-cookingmenu
+						for i in [0,1,2,3]
+							.team-box.col-md-12
+								figure
+									img(src="img/cooking/team" + "/" + i + ".png" class="img-responsive")
+									figcaption
+									.layer1
+										h3 #{chefranks[i]}
+									.layer2
+										h4 #{chefname[i]}
+
+mixin quote-widget-coooking()
+	section&attributes(attributes)#widgets.quote-widget-cooking
+		.alpha
+			.container
+				.row
+					.col-md-12
+						div.owl-tweeter.pv50
+							div.owl-carousel(id="owl-quotes-cooking")
+								- author =['Corlos lengol', 'Mr. shahzaad', 'Mrs. Shakeela', 'Mr. Nekores']
+								for i in [0,1,2,3]
+									div.center-block
+										.col-md-12
+											a(href="#")
+												.img
+													img.center-block.img-responsive(src='img/construction/quote'+ '/' + i + '.jpg')
+										.col-md-12.col-md-12.col-xs-12
+											.center-block.author-name.bg-primary.text-center.text-uppercase.bs(style="width: 200px; height:37px;")
+												p.center-block.pt10.ts #{author[i]}
+										.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-12.text-center
+											.text.mt20
+												p.
+													"<i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."</i>
+
+//- PORTFOLIO SECTION CODE HERE
+mixin cooking_portfolio()
+	div()&attributes(attributes).cooking_portfolio
+		.container
+			.row
+				.col-md-12
+					+cooking-section_title("all images . all events","photo","gallery")
+		.container-fluid#container1.no-padding
+			.row.mt30
+				.col-md-12.col-sm-12.col-xs-12.no-padding
+					nav
+						ul.nav(class="portfolio-filter-gallery" id="filters")
+							li
+								a.active(class="all filter active", data-filter="all") All
+							li
+								a(class="filter ", data-filter=".restaurants") Retaurants
+							li
+								a(class="filter", data-filter=".places") Places
+							li
+								a(class="filter", data-filter=".travels") Travels
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.places.col-sm-3.no-padding
+								.img-box-portfolio
+									img(src="img/places/" + i + ".jpg" class="img-responsive")
+									.img-content
+									.font-icon
+										.table-1
+											.table-middle-row-1.text-center.center-block
+												ul.list-inline
+													li
+														+icon-fa('fa-link', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+													li.popup-gallery
+														+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/places/' + i + '.jpg')
+						for i in [0,1,2,3,4,5,7,8]
+							.col-md-3.mix.restaurants.travels.col-sm-3.no-padding
+								.img-box-portfolio
+									img(src="img/work/" + i + ".jpg" class="img-responsive")
+									.img-content
+									.font-icon
+										.table-1
+											.table-middle-row-1.text-center.center-block
+												ul.list-inline
+													li
+														+icon-fa('fa-link', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+													li.popup-gallery
+														+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/work/' + i + '.jpg')
+
+//- CLIENTS SECTION CODED HERE
+mixin cooking_client()
+	div()&attributes(attributes).cooking_client
+		.alpha
+			.container
+					.row
+						.col-md-12
+							+cooking-section_title("we regular lovely clients","clients", "travelon")
+			+widget6()
+
+//- CONTACT US SECTION CODE HERE
+mixin cooking_contact()
+	div()&attributes(attributes).cooking_contact
+		.container
+			.row
+				.col-md-12
+					+cooking-section_title("Our access . location . we are here", "cheff's", "contact")
+				.col-md-12
+					form(role="form")
+						.col-md-4.mt40
+							h6.label Your full Name*
+							input(type="text" role="text" class="form-control" placeholder="Mr. Nekroes" required).p20.no-bdr-rad
+						.col-md-4.mt40.mb20
+							h6.label email address*
+							input(type="email" role="email " class="form-control" placeholder="abc@mail.com" required).p20.no-bdr-rad
+						.col-md-4.mt40.mb20
+							h6.label phone number*
+							input(type="text" role="text" class="form-control" placeholder="+92123456789" required).p20.no-bdr-rad
+						.col-md-4.mt10
+							h6.label Date*
+							input(type="text" role="text " class="form-control" placeholder="Enter date" required).p20.no-bdr-rad
+						.col-md-4.mt10.mb20
+							h6.label time (from - to)*
+							input(type="text" role="text" class="form-control" placeholder=" 12:00Pm - 12:00Am" required).p20.no-bdr-rad
+						.col-md-4.mt10.mb20
+							h6.label number of person*
+							input(type="text" role="text " class="form-control" placeholder="Number of persons" required).p20.no-bdr-rad
+						.col-md-12.mb20
+							h6.label.clr-primary Description
+							textarea(type="text" rows="6" class="form-control" placeholder="type your Description" required).p20.no-bdr-rad
+						.col-md-6.mb30
+							button.btn.btn-m-primary.btn-lg.no-bdr-rad(type="submit" value="submit") Send Message
+								span.pl10.fa.fa-send
+
+
+//- COOKING SECTION CODED HERE
+mixin cooking_calculate()
+	div()&attributes(attributes).cooking_calculateform
+		.alpha
+			.container.mb50
+					.row
+						.col-md-12
+							+cooking-section_title("we regular lovely clients","Price", "calculate")
+			.container
+				.row
+					.col-md-12
+							form(role="form")
+								.form-group
+									.input-group
+										.col-md-3.col-sm-3
+											label.ml15
+												h6 Country
+												select
+													option(value="Paris") Paris
+													option(value="Canada") Canada
+													option(value="Pakistan") Pakistan
+													option(value="London") London
+													option(value="America") America
+													option(value="Japan") Japan
+													option(value="Thiland") Thiland
+										.col-md-3.col-sm-3
+											label.ml15
+												h6 City
+												select
+													option(value="Deira") Deira
+													option(value="Canada") Karachi
+													option(value="Pakistan") Washington
+													option(value="London") Newyork
+													option(value="America") Texas
+													option(value="Japan") Chigago
+													option(value="Thiland") Standford
+										.col-md-3.col-sm-3
+											label.ml15
+												h6 Check In
+												input.dpd1(type="text" placeholder="mm/dd/yyyy" class="form-control" required)
+										.col-md-3.col-sm-3
+											label.ml15
+												h6 Check out
+												input.dpd2(type="text" placeholder="mm/dd/yyyy" class="form-control" required)
+										.col-md-12.col-sm-12.no-padding
+											.search_button.pull-right
+												button(type="submit" value="submit" class="btn btn-default") Calculate
+
+
+
+//- COOKING FOOTER SECTION CODE HERE
+mixin cooking_footer()
+	div()&attributes(attributes).cooking_footer
+		.alpha
+			.container
+				.row
+					.col-md-4.col-sm-12.partition1.mt60
+						ul.p40.clr-primary.list-unstyled.bgalpha
+							p.head Our Company
+							li.mv10
+								a.no-dac.center-block(class="media-left" href="#slider")
+									img.center-block(src="img/construction/enthink/logo/enthink.png")
+							li.mt10
+								a.no-dac(href="").para.text-center.clr-primary.mt15.
+									There are many variations of passages of lorem ipsum availiable, but the majority have suffered alteration i some forem there are many variation.
+									<br>
+									Lorem ipsum dolor sit amet, consectetur adipisicing.
+					.col-md-4.col-sm-12.partition1.mt60
+						div.p35.bgalpha
+							p.head.
+								Recent Blog Posts
+							// - icons =["flaticon-food-23","flaticon-pen","flaticon-food-21"]
+							for i in [0,1,2]
+								div(class="media")
+									div.no-dac(class="media-left")
+										+icon-flat("flaticon-food-21","icon-frame-inverse-primary icon-flat-md","#")
+									div(class="media-body").mv10
+										a.para.blog-desc(href="").
+											Mutat definitionem id untamed nekores.
+					.col-md-4.col-sm-12.partition1.mt60
+						ul.p40.list-unstyled.bgalpha
+							p.head.
+								Our Accessibility
+							li.mv10
+								i.fa.fa-location-arrow.clr-primary
+								a(href="").pl5.para.text-center.clr-primary.mt15 Nekores Plaza, GB Dubai
+							li.mv10
+								i.fa.fa-envelope.clr-primary
+								a(href="").pl5.para.text-center.clr-primary.mt15 nekores@cdoctors.com
+							li.mv10
+								i.fa.fa-phone.clr-primary
+								a(href="").pl5.para.text-center.clr-primary.mt15 +92(3129749993)
+							li.mv10
+								i.fa.fa-shield.clr-primary
+								a(href="").pl5.para.text-center.clr-primary.mt15 Engineering Mind
+							ul.list-inline(style="margin-top:38px;")
+								li
+									+icon-fa('fa-facebook', 'icon-frame-primary facebook icon-sm')
+								li
+									+icon-fa('fa-twitter', 'icon-frame-primary twitter icon-sm')
+								li
+									+icon-fa('fa-instagram', 'icon-frame-primary instagram icon-sm')
+								li
+									+icon-fa('fa-youtube', 'icon-frame-primary youtube icon-sm')
+			.container-fluid.no-padding.mt50(style="overflow: hidden;")
+				.row.no-padding
+					.col-md-12.no-padding
+						.footer-text.text-center
+							h5.p20.clr-primary Copyright @ 2015 Upack &nbsp;<span class="clr-primary">| Construction Design |</span> &nbsp;   Nekores Contribution

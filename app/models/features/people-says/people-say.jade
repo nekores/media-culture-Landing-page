@@ -1,0 +1,36 @@
+- saying = ["~ mr lorem", "wedding experts", "event expert"]
+mixin peoplesay1()
+    //=== testimonial start here ====
+    section().peoplesay1&attributes(attributes)
+        .saying-people
+            .bg-alpha
+                .container
+                    .row.mb60
+                        .col-md-6
+                            h2.section-titles what people
+                                br 
+                                span say
+                            p.testmonial-para Testimonial
+                        .col-md-6
+                            div.owl-slider
+                                div.owl-carousel(id="owl")
+                                    for i in [0,1,2]
+                                        div
+                                            p
+                                                i.saying-para.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit
+                                            h3.testimonial-name #{saying[i]}
+    //=== testimonial end here ====
+mixin peoplesay-testimonial(postevent)
+    div.testimonial2
+        div.owl-carousel(id="owl")
+            for i in [0,1,2]
+                div
+                    p
+                        i.saying-para2.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt,
+                    h3.testimonial-name #{postevent[i]}

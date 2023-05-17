@@ -1,0 +1,10 @@
+extends ../../../views/layout/main.jade
+block main_content
+    +navbar-pack().navbar-fixed-top.custom-navbar.navbar-default.navbar-white
+    - directionheading= ("components")
+    - activepage = ("fontawesome")
+    +pages-header-xs()
+    .mt50
+    +font-icons()
+    include ../../../models/back-to-top/back-to-top.jade
+    include ../../../models/loder/loder.jade

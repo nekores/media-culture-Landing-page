@@ -1,0 +1,93 @@
+- titles = ['STARTER', 'BASIC', 'BUSINESS']
+-price = ['20','50','80']
+-months = ['one month','per month', 'per month']
+-line1 =['5 ', '12 ', 'Unlimited ']
+-line2 =['10 ', '100  ', 'Unlimited ']
+-line3 =['10GB ', '80GB ', '2TB ']
+-line4 =['5 ','20 ', 'Unlimited ']
+
+mixin price1()
+	//=== price table start here ===
+	for i in [0,1]
+		.col-md-6
+			div.bg-clr-table
+				div.num-title
+					h4 #{titles[i]}
+				div.title-heading
+					h3 $#{price[i]}
+					span.
+						#{months[i]}
+				div.price-list
+					p #{line1[i]}
+						span.
+							 users
+					.price-seprator
+					p #{line2[i]}
+						span.
+							projects
+					.price-seprator
+					p #{line3[i]}
+						span.
+							amount of space
+					.price-seprator
+					p #{line4[i]}
+						span.
+							email accounts
+					.price-seprator
+				div.price-button
+					button.btn.sign-up-button sign up
+	//=== price table end here ===
+mixin price2()
+	//=== price table start here ===
+	.col-md-10.col-md-offset-1
+		for i in [0,1,2]
+			.col-md-4.mv40
+				div.bg-clr-table
+					div.num-title
+						h4 #{titles[i]}
+					div.title-heading
+						h3 $#{price[i]}
+						span.
+							#{months[i]}
+					div.price-list
+						p #{line1[i]}
+							span.
+								 users
+						.price-seprator
+						p #{line2[i]}
+							span.
+								projects
+						.price-seprator
+						p #{line3[i]}
+							span.
+								amount of space
+						.price-seprator
+						p #{line4[i]}
+							span.
+								email accounts
+						.price-seprator
+					div.price-button
+						button.btn.btn-lg.btn-c-primary.ph25.pv5 sign up
+	//=== price table end here ===
+- photohrs = ['photoshoot 2 hrs', "photoshoot 5 hrs", "photoshoot 12 hrs"]
+- album = ['little album ',"big album ","big album"]
+- photo = ["100 Photos", "200 photos", "500 photos"]
+mixin price3()
+	//=== price table start here ===
+	section()&attributes(attributes)
+		for i in [0,1,2]
+			.col-md-4.mv40
+				div.package
+					h3 #{titles[i]}
+					ul
+						li #{photohrs[i]}
+						li High quality Photos
+						li #{album[i]}
+						li Lorem dolat sit
+						li #{photo[i]}
+					a(herf="#")
+						h2
+							span $ 
+							| #{price[i]}
+					button.mv20.btn.btn-sm.ph50.btn-c-primary get started
+	//=== price table end here ===

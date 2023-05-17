@@ -1,0 +1,32 @@
+mixin about-default(sec_desc, sec_title)
+	div()&attributes(attributes)#about-envision.about-envision
+		.container(style="margin-right: 0px; padding: 0px; overflow: hidden;")
+			.row.pos-r
+				.heading
+					.text
+						.upper
+							span #{sec_desc}
+						.lower
+							h3 #{sec_title}
+				.col-md-10.col-md-offset-2
+					.contain
+						.row.pr20.popup-gallery
+							.col-md-7
+								.img
+									img(src="img/construction/about/img-video.jpg" class="img-responsive")
+									a(href="img/construction/about/img-video.jpg")
+										.layer1
+							.col-md-5
+								.text-heading.mt10
+									h4.
+										OMNES LATINE CONSETETUR QUO ET EST NE DICANT TRITANI EFFICIENDI.
+									p.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									p.
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco
+		.container-fluid.bg-gray
+			.row.pv30
+				.col-md-12.mt30
+					+countup5()
+		//- +widget5()

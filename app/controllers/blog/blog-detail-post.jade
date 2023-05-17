@@ -1,0 +1,10 @@
+extends ../../views/layout/main.jade
+block main_content
+	+navbar-pack().navbar-fixed-top.custom-navbar.navbar-default.navbar-white
+	- pageheader = ("BLog 2 col")
+	+comp-header-blog()
+	+blog-detail-post-page()
+	include ../../models/switcher/switcher.jade
+	include ../../models/back-to-top/back-to-top.jade
+	include ../../models/loder/loder.jade
+

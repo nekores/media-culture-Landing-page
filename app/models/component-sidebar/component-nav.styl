@@ -1,0 +1,34 @@
+.component-nav
+	#nav-title
+		font-weight 400
+		text-transform capitalize
+	ul
+		margin-top 40px
+		text-transform uppercase
+		li
+			padding 5px 10px
+			
+			border-left 2px solid transparent
+			&:before
+				// content "\f105"
+				position absolute
+				left 0
+				top 4px
+				color #777
+				font-family FontAwesome
+				
+			a
+				text-decoration none !important
+				color #555
+				font-family 'Raleway'
+				&:hover
+					color primary
+			&:hover
+				border-left 1px solid primary
+			&.active, a:focus
+				border-left-color primary  !important
+				a
+					color primary
+@media(max-width 992px)
+	.component-nav
+		display none

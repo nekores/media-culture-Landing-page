@@ -1,0 +1,35 @@
+mixin help-tab()
+	section.pv40&attributes(attributes).help-section
+		.container
+			.row
+				.col-md-7.col-sm-6.col-xs-12
+					.pv20
+						+tab4()
+				//- Tab mixin starts here
+				.col-md-5.col-sm-6.col-xs-12
+					.doctors.pv20
+						div(id="medical-help-slider" class="owl-carousel owl-theme")
+							div
+								a(href="img/medical/help/1.jpg")
+									img(src="img/medical/help/1.jpg" class="img-responsive")
+									.name1
+										h4 Sheela Mark
+										small Primary Care
+							div
+								a(href="img/medical/help/2.jpg")
+									img(src="img/medical/help/2.jpg" class="img-responsive")
+									.name2
+										h4 Dayana loyee
+										small Paediatrics
+							div
+								a(href="img/medical/help/3.jpg")
+									img(src="img/medical/help/3.jpg" class="img-responsive")
+									.name3
+										h4 Aleen Shah
+										small Gynaecology
+							div
+								a(href="img/medical/help/4.jpg")
+									img(src="img/medical/help/4.jpg" class="img-responsive")
+									.name4
+										h4 Mark Doe
+										small Cardiology

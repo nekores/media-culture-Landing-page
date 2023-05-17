@@ -1,0 +1,44 @@
+mixin bloglayout1()
+	section
+		.container
+			.row
+				.text-center
+					.col-md-12
+						+heading('recent','news','world latest news')
+				.col-md-12
+					+blog-2-column()
+	+footer-1()
+
+
+
+mixin bloglayout2()
+	section
+		.container
+			.row
+				.text-center
+					.col-md-12
+						+heading('latest','new','We Deliver The Ready Product')
+				.col-md-8
+					+bloggrid-3-column("col-md-6", 8)
+				.col-md-4
+					+blog-sidebar()
+	+footer-1()
+mixin bloglayout3()
+	+slider()
+	+call-out-btn-right()
+	section
+		.container
+			.row
+
+				.col-md-12
+					+blog-2-column()
+	+footer-2()
+mixin bloglayout4()
+	+slider()
+	+call-out-btn-right()
+	section
+		.container
+			.row
+				.col-md-12
+					+blog-2-column()
+	+footer-1()

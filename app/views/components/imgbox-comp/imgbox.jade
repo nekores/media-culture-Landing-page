@@ -1,0 +1,101 @@
+//- ImageBox transition top-bottom
+mixin imgbox-default-1()
+	section()&attributes(attributes).imgbox
+		.container
+			.row
+				.col-md-12
+					.section-top-text.text-center.mt80
+						.heading
+							h2.fs35.fw900 ImageBox Components
+						.description
+							p.fw100.
+								Upack Designed Icons in different size
+					.icons
+						.content-top-heading.text-center.mt80
+							h4.fs35.fw800 ImgBox - I
+							p.fw900.mr5 State:
+								span.fw100.pl5 Default having no animations
+							p.fw900.mr5 Transition:
+								span.fw100.pl5 Social icon DissolveIn
+						.description
+						hr
+			.row
+				.col-md-12
+					+imgbox1()
+							
+mixin imgbox1()
+
+	+imgbox-1('col-md-4 col-sm-4 col-xs-12 mv40', 3, 'team')&attributes(attributes)
+
+
+//- ImageBox transition rotate right
+mixin imgbox-default-2()
+	section()&attributes(attributes).imgbox
+		.container
+			.row
+				.col-md-12
+					.icons
+						.content-top-heading.text-center.mt80
+							h4.fs35.fw800 ImgBox - II
+							p.fw900.mr5 State:
+								span.fw100.pl5 Content Transition Effect left-Side 
+							p.fw900.mr5 Transition:
+								span.fw100.pl5 Rotate(20deg)
+						.description
+						hr
+
+			.row
+				.col-md-12
+					+imagebox2()
+							
+mixin imagebox2()
+	+imgbox-2('col-md-4 col-sm-4 col-xs-12 mv40', 3, 'team')&attributes(attributes)
+
+
+//- ImageBox transition rotate right
+mixin imgbox-default-3()
+	section()&attributes(attributes).imgbox
+		.container
+			.row
+				.col-md-12
+					.icons
+						.content-top-heading.text-center.mt80
+							h4.fs35.fw800 ImgBox - III
+							p.fw900.mr5 State:
+								span.fw100.pl5 Content Transition Effect Spin
+							p.fw900.mr5 Transition:
+								span.fw100.pl5 Rotate(360deg)
+						.description
+						hr
+
+			.row
+				.col-md-12
+					+imagebox3()
+							
+mixin imagebox3()
+	+imgbox-3('col-md-4 col-sm-4 col-xs-12 mv40', 3, 'team')&attributes(attributes)
+mixin theme-imageboxs()
+	section
+		.container
+			.row
+				.col-md-12
+					h3.mv70.comp-title image boxs I
+					+imgboxs-4-column('col-md-3 col-sm-3 col-xs-12 mv40', 4, 'team')&attributes(attributes)
+	section
+		.container
+			.row
+				.col-md-12
+					h3.mt20.mb70.comp-title image boxs II
+					+bloggrid-3-column("col-md-4", 3)
+	section
+		.container
+			.row
+				.col-md-12
+					h3.mt20.mb70.comp-title image boxs III
+					+bloggrid-2-column("col-md-6", 2)
+					//- +imgbox-2('col-md-4 col-sm-4 col-xs-12 mv40', 3, 'team')&attributes(attributes)
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+footer-1()

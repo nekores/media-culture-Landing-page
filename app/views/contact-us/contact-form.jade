@@ -1,0 +1,37 @@
+mixin contactform1()
+    section.contact1
+        .contact-bg-image
+            .bg-alpha
+                .container
+                    .row.mb60
+                        .col-md-12
+                            .col-md-5
+                                +contacttext1()
+                            .col-md-6.col-md-offset-1
+                                +contactinput1()
+mixin contactform2()
+    section
+        .container
+            .row
+                .col-md-12
+                    div.mt100
+                        +contact-form-input()
+mixin contactform3()
+    section
+        .container
+            .row
+                .col-md-12
+                    div.mt100
+                    h2.comp-title restorent reservation
+                    +contact-form-reservation()
+
+    section
+        .container
+            .row
+                .col-md-12
+                    div.mt100
+                    h2.comp-title restorent reservation
+                    +contact-form-event()
+
+
+

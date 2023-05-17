@@ -1,0 +1,106 @@
+mixin default-footer()
+	section&attributes(attributes).upack-default-footer
+		.container-fluid
+			.row
+				.col-md-3.col-sm-3
+					.first-notes1
+						.heading
+							h5 Reasources and Favorites
+						ul
+							li
+								a(href="#") 100+ components
+							li
+								a(href="#") Design map
+							li
+								a(href="#") css tricks
+							li
+								a(href="#") bootstrap responsive
+							li
+								a(href="#") Jquery Animations
+							li
+								a(href="#") jade Framework
+							li
+								a(href="#") 500+ icons
+							li
+								a(href="#") Mixitup gallery
+							li
+								a(href="#") Multiple Variations
+				.col-md-6.col-sm-6
+					.first-notes2
+						.heading
+							h5 Features and Resources
+						.col-md-6.sub-notes
+							ul
+								li
+									a(href="#") css gallery
+								li
+									a(href="#") Design map
+								li
+									a(href="#") css tricks
+								
+						.col-md-6.sub-notes
+							ul
+								li
+									a(href="#") css gallery
+								li
+									a(href="#") Design map
+								li
+									a(href="#") css tricks
+					.col-md-12.no-padding
+						ul.mt20.brands-custom
+							#default-footer-brands
+								for i in [0,1,2,3,4,5,6,7,8,9]
+									img(src="img/construction/brands/" + i + ".png" height="50px" width="100px" class="img-responsive")
+						.carouselsss.mt20
+							div(id="wrapper")
+								div(id="cool57")
+									- link = ['photography.html','cons_enthinkvegas.html','cons_enthinkvegas.html','cons_enthinkvegas.html','cons_enthinkvegas.html','cons_enthinkvegas.html','cons_enthinkvegas.html','cons_enthinkvegas.html','cons_enthinkvegas.html']
+									- brand_name = ['Enthink','Envision','Photography','Medical','veet', 'Flame','Uconnect','Designer','Maku','Disney','Uexel','Gym','Flirchi','Romantic','fashion']
+									for i in [0,1,2,0,1,2,0,1,2]
+										div.bg-primary
+											img(src="img/upack-footer/"+ i +".jpg" width="150" height="150")
+											a(href="#{link[i]}")
+												span #{brand_name[i]}
+								div(id="pager")
+								
+				.col-md-3.col-sm-3
+					.first-notes4
+						.heading
+							h5 Features and Resources
+						.address
+							.office
+								.media
+									.media-left
+										h6 Address:
+									.media-body
+										span Flat# 304 Uconnect Software House Gilgit
+							.phone
+								.media
+									.media-left
+										h6 Phone:
+									.media-body
+										span +923129749923
+							.email
+								.media
+									.media-left
+										h6 Email:
+									.media-body
+										span nekores@nekoresmail.com
+						input(type="text" placeholder="Email")
+						button.btn.btn-primary Subscribe
+							span.fa.fa-send
+						ul.list-inline
+							li
+								+icon-fa("fa-facebook", "icon-frame-primary facebook icon-sm")
+							li
+								+icon-fa("fa-twitter", "icon-frame-primary twitter icon-sm")
+							li
+								+icon-fa("fa-youtube", "icon-frame-primary youtube icon-sm")
+							li
+								+icon-fa("fa-linkedin", "icon-frame-primary linkedin icon-sm")
+				.col-md-12.no-padding.footer-bottom-panel
+					.left-description.pull-left
+						h5 copyright@ Untamed Nekores
+					.right-description.pull-right
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

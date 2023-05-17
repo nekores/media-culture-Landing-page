@@ -1,0 +1,48 @@
+extends ../../../views/layout/main.jade
+block main_content
+	+navbar-pack().navbar-fixed-top.navbar-default.navbar-white
+	section
+		.container
+			.row
+				.col-md-12
+					h3.comp-titles page title center align
+	- pagesmainheading = ("page title")
+	- directionheading= ("location")
+	- activepage = ("active page")
+	+pages-header()
+	section
+		.container
+			.row
+				.col-md-12
+					h3.comp-titles page title center align
+	- pagesmainheading=("portfolio")
+	- directionheading=("portfolio 3 column grid")
+
+	+portfolio-header()
+	section
+		.container
+			.row
+				.col-md-12
+					h3.comp-titles page title left align
+	- pagesmainheading = ("page title")
+	- directionheading= ("location")
+	- activepage = ("active page")
+	
+	+pages-header-sm()
+	section
+		.container
+			.row
+				.col-md-12
+					h3.comp-titles page title breadcrumbs only
+	+pages-header-xs()
+	section
+		.container
+			.row
+				.col-md-12
+					h3.comp-titles page title left align
+	- pageheader = ("page title")
+	+comp-header-blog()
+	+footer-2()
+	include ../../../models/switcher/switcher.jade
+	include ../../../models/back-to-top/back-to-top.jade
+	include ../../../models/loder/loder.jade

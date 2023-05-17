@@ -1,0 +1,119 @@
+mixin widget1()
+	section&attributes(attributes)#widgets.widget1
+		.container
+			.row
+				.col-md-12
+					div.owl-tweeter
+						div.owl-carousel(id="owl-tweeter")
+							for i in [0,1,2,3]
+								div.center-block
+									.col-md-2.col-sm-3
+										a(href="#")
+											.img
+												img.center-block.img-responsive(src='img/construction/quote'+ '/' + i + '.jpg')
+									.col-md-8.col-sm-8.mt65.text-center
+										.text
+											p.
+												"<i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."</i>
+mixin widget2()
+	section&attributes(attributes).widget2
+		.container-fluid
+			.row
+				- callout_titles = ["Our Services", "Constructions", "Re Desiging"]
+				for i in [0,1,2]
+					.col-md-4.blocks.pos-r
+						div(class="media").p30.mv40
+							div(class="media-left")
+								+flat_icon("icon-frame-inverse-primary icon-flat-md")
+							div(class="media-body")
+								.media-text
+									h4(class="media-heading").mb10 #{callout_titles[i]}
+									p.
+										Mutat definitionem id cum, nibh omittam delicatissimi ei eam ne vidit usu
+								.button.pos-a
+									.btn.btn-primary.no-bdr-rad.bg-gray.bdr-primary Get In Touch
+mixin widget3()
+	section&attributes(attributes).widget3.bg-gray
+		.container
+			.row
+				.col-md-6
+					.col-md-4
+						div.center-block
+							div.sidebox.center-block
+								.btn.btn-primary
+									i.fa.fa-comments.fs35
+					.col-md-8.text-center
+						.subscription-text.mv35
+							h3.clr-white.
+								SUBSCRIBE TO OUR NEWSLETTER
+							h5.clr-white.
+								Get notified and stay update
+
+				.col-md-6
+					form.pos-r
+						input.input1(type="email" role="text" placeholder="Enter Your Email" class="form-control")
+						div.button.pos-a
+							.btn.btn-primary.pv15.ph40.fs17(type="submit" value="submit") Subscribe
+								i.pl30.fa.fa-send.fs17
+mixin widget4()
+	section&attributes(attributes).widget4.bg-gray
+		.container(style="margin-right: 0px; padding: 0px; overflow: hidden;")
+			.row
+				.col-md-6
+					.col-md-4
+						div.center-block
+							div.sidebox.center-block
+								.btn.btn-primary
+									i.fa.fa-twitter(style="color : #0084b4;")
+					.col-md-8.text-center
+						.tweets1.mv35
+							h3.
+								FOLLOW US ON TWITTER
+							h5.
+								Get notified and stay update
+
+				.col-md-6
+					form.pos-r
+						.tweets2
+							h4 Recent Tweets
+								span.pull-left.fa.fa-twitter
+
+							p.pl25 @Untamed_Nekores
+
+mixin widget5()
+	section&attributes(attributes).widget5.bg-gray
+		.container(style="margin-right: 0px; padding: 0px; overflow: hidden;")
+			.row
+				.col-md-6
+					.col-md-4
+						div.center-block
+							div.sidebox.center-block
+								.btn.btn-primary
+									i.fa.fa-facebook-square.clr-facebook.fs35
+					.col-md-8.text-center
+						.fb1.mv35
+							h3.
+								LIKE US ON FACEBOOK
+							h5.
+								Get notified and stay update
+
+				.col-md-6
+					form.pos-r
+						.fb2
+							h4 Recent Notifications
+								span.pull-left.fa.fa-bell-o
+
+							p.pl25 Untamed Nekores
+								//- span.pull-left.fa.fa-bell-o
+
+mixin widget6()
+	section&attributes(attributes).widget6.bg-gray
+		.container
+			.row
+				.col-md-12
+					div.construction_brands
+						div.owl-carousel(id="constrution_brands")
+							for i in [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+								div.mt60.mb40.center-block
+									img.center-block.img-responsive(src='img/construction/brands'+ '/' + i + '.png')

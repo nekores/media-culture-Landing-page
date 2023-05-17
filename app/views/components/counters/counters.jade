@@ -1,0 +1,34 @@
+mixin counter-up1()
+    .section
+        .container
+            .row
+                .col-md-8
+                    h2.comp-title counters
+                    hr
+                    h2.comp-titles count up: box 1
+                    
+                    +countup3()
+
+                    h2.comp-titles count up: box 2
+                    +countup4()
+                .col-md-4.hidden-sm.hidden-xs
+                    +component-nav()
+
+            .row
+                .col-md-12
+                    h2.comp-titles Full width: count up 1
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +countup1()
+        .container
+            .row
+                .col-md-12
+
+                    h2.comp-titles Full width: count up 2
+                    
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +countup2()
+                    .mb50

@@ -1,0 +1,324 @@
+.navbar-upack-default
+	.navbar-dark
+		background-color #333
+		.navbar-nav
+			> li > a
+				color white !important
+				ul > li > a
+					color red
+			> li >.dropdown-menu
+				background-color #333 !important
+				> li
+					border-bottom 1px solid alpha(white, 10%) 
+				.dropdown-menu
+					background-color #333 !important
+					> li
+						border-bottom 1px solid alpha(white, 10%)
+			.dropdown-menu
+				> li > a
+					color white
+		.navbar-nav ul.dropdown-menu li.active>a
+			color darken(white, 10%)
+			background-color alpha(white, 10%)
+		.navbar-nav ul.dropdown-menu li.active:hover>a
+			color darken(white, 10%)
+			background-color alpha(white, 4%)
+		.navbar-nav ul.dropdown-menu li:hover>a
+			color darken(white, 10%)
+			background-color alpha(white, 4%)
+		
+		.navbar-nav>.active>a
+			background-color transparent !important
+		.navbar-nav>:hover>a
+			background-color primary !important
+			color white !important
+		.navbar-brand
+			color white !important
+
+		.megamenu > li > ul > li > a
+			color white !important
+			border-bottom 1px solid alpha(white, 10%) !important
+
+		.megamenu > li ul > li > a:hover,
+		.megamenu > li ul > li > a:focus
+			color darken(white, 10%)
+			background-color alpha(white, 3%)
+
+
+		//- navbar white variation
+	.navbar-white
+		background-color white
+		.navbar-nav
+			> li > a
+				color #333 !important
+			> li >.dropdown-menu
+				background-color white !important
+				> li
+					border-bottom 1px solid alpha(#333, 20%) 
+				.dropdown-menu
+					background-color white !important
+					> li
+						border-bottom 1px solid alpha(#333, 20%) 
+					
+			.dropdown-menu
+				> li > a
+					color #333
+		.navbar-nav ul.dropdown-menu li.active>a
+			color darken(white, 60%)
+			background-color alpha(primary, 60%)
+		.navbar-nav ul.dropdown-menu li.active:hover>a
+			color darken(white, 60%)
+			background-color alpha(primary, 50%)
+		.navbar-nav ul.dropdown-menu li:hover>a
+			color darken(white, 60%)
+			background-color alpha(primary, 50%)
+		
+		.navbar-nav>.active>a
+			background-color transparent !important
+		.navbar-nav>:hover>a
+			background-color primary !important
+			color white !important
+		.navbar-brand
+			color #333 !important
+
+		.megamenu > li > ul > li > a
+			color #333 !important
+			border-bottom 1px solid alpha(#333, 10%) !important
+
+		.megamenu > li ul > li > a:hover,
+		.megamenu > li ul > li > a:focus
+			color darken(white, 10%)
+			background-color alpha(white, 3%)
+	.navbar-default
+		border-radius 0
+		position relative
+		box-shadow none
+		border none
+		margin 0
+		border-bottom 2px solid transparent !important
+		height 100px
+		.navbar-header
+			.button-header
+					transition 0.5s all ease-in-out
+					margin-top 40px !important
+					margin-right 70px !important
+				.navbar-brand
+					transition 0.5s all ease-in-out
+					margin-top 25px
+	
+		.navbar-nav
+			> li > a
+				transition 0.5s all ease-in-out
+				padding-top 39px
+				padding-bottom 39px
+				letter-spacing 0.3px
+				text-transform uppercase
+				font-weight 500
+				position relative
+				font-size 13.5px
+				ul > li > a
+					padding-top 30px
+					padding-bottom 30px
+					letter-spacing 0.3px
+					text-transform uppercase
+					font-weight 500
+					font-size 12px
+					position relative
+			> li >.dropdown-menu
+				border-top 2px solid primary
+				border-radius 0px
+			.dropdown-menu
+				padding 0
+				margin 0
+				border-top 2px solid primary
+				> li > a
+					border-bottom 1px solid alpha(#333, 10%)
+					padding 12px 20px
+					border 0px
+					position relative
+					top 0
+					left 0
+					font-size 14px
+					font-weight 400
+					margin 0 !important
+					text-transform capitalize
+
+			// for submenu plugi
+		&.affix
+			position fixed
+			transition 0.3s all ease-in-out
+			height 70px
+			.navbar-nav
+				> li > a
+					padding-top 25px
+					padding-bottom 25px
+					letter-spacing 0.3px
+					text-transform uppercase
+					font-weight 500
+					position relative
+				> li >.dropdown-menu
+					margin-top -1px
+			.navbar-header
+				.button-header
+					margin-top 23px !important
+					margin-right 65px !important
+					transition 0.5s all ease-in-out
+				.navbar-brand
+					transition 0.5s all ease-in-out
+					margin-top 8px
+				#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
+					background-color primary !important
+				#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
+					transition all 500ms ease-in-out
+				#nav-toggle.active span
+					background-color transparent !important
+				
+
+	@media(min-width:768px)
+		.custom-navbar
+			ul.navbar-nav
+					> li.dropdown:hover
+							display block !important
+							> ul.dropdown-menu
+								
+									display block !important
+									> li.dropdown-submenu
+											display block !important
+							> ul.dropdown-menu
+									> li.dropdown-submenu:hover
+											display block !important
+											> ul.dropdown-menu
+													display block !important
+
+
+
+	@media (max-width: 1200px)
+		.custom-navbar
+			.navbar-nav
+				> li > a
+					font-size 11px
+			&.affix
+				.navbar-nav
+					> li > a
+						font-size 11px
+
+
+
+	@media (max-width: 768px)
+		.custom-navbar
+			.navbar-collapse
+				background-color #333 //- dropdown collapse ul bg color 
+				width 100% 
+					
+		.custom-navbar
+			.container
+				&, .col-xs-12, .row,.col-sm-12,.col-md-11, [class ~="col-"], [class*=' col-'], .navbar-collapse
+					padding 0
+					margin 0
+					position relative
+					border-bottom none
+
+
+
+	@media (max-width: 768px)
+
+		.custom-navbar
+			.navbar-nav
+				width 100%
+				margin 0 !important
+				padding 0 !important
+				> li > a
+					padding-top 10px
+					padding-bottom 10px
+					letter-spacing 0.3px
+					text-transform uppercase
+					font-weight 500
+					color white !important
+					font-size 12px
+			&.affix
+				position fixed
+				height 70px
+				.navbar-nav
+					margin 0
+					> li > a
+						padding-top 10px
+						padding-bottom 10px
+						letter-spacing 0.3px
+						text-transform uppercase
+						font-weight 500
+						color white
+						font-size 12px
+
+	.megamenu
+		width 100%
+
+
+	.megamenu> li > ul //- this is mega ul padding reset
+		padding 0
+		margin 0
+	.megamenu> li //- this is mega li padding reset
+		padding 0
+		margin 0
+
+	.menu-large
+		position static !important
+
+	.megamenu > li > ul > li
+		list-style none
+
+	.megamenu > li > ul > li > a
+		display block
+		padding-top 12px
+		padding-bottom 12px
+		padding-left 20px
+		clear both
+		font-weight 400
+		line-height 1.428571429
+		white-space normal
+		text-transform capitalize
+		font-size 14px !important
+
+	.megamenu > li ul > li > a:hover,
+	.megamenu > li ul > li > a:focus
+		text-decoration none
+
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
+		cursor pointer
+		border-radius 0px
+		height 3px
+		width 30px
+		background-color primary
+		position absolute
+		display block
+		content ''
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
+		transition all 500ms ease-in-out
+	#nav-toggle.active span
+		background-color transparent
+
+	#nav-toggle.active span:before, #nav-toggle.active span:after
+		top 0
+
+	#nav-toggle.active span:before
+		transform rotate(405deg)
+
+	#nav-toggle.active span:after
+		transform rotate(-405deg)
+
+	#nav-toggle span:before
+		top -8px
+
+	#nav-toggle span:after
+		bottom -8px
+
+	.navbar-toggle
+		border-color transparent !important
+
+	.navbar-toggle:focus,
+	.navbar-toggle:hover
+		background-color transparent !important
+	
+
+
+
+

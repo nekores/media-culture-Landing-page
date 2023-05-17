@@ -1,0 +1,9 @@
+mixin section_title(sec_desc, sec_title, sec_title2)
+	section&attributes(attributes).section_titles
+		.heading
+			.text
+				.upper
+					span.ls1.fw400 #{sec_desc}
+				.lower
+					h3.fw400 #{sec_title}
+						span.pl10.clr-black #{sec_title2}

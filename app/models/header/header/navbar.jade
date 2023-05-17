@@ -1,0 +1,460 @@
+mixin navbar-pack()
+    .navbar-upack-default
+        div.navbar.custom-navbar( data-spy="affix", data-offset-top="10")&attributes(attributes)
+            .container
+                .col-sm-1.col-md-1
+                    .navbar-header
+                        a( href="#" id="nav-toggle" class="navbar-toggle button-header" data-toggle="collapse" data-target=".navbar-collapse")
+                            span
+                        //- button(type="button" class="navbar-toggle button-header" data-toggle="collapse" data-target=".navbar-collapse" id="nav-toggle")
+                        //-     span.sr-only Toggle navigation
+                        //-     span.icon-bar
+                        //-     span.icon-bar
+                        //-     span.icon-bar
+                        a(class="navbar-brand" href="index.html" id="nav-toggle").ls1 Upack
+
+                
+                .col-md-11.col-sm-11
+                    div.navbar-collapse.collapse.pull-right
+                        ul#nav.nav.navbar-nav.pull-right
+
+                            li.dropdown
+                                a(href='#', class='dropdown-toggle', data-toggle='dropdown' data-submenu aria-expanded="false")
+                                    |   Home     
+                                    span.fa.fa-angle-down
+                                ul.dropdown-menu
+                                    li
+                                        a(href='index.html' )
+                                            |   home default
+                                    li
+                                        a(href='home-revolution-slider.html' )
+                                            |   home revolution slider
+                                    li
+                                        a(href="medical.html" )
+                                            |   Home-medical
+                                    li.dropdown-submenu
+                                        a(href='' )
+                                            |   Home-photogrphy
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="photography.html" )
+                                                    | slider background
+                                            li
+                                                a(href="photography-bg-img.html" )
+                                                    | static background
+                                            li
+                                                a(href="photography-bg-video.html")
+                                                    | video background
+
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   Home-construction-I
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="cons_enthinkvegas.html")
+                                                    | slider background
+                                            li
+                                                a(href="cons_enthinkstatic.html")
+                                                    | static background
+
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   Home-construction-II
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="cons_envisionvegas.html")
+                                                    | slider background
+                                            li
+                                                a(href="cons_envisionstatic.html")
+                                                    | static background
+
+
+
+                                    li.dropdown-submenu
+                                        a(href="")
+                                            |   Home blog
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="home-blog-layout1.html")
+                                                    | blog layout 1
+                                            li
+                                                a(href="home-blog-layout2.html")
+                                                    | blog layout 2
+                                    
+
+
+                                    
+                                    li.dropdown-submenu
+                                        a(href="")
+                                            |   comming soon
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="commingsoon0.html")
+                                                    | comming soon I
+                                            li
+                                                a(href="commingsoon1.html")
+                                                    | comming soon II
+                                            li
+                                                a(href="commingsoon2.html")
+                                                    | comming soon III
+                                            li
+                                                a(href="commingsoon3.html")
+                                                    | comming soon IV
+                                            li
+                                                a(href="commingsoon4.html")
+                                                    | comming soon V
+                                            li
+                                                a(href="commingsoon5.html")
+                                                    | comming soon VI
+                                            li
+                                                a(href="commingsoon6.html")
+                                                    | comming soon VII 
+                                            li
+                                                a(href="commingsoon7.html")
+                                                    | comming soon VIII
+                                            li
+                                                a(href="commingsoon8.html")
+                                                    | comming soon IX
+                                            li
+                                                a(href="commingsoon9.html")
+                                                    | comming soon X
+
+
+                                    
+
+                                    li
+                                        a(href='one-page-version.html')
+                                            |   one page version
+
+
+
+
+
+                            li.dropdown
+                                a(href='#', class='dropdown-toggle', data-toggle='dropdown' data-submenu aria-expanded="false")
+                                    |    Pages 
+                                    span.fa.fa-angle-down
+                                ul.dropdown-menu
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   about us
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="about-us-1.html")
+                                                    |   about us I
+
+                                            li
+                                                a(href="about-us-2.html")
+                                                    |   about us II
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   our team
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="ourteam1.html")
+                                                    |   our team I
+
+                                            li
+                                                a(href="ourteam2.html")
+                                                    |   our team II
+                                            li
+                                                a(href="ourteam3.html")
+                                                    |   our team III
+
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   services
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="services-1.html")
+                                                    |  services I
+                                            li
+                                                a(href="services-2.html")
+                                                    |  services II
+                                            li
+                                                a(href="services-3.html")
+                                                    |   services III
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |  Error pages
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="error2.html")
+                                                    |  Error I
+                                            li
+                                                a(href="error1.html")
+                                                    |  Error II
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |  pricing tables
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="pricing-table1.html")
+                                                    |  pricing I
+                                            li
+                                                a(href="pricing-table2.html")
+                                                    |  pricing II
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |  contact forms
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="contact-forms1.html")
+                                                    |  contact form I
+                                            li
+                                                a(href="contact-forms2.html")
+                                                    |  contact form II
+                                    
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   Login/SignUp Forms
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="loginform1.html")
+                                                    |   login form1
+
+                                            li
+                                                a(href="loginform2.html")
+                                                    |   login form2
+                                            li
+                                                a(href="loginform3.html")
+                                                    |   login form3
+                                            li
+                                                a(href="signupform1.html")
+                                                    |   SignUp form1
+
+
+
+
+
+
+                            li.dropdown
+                                a(href='#', class='dropdown-toggle', data-toggle='dropdown' data-submenu aria-expanded="false")
+                                    |    Features 
+                                    span.fa.fa-angle-down
+                                ul.dropdown-menu
+                                    li
+                                        a(href="page-titles-header.html")
+                                            |   page titles
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   sliders
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="vegas-slider.html")
+                                                    |   vegas slider
+
+                                            li
+                                                a(href="revolution-slider.html")
+                                                    |   revolution slider
+
+                                    li.dropdown-submenu
+                                        a(href="#")
+                                            |   headers
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="navbar-dark-version.html")
+                                                    |   navbar dark
+
+                                            li
+                                                a(href="navbar-white-version.html")
+                                                    |   navbar white
+                                    li.dropdown-submenu
+                                        a(href="")
+                                            |   icons
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="font-awesome-icons.html")
+                                                    | fontawesome
+                                            li
+                                                a(href="ghylificons-icons.html")
+                                                    | glypicons
+                                    li.dropdown-submenu
+                                        a(href="")
+                                            | portfolio
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="gallery-option1.html")
+                                                    | portfolio layout 1
+                                            li
+                                                a(href="gallery-option2.html")
+                                                    | portfolio layout 2
+                                            li
+                                                a(href="gallery-option3.html")
+                                                    | portfolio layout 3
+                                            li
+                                                a(href="gallery-option4.html")
+                                                    | portfolio layout 4
+                                    
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   footers
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="footer1.html")
+                                                    |   footer-1
+
+                                            li
+                                                a(href="footer2.html")
+                                                    |   footer-2
+                                            li
+                                                a(href="footer3.html")
+                                                    |   footer-3
+                                            li
+                                                a(href="footer4.html")
+                                                    |   footer-4
+                                            li
+                                                a(href="footer5.html")
+                                                    |   footer-5
+
+
+
+
+                            
+
+
+                            li.dropdown
+                                a(href='#', class='dropdown-toggle', data-toggle='dropdown' data-submenu aria-expanded="false")
+                                    |   portfolio     
+                                    span.fa.fa-angle-down
+                                ul.dropdown-menu
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            | no space boxed
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="portfolio-2-column-nospaceboxed.html")
+                                                    |   2 Column
+                                            li
+                                                a(href="portfolio-3-column-nospaceboxed.html")
+                                                    |   3 Column
+                                            li
+                                                a(href="portfolio-4-column-nospaceboxed.html")
+                                                    |   4 Column
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            | grid boxed
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="portfolio-grid-2-column.html")
+                                                    |   2 Column
+                                            li
+                                                a(href="portfolio-grid-3-column.html")
+                                                    |   3 Column
+                                            li
+                                                a(href="portfolio-grid-4-column.html")
+                                                    |   4 Column
+                                    
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            | grid boxed full width
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="portfolio-grid-2-column-fullwidth.html")
+                                                    |   2 Column
+                                            li
+                                                a(href="portfolio-grid-3-column-fullwidth.html")
+                                                    |   3 Column
+                                            li
+                                                a(href="portfolio-grid-4-column-fullwidth.html")
+                                                    |   4 Column
+                                            li
+                                                a(href="portfolio-grid-5-column-fullwidth.html")
+                                                    |   5 Column
+
+
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            | no space full width
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="portfolio-2-column-nospacefullwidth.html")
+                                                    |   2 Column
+                                            li
+                                                a(href="portfolio-3-column-nospacefullwidth.html")
+                                                    |   3 Column
+                                            li
+                                                a(href="portfolio-4-column-nospacefullwidth.html")
+                                                    |   4 Column
+                            li.dropdown
+                                a(href='#', class='dropdown-toggle', data-toggle='dropdown' data-submenu aria-expanded="false")
+                                    |   Blog     
+                                    span.fa.fa-angle-down
+                                ul.dropdown-menu
+                                    li.dropdown-submenu
+                                        a(href='')
+                                            |   Grid
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="blog2-column.html")
+                                                    |   2 Column
+                                            li
+                                                a(href="blog3-column.html")
+                                                    |   3 Column
+                                    li.dropdown-submenu
+                                        a(href="")
+                                            | blog list
+                                        ul.dropdown-menu
+                                            li
+                                                a(href="blog-detail.html")
+                                                    | without sidebar
+                                            li
+                                                a(href="blog-left-sidebar.html")
+                                                    | left sidebar
+                                            
+                                            li
+                                                a(href="blog-right-sidebar.html")
+                                                    | right sidebar
+                                    li
+                                        a(href="blog-detail-post.html")
+                                            | blog post
+
+
+                            li(class="dropdown menu-large")
+                                a(href="#" class="dropdown-toggle" data-toggle="dropdown")
+                                    |    Components      
+                                    span.fa.fa-angle-down
+                                ul(class="dropdown-menu megamenu row")
+                                    li(class="col-sm-3")
+                                        ul
+                                            
+                                            li
+                                                a(href="typography.html") typography
+                                            li
+                                                a(href="brands.html") brands
+                                            li
+                                                a(href="progresbars.html") progress bars
+                                            li
+                                                a(href="modals.html") modals
+                                    li(class="col-sm-3")
+                                        ul
+                                            
+                                            li
+                                                a(href="forms.html") forms
+                                            li
+                                                a(href="collapse.html") collapse
+                                            li
+                                                a(href="callouts.html") callouts
+                                            li
+                                                a(href="pagination.html") pagination
+                                    li(class="col-sm-3")
+                                        ul
+                                            
+                                            li
+                                                a(href="iconbox.html") icon boxs
+                                            li
+                                                a(href="dividers.html") dividers
+                                            li
+                                                a(href="image-boxs.html") image boxes
+                                            li
+                                                a(href="tabs.html") tabs and pills
+                                    li(class="col-sm-3")
+                                        ul
+                                            li
+                                                a(href="counters.html") counters
+                                            li
+                                                a(href="pricestable.html") priceing tables
+                                            li
+                                                a(href="charts.html") charts
+                                            li
+                                                a(href="buttons.html") buttons

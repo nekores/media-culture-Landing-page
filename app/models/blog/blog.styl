@@ -1,0 +1,317 @@
+.team-blog
+    position relative
+    overflow hidden
+    width 100%
+    float left
+    
+    figure
+        position relative
+        overflow hidden
+        width 100%
+        float left
+        
+        img
+            float left
+            width 100%
+            height 250px
+        .img-hover
+            position absolute
+            height 90%
+            top 5%
+            left 5%
+            background-color alpha(black, 0.7)
+            width 90%
+            opacity 0
+            transition ease-out 0.40s
+            transform: scale(0)
+        a
+            color #fff
+            position absolute
+            font-size 30px
+            left 0
+            right 0
+            text-align center
+            top:  45%;
+            opacity 0
+            z-index 5
+            outline none
+            transform: scale(9)
+            transition ease-out 0.40s
+            
+            
+        &:hover
+            .img-hover , a
+                transform: scale(1)
+                
+                opacity 1
+                transition 0.30s all
+                
+            
+    .team-blog-caption
+        float left
+        font-size 14px
+        padding-right 7px
+        width 100%
+        padding-top 27px
+        color #666
+        
+        .lb-h4
+            a
+                text-decoration none
+                h4
+                    text-transform uppercase
+                    font-weight 800
+                    line-height 1.2%
+                    color darken(white, 60%);
+                    margin 0 0 10px 0
+                    &:hover
+                        color darken(primary, 20%)
+        .lb-ul
+            ul
+                width 100%
+                margin-bottom 21px
+                padding 5px 0px
+                color #fff
+                li
+                    float left
+                    margin-right 15px
+                    span 
+                        color darken(white, 40%);
+                        font-size 12px
+                        margin-right 5px
+                    
+                    a
+                        
+                        color darken(white, 40%);
+                        text-decoration none
+                        // font-style italic
+                        color #929292
+                        i
+                            color darken(white, 40%);
+                            margin-right 5px
+                    .date-format
+                        color #929292
+        .lb-p
+            p
+                font-size 16px
+                font-weight 300
+                letter-spacing 0.9px
+                word-spacing 0.8px
+                line-height 30px
+        .lb-btn
+            a
+                font-size 12px
+                color darken(white, 40%);
+                text-transform uppercase
+                letter-spacing 0.5px
+                word-spacing 0
+                
+            
+
+
+// - blog 2 column style
+
+.team-blog
+    position relative
+    overflow hidden
+    width 100%
+    float left
+    
+    .blog-2-sidebar
+        float left
+        width 70px
+        ul
+            margin 0
+            padding 0
+            li
+                float left
+                width 100%
+                list-style none
+                strong
+                    float right
+                    font-size 26px
+                    margin-bottom 3px
+                a
+                    text-transform capitalize
+                    font-size 12px
+                    color #333
+                    position relative
+                    float right
+                    padding-bottom 13px
+                    margin-bottom 20px
+                    text-align right
+                    width 100%
+                    text-decoration none
+                    border-bottom 1px dotted
+                    
+                    &:after
+                        content ''
+                        position absolute
+                        border-bottom 4px solid primary
+                        left 0
+                        right 0
+                        text-align center
+                        bottom -2px
+                        width 14px
+    .blog-2-image
+        
+        padding-left 90px
+        figure
+            position relative
+            overflow hidden
+            width 100%
+            float left
+            img
+        .blog-2-caption
+            float left
+            font-size 14px
+            padding-top 27px
+            color #999
+            position relative
+            h4 
+                
+                text-transform uppercase
+                font-weight 800
+                line-height 1.2%
+                color darken(white, 60%);
+                margin 20px 0 10px 0
+                &:hover
+                    color darken(primary, 20%)
+            p
+                font-size 16px
+                font-weight 300
+                letter-spacing 0.9px
+                word-spacing 0.8px
+                line-height 30px
+            button
+                &:after
+                    content ''
+                    position absolute
+                    height 1px
+                    border-bottom 1px dotted #777
+                    width 300px   
+                    left 110%
+                    bottom 0
+                    right 0
+
+// -blog 3-column style
+.blog-detail
+    figure
+        float left
+        width 100%
+        position relative
+        border-bottom 4px solid
+        border-color primary
+        margin-bottom 30px
+        z-index 111
+        
+    .blog-img-year
+        background-color primary
+        position absolute
+        top 0
+        left 0
+        width 60px
+        height 70px
+        z-index 123
+    .blog-img-year-owl
+        background-color primary
+        position absolute
+        top 0
+        left 0
+        width 60px
+        height 70px
+        z-index 12
+    .blog-img-year
+        :before
+            content ""
+            position absolute
+            top: 6px
+            right -6px
+            width 100%
+            height 100%
+            border 1px solid primary
+            
+            
+        
+        a
+            text-decoration none
+            color #fff
+            text-transform capitalize
+            font-size 18px
+            padding 10px
+            text-align center
+            display inline-block
+            z-index 1111
+    
+    .blog-detail-caption
+        position relative
+        padding 0 20px 30px
+        .bd-sh
+            a
+                text-decoration none
+                list-style none
+            h5
+                font-size 16px
+                color darken(white, 50%);
+                letter-spacing 0.9px
+                word-spacing 0.5px
+                transition 0.2s ease-in-out
+                font-style italic
+                
+                &:hover
+                    color primary
+        .bd-mh
+            a
+                text-decoration none
+                list-style none
+            h1
+                font-size 22px
+                color darken(white, 60%);
+                letter-spacing 0.9px
+                word-spacing 0.5px
+                transition 0.2s ease-in-out
+                &:hover
+                    color primary
+        .bd-ls
+            ul
+                
+                li 
+                    list-style none
+                     
+                    .fa
+                        color darken(white, 40%);
+                        font-size 12px
+                    span
+                        color darken(white, 40%);
+                        letter-spacing 0.1px
+                        font-size 14px
+                        
+                        &:hover
+                            text-decoration underline
+                            color primary
+        .bd-para
+            p
+                font-weight 300
+                letter-spacing 0.9px
+                word-spacing 0.6px
+                line-height 30px
+                font-size 16px
+                color darken(white, 70%); 
+        .bd-si
+            position relative
+            display inline
+            float right
+            margin-top -30px                 
+            ul
+                
+                display inline
+                text-decoration none
+                padding 0px
+                li
+                    float left
+                    list-style none
+        h4
+            text-transform uppercase
+            font-weight 400
+            color #555
+            line-height 1.2

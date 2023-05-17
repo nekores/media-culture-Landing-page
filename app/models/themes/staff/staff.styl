@@ -1,0 +1,55 @@
+.staff
+	.img-box-medical
+		figure
+			position relative
+			overflow hidden
+			figcaption
+				position absolute
+				height 100%
+				width 100%
+				top 0
+				opacity 0
+				cursor pointer
+				transition 0.5s all
+				background-color  alpha(primary, 30%)
+				.icon-frame-primary:hover
+					background-color white
+					border-color white
+				
+			&:hover
+				figcaption
+					opacity 2
+				.figcaption1
+					opacity 9
+	.img-content
+		background-color white
+		img
+			width 100%
+		h4
+			font-weight 600
+			text-transform uppercase
+			color primary
+		h5
+			text-align left
+			margin-top -15px
+			background-color alpha(primary, 70%)
+			margin-bottom 20px
+			font-size 10px !important
+			font-weight 400
+			color white
+			letter-spacing 1px
+			text-transform uppercase
+		p
+			text-transform lowercase
+			// font-weight 100
+			font-size 15px
+			margin-top 15px
+			line-height 20px
+			letter-spacing 0.8px
+		a
+			p
+				text-decoration none
+			&:hover
+				text-decoration none
+.no-outline
+	outline none !important

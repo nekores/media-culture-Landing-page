@@ -1,0 +1,18 @@
+mixin services(sec_desc, sec_title)
+	div()&attributes(attributes)#services-envision.services-envision
+		.container(style="margin-right: 0px; padding: 0px; overflow: hidden;")
+			.row.pos-r
+				.heading
+					.text
+						.upper
+							span #{sec_desc}
+						.lower
+							h3 #{sec_title}
+				.col-md-10.col-md-offset-2.services
+					.contain
+						.row.pr50
+							for i in [0,1]
+								.col-md-12.mb10
+									+construction-iconbox1()
+mixin construction-iconbox1()
+	+iconbox-7('col-md-6 col-sm-6 col-xs-12 mv20', 2)&attributes(attributes)

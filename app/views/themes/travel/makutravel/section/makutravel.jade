@@ -1,0 +1,329 @@
+//- MAKUTRAVEL ABOUT SECTION CODED HERE
+mixin about-makutravel()
+	div()&attributes(attributes).about-makutravel
+		.alpha
+			.widget
+				.container(style="margin:0 !Important; width:100%:")
+					.row
+						+tab6()
+			.container
+				.row
+					.col-md-12
+						+makutravel-section_title("who we are and what we want","About", "travelon")
+					.col-md-6
+						.introduction_makutravel
+							h1.title Our Introduction
+							hr
+							p.para.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident.
+					.col-md-6.pt30.pb60
+						iframe(id="ytplayer" width="100%" height="300px" src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+						frameborder="0")
+
+
+//- BLOG SECTION CODED HERE
+mixin makutravel_blog()
+	div()&attributes(attributes).makutravel_blog
+		.alpha
+			.container
+				.row
+					.col-md-12
+						+makutravel-section_title(" our latest posts "," Latest", "Blog")
+					.col-md-12
+						.owl-carousel#travel_blog_owl
+							- titles =['10 things to do before travel', 'Feel Like Your Home', 'Our Responsiblities','Friendly Trip To Your Location', 'Long  Journey Decide', 'Keep Your Mind Be Happy', 'Height Matters During Journey']
+							- dates =['27 Jan, 2016', '5 March, 2016', '10 April, 2016', '15 May, 2016', '15 June, 2016', '19 July, 2016']
+							for i in [0,1,3,4,5,6]
+								div
+									.col-md-6.col-xs-12
+										ul(class="media-list").mv50
+											li(class="media")
+												a(class="media-left" href="#")
+													img(src='img/travel/makutravel' + '/' + i + '.jpg' style="height:150px; width:150px;")
+												div(class="media-body")
+													h4(class="media-heading").text-uppercase #{titles[i]}
+													.media-text
+														a(href="#") #{dates[i]}
+														h4(class="media-heading").mb10
+														p.
+															Mutat defininem id cum, nibh omittam delissimi ei eam ne esta dyka jeku
+													.pos-a
+														.btn.btn-primary.no-bdr-rad.bg-primary.bdr-primary Read More
+//- TEAM SECTION CODED HERE
+mixin services-makutravel(sec_desc, sec_title)
+	div()&attributes(attributes).services-makutravel
+		.alpha
+			.container
+				.row
+					.col-md-12
+						+makutravel-section_title("what our clients expects","our", "services")
+					.col-md-12.mv40
+						div.owl-services.mb60
+							div.owl-carousel(class="makutravel-services-carousal")
+								for i in [0,1,2,3,4]
+									+iconbox-9('col-md-12 col-sm-12 col-xs-12 mv40',1)&attributes(attributes)
+
+
+
+//- PORTFOLIO SECTION CODED HERE
+mixin portfolio-makutravel()
+	div()&attributes().portfolio-makutravel
+		.alpha
+			.container
+				.row
+					.col-md-12.mb20
+						+makutravel-section_title("what are our recent works","our", "porfolio")
+			.container-fluid#container1.no-padding
+				.row.mt30
+					.col-md-12.col-sm-12.col-xs-12.no-padding
+						nav
+							ul.nav(class="portfolio-filter-gallery" id="filters")
+								li
+									a.active(class="all filter active", data-filter="all") All
+								li
+									a(class="filter ", data-filter=".restaurants") Retaurants
+								li
+									a(class="filter", data-filter=".places") Places
+								li
+									a(class="filter", data-filter=".travels") Travels
+							for i in [0,1,2,3,4,5,6,7]
+								.col-md-3.mix.places.col-sm-3.no-padding
+									.img-box-portfolio
+										img(src="img/places/" + i + ".jpg" class="img-responsive")
+										.img-content
+										.font-icon
+											.table-1
+												.table-middle-row-1.text-center.center-block
+													ul.list-inline
+														li
+															+icon-fa('fa-link', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+														li.popup-gallery
+															+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/places/' + i + '.jpg')
+							for i in [0,1,2,3,4,5,7,8]
+								.col-md-3.mix.restaurants.travels.col-sm-3.no-padding
+									.img-box-portfolio
+										img(src="img/work/" + i + ".jpg" class="img-responsive")
+										.img-content
+										.font-icon
+											.table-1
+												.table-middle-row-1.text-center.center-block
+													ul.list-inline
+														li
+															+icon-fa('fa-link', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+														li.popup-gallery
+															+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/work/' + i + '.jpg')
+//- CLIENTS SECTION CODED HERE
+mixin clients-makutravel()
+	div()&attributes(attributes).clients-makutravel
+		.alpha
+			.container
+					.row
+						.col-md-12
+							+makutravel-section_title("we regular lovely clients","clients", "travelon")
+			+widget6()
+//- CONTACT SECTION CODED HERE
+mixin contact-makutravel(sec_desc, sec_title)
+	div()&attributes(attributes).contact-makutravel
+		//- +widget3()
+		.alpha
+			.container
+				.row
+					.col-md-12
+						+makutravel-section_title("we love to hear from you","contact", "travelon")
+				.col-md-8
+					form(role="form")
+						.col-md-6.mt40
+							h6.clr-primary Your Name
+							input(type="text" role="text" class="form-control" required).p20.no-bdr-rad
+						.col-md-6.mt40.mb20
+							h6.clr-primary Your Email
+							input(type="email" role="email " class="form-control" required).p20.no-bdr-rad
+						.col-md-12.mb20
+							h6.clr-primary Message
+							textarea(type="text" rows="6" class="form-control" required).p20.no-bdr-rad
+						.col-md-6.mb30
+							button.btn.btn-m-primary.btn-lg.no-bdr-rad(type="submit" value="submit") Send Message
+								span.pl10.fa.fa-send
+				.col-md-4.mt60.mb20
+					.map
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="242px" src="https://maps.google.com/maps?hl=en&q=gilgit paksita&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://buyproxies.io/">buyproxies.io</a></small></div></iframe>
+					.map-thumbnail-view.mb30.mt15
+						+modal3()
+
+
+//- CALCULATE FORM
+mixin calculateform-makutravel()
+	div()&attributes(attributes).calculateform-makutravel
+		.container.mb50
+				.row
+					.col-md-12
+						+makutravel-section_title("we love to hear from you","Calulate", "Prices")
+		.container
+			.row
+				.col-md-12
+						form(role="form")
+							.form-group
+								.input-group
+									.col-md-3.col-sm-3
+										label.ml15
+											h6 Country
+											select
+												option(value="Paris") Paris
+												option(value="Canada") Canada
+												option(value="Pakistan") Pakistan
+												option(value="London") London
+												option(value="America") America
+												option(value="Japan") Japan
+												option(value="Thiland") Thiland
+									.col-md-3.col-sm-3
+										label.ml15
+											h6 City
+											select
+												option(value="Deira") Deira
+												option(value="Canada") Karachi
+												option(value="Pakistan") Washington
+												option(value="London") Newyork
+												option(value="America") Texas
+												option(value="Japan") Chigago
+												option(value="Thiland") Standford
+									.col-md-3.col-sm-3
+										label.ml15
+											h6 Check In
+											input.dpd2(type="text" placeholder="mm/dd/yyyy" class="form-control" required)
+									.col-md-3.col-sm-3
+										label.ml15
+											h6 Check out
+											input.dpd2(type="text" placeholder="mm/dd/yyyy" class="form-control" required)
+									.col-md-12.col-sm-12.no-padding
+										.search_button.pull-right
+											button(type="submit" value="submit" class="btn btn-default") Calculate
+
+//- FOOTER SECTION CODED HERE
+mixin footer-makutravel()
+	section()&attributes(attributes).footer_makutravel
+		.alpha
+			.container
+				.row
+					.col-md-3.col-sm-5.partition1.mt60
+						ul.clr-primary.list-unstyled
+							//- p.head FAIR PRICE PACKAGE
+							li.mv10
+								a.no-dac.center-block(class="media-left" href="#slider")
+									img(src="img/travel/makutravel/logo/logo.png")
+							li.mt10
+								//- i.fa.fa-check-square-o.clr-primary
+								a.no-dac(href="").para.text-center.mt15.
+									There are many variations of passages of lorem ipsum availiable.
+						ul.list-inline
+							li
+								+icon-fa('fa-facebook no-bdr', 'icon-frame-primary facebook icon-sm')
+							li
+								+icon-fa('fa-twitter no-bdr', 'icon-frame-primary twitter icon-sm')
+							li
+								+icon-fa('fa-instagram no-bdr', 'icon-frame-primary instagram icon-sm')
+							li
+								+icon-fa('fa-youtube no-bdr', 'icon-frame-primary youtube icon-sm')
+					.col-md-4.col-sm-7.partition1.mt60
+						div
+							p.head.
+								fair price packages
+							.line
+
+								hr
+							ul.no-padding.fair_price_list
+								li
+									span.price 15$ off
+										a(href="") nights of london
+									p consectetur adipisicing elit Lorem ipsum dolor
+									hr
+								li
+									span.price 25$ off
+										a(href="") family fun in malaysia
+									p consectetur adipisicing elit Lorem ipsum dolor
+									hr
+								li
+									span.price 10$ off
+										a(href="") charm in dubai
+									p consectetur adipisicing elit Lorem ipsum dolor
+					.col-md-2.col-sm-4.partition1.mt60
+						div
+							p.head.
+								Search for
+							.line
+
+								hr
+							ul.travel_source
+								li
+									a(href="#") Flight
+								li
+									a(href="#") Train
+								li
+									a(href="#") Bus
+								li
+									a(href="#") Car
+								li
+									a(href="#") Cruise
+								li
+									a(href="#") Room
+								li
+									a(href="#") Holiday
+					.col-md-3.col-sm-6.partition1.mt60
+						div
+							p.head.
+								our gallery
+							.line.mb5
+
+								hr
+							ul.no-padding.list-inline.gallery-img
+								li.figure
+									a(href="#")
+										img(src="img/travel/makutravel/0.jpg" class="img-responsive")
+										.figcaption1
+										.figcaption2
+											//- +icon-fa("fa-plus","icon-xs icon-frame-inverse-white")
+											i.fa.fa-plus
+								li.figure
+									a(href="#")
+										img(src="img/travel/makutravel/1.jpg" class="img-responsive")
+										.figcaption1
+										.figcaption2
+											//- +icon-fa("fa-plus","icon-xs icon-frame-inverse-white")
+											i.fa.fa-plus
+								li.figure
+									a(href="#")
+										img(src="img/travel/makutravel/2.jpg" class="img-responsive")
+										.figcaption1
+										.figcaption2
+											//- +icon-fa("fa-plus","icon-xs icon-frame-inverse-white")
+											i.fa.fa-plus
+								li.figure
+									a(href="#")
+										img(src="img/travel/makutravel/3.jpg" class="img-responsive")
+										.figcaption1
+										.figcaption2
+											//- +icon-fa("fa-plus","icon-xs icon-frame-inverse-white")
+											i.fa.fa-plus
+								li.figure
+									a(href="#")
+										img(src="img/travel/makutravel/4.jpg" class="img-responsive")
+										.figcaption1
+										.figcaption2
+											//- +icon-fa("fa-plus","icon-xs icon-frame-inverse-white")
+											i.fa.fa-plus
+								li.figure
+									a(href="#")
+										img(src="img/travel/makutravel/5.jpg" class="img-responsive")
+										.figcaption1
+										.figcaption2
+											//- +icon-fa("fa-plus","icon-xs icon-frame-inverse-white")
+											i.fa.fa-plus
+			.container-fluid.no-padding.mt50(style="overflow: hidden;")
+				.row.no-padding
+					.col-md-12.no-padding
+						.footer-text.text-center
+							h5.p20.clr-primary Copyright @ 2015 Upack &nbsp;<span class="clr-primary">| MakuTravel Design |</span> &nbsp;   Nekores Contribution

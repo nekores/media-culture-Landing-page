@@ -1,0 +1,181 @@
+//- Button trigger modal
+mixin modal1()
+	section()&attributes(attributes).modal1.mv60
+		.modal-btn.text-center(data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo") Shortly Send Message
+		div.modal-1-bg(class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+			div(class="modal-dialog")
+				div(class="modal-content")
+					div(class="modal-header")
+						button(type="button" class="close" data-dismiss="modal")
+							span(aria-hidden="true") &times;
+							span(class="sr-only") Close
+						h4(class="modal-title" id="exampleModalLabel") New message
+					div(class="modal-body")
+						form(role="form")
+							div(class="form-group")
+								label(for="recipient-name" class="control-label") Name:
+								input.no-bdr-rad(type="text" class="form-control" id="recipient-name"  placeholder="Your Name")
+								label(for="recipient-name" class="control-label") Email:
+								input.no-bdr-rad(type="email" class="form-control" id="recipient-name" placeholder="Your Email")
+						div(class="form-group")
+							label(for="message-text" class="control-label") Message:
+							textarea.no-bdr-rad(class="form-control" rows="5" id="message-text" placeholder="Type Your Message here...")
+					div(class="modal-footer")
+						button.btn.btn-model.f-r(value="submit") submit
+						button.btn.btn-model.f-r.mr5(data-dismiss="modal") Cancel
+mixin modal2()
+	section()&attributes(attributes).modal2.mv60
+		.modal-btn.text-center(data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo") Account Registration
+		div.modal-2-bg(class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true")
+			div(class="modal-dialog")
+				div(class="modal-content").no-bdr-rad
+					div(class="modal-header")
+						button(type="button" class="close" data-dismiss="modal")
+							span(aria-hidden="true") &times;
+							span(class="sr-only") Close
+						h4(class="modal-title" id="exampleModalLabel1") Account Registration
+					div(class="modal-body")
+						form(role="form")
+							div(class="form-group")
+								ul.list-unstyled.mt30
+									li
+										label(for="recipient-name" class="control-label") First Name:
+										input.no-bdr-rad(type="text" class="form-control" id="recipient-name"  placeholder="First Name")
+									li
+										label(for="recipient-name" class="control-label") Second Name:
+										input.no-bdr-rad(type="text" class="form-control" id="recipient-name"  placeholder="Second Name")
+									li
+										label(for="recipient-name" class="control-label") Email:
+										input.no-bdr-rad(type="email" class="form-control" id="recipient-name" placeholder="Your Email")
+									li
+										label(for="recipient-name" class="control-label") Password:
+										input.no-bdr-rad(type="password" class="form-control" id="recipient-name"  placeholder="New Password")
+									li
+										label(for="recipient-name" class="control-label") Retype Password:
+										input.no-bdr-rad(type="password" class="form-control" id="recipient-name" placeholder="Retype New Password")
+								ul.center-block(style="padding-left: 0;")
+									li.list-unstyled.mt30
+										.center-block.btn(type='submit' value='submit') Submit
+					div(class="modal-footer")
+						ul.list-inline
+							li.pull-left
+								+icon-fa("fa-facebook","icon-xs icon-frame-primary facebook")
+							li.pull-left
+								+icon-fa("fa-twitter","icon-xs icon-frame-primary twitter")
+							li.pull-left
+								+icon-fa("fa-linkedin","icon-xs icon-frame-primary linkedin")
+							li.pull-left
+								+icon-fa("fa-youtube","icon-xs icon-frame-primary youtube")
+							li.no-padding.list-unstyled.pull-right
+								.btn(data-dismiss="modal") Close
+		
+mixin modal3()
+	section()&attributes(attributes).modal3
+		.modal-btn.text-center(data-toggle="modal" data-target="#maptransparent" data-whatever="@mdo") Map Thumbmail View
+		div.modal-3-bg(class="modal fade" id="maptransparent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+			div(class="modal-dialog modal-dialog-map-custom")
+				div(class="modal-content").no-bdr-rad
+					div(class="modal-header")
+						button(type="button" class="close" data-dismiss="modal")
+							span(aria-hidden="true") &times;
+							span(class="sr-only") Close
+						h4(class="modal-title" id="exampleModalLabel") Map Thumbnail View
+					div(class="modal-body")
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="450px" src="https://maps.google.com/maps?hl=en&q=gilgit paksita&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://buyproxies.io/">buyproxies.io</a></small></div></iframe>
+					div(class="modal-footer")
+						//- button.btn.btn-model.f-r(value="submit") submit
+						button.btn.btn-model.f-r.mr5(data-dismiss="modal") Exit
+mixin modal4()
+	section()&attributes(attributes).modal3
+		.modal-btn.text-center(data-toggle="modal" data-target="#map" data-whatever="@mdo") Map Thumbnail View
+		div.modal-4-bg(class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+			div(class="modal-dialog modal-dialog-map-custom")
+				div(class="modal-content").no-bdr-rad
+					div(class="modal-header")
+						button(type="button" class="close" data-dismiss="modal")
+							span(aria-hidden="true") &times;
+							span(class="sr-only") Close
+						h4(class="modal-title" id="exampleModalLabel") Map Thumbnail View
+					div(class="modal-body")
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="450px" src="https://maps.google.com/maps?hl=en&q=gilgit paksita&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://buyproxies.io/">buyproxies.io</a></small></div></iframe>
+					div(class="modal-footer")
+						//- button.btn.btn-model.f-r(value="submit") submit
+						button.btn.btn-model.f-r.mr5(data-dismiss="modal") Exit
+
+mixin modal5()
+	section()&attributes(attributes).modal5.mv60
+		.modal-btn.text-center(data-toggle="modal" data-target="#transparent_reg_form" data-whatever="@mdo") Account Registration Transparent
+		div.modal-5-bg(class="modal fade" id="transparent_reg_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true")
+			div(class="modal-dialog")
+				div(class="modal-content").no-bdr-rad
+					div(class="modal-header")
+						button(type="button" class="close" data-dismiss="modal")
+							span(aria-hidden="true") &times;
+							span(class="sr-only") Close
+						h4(class="modal-title" id="exampleModalLabel1") Account Registration
+					div(class="modal-body")
+						form(role="form")
+							div(class="form-group")
+								ul.list-unstyled.mt30
+									li
+										label(for="recipient-name" class="control-label") First Name:
+										input.no-bdr-rad(type="text" class="form-control" id="recipient-name"  placeholder="First Name")
+									li
+										label(for="recipient-name" class="control-label") Second Name:
+										input.no-bdr-rad(type="text" class="form-control" id="recipient-name"  placeholder="Second Name")
+									li
+										label(for="recipient-name" class="control-label") Email:
+										input.no-bdr-rad(type="email" class="form-control" id="recipient-name" placeholder="Your Email")
+									li
+										label(for="recipient-name" class="control-label") Password:
+										input.no-bdr-rad(type="password" class="form-control" id="recipient-name"  placeholder="New Password")
+									li
+										label(for="recipient-name" class="control-label") Retype Password:
+										input.no-bdr-rad(type="password" class="form-control" id="recipient-name" placeholder="Retype New Password")
+								ul.center-block(style="padding-left: 0;")
+									li.list-unstyled.mt30
+										.center-block.btn(type='submit' value='submit') Submit
+					div(class="modal-footer")
+						ul.list-inline
+							li.pull-left
+								+icon-fa("fa-facebook","icon-xs icon-frame-primary facebook")
+							li.pull-left
+								+icon-fa("fa-twitter","icon-xs icon-frame-primary twitter")
+							li.pull-left
+								+icon-fa("fa-linkedin","icon-xs icon-frame-primary linkedin")
+							li.pull-left
+								+icon-fa("fa-youtube","icon-xs icon-frame-primary youtube")
+							li.no-padding.list-unstyled.pull-right
+								.btn(data-dismiss="modal") Close
+		
+
+mixin alert1()
+	section()&attributes(attributes).mv60.alert1
+		div.alert-custom(class="alert alert-warning alert-dismissible fade in" role="alert")
+			button(type="button" class="close" data-dismiss="alert")<span aria-hidden="true">&times;</span><span class="sr-only">
+			h5 <strong>Alert!</strong> Once you clicked you, Alert! will Close
+
+mixin alert2()
+	section()&attributes(attributes).mv60.alert2
+		div.alert-custom(class="alert alert-danger alert-dismissible fade in" role="alert")
+			button(type="button" class="close" data-dismiss="alert")<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+			h4 Ooops! Take care of these instructions
+			ul
+				li
+					p Take a review of instructions before using. Thanks!
+				li
+					p Take a review of instructions before using. Thanks!
+				li
+					p Take a review of instructions before using. Thanks!
+			ul.list-inline
+				li.mv5
+					//- +btn-appbox-icon("Take this","fa-warning")
+				li.mv5
+					//- +btn-appbox-icon("Take this","fa-spinner fa-spin")
+				li.mv5
+					//- +btn-appbox-icon-glass("Take this","fa-spinner fa-spin")
+mixin alert3()
+	section()&attributes(attributes).mv60.alert3
+		div.alert-custom(class="alert alert-warning alert-dismissible fade in" role="alert")
+			button(type="button" class="close" data-dismiss="alert")<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+			h4 this is my first heading

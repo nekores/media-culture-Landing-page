@@ -1,0 +1,149 @@
+mixin blog-detail-post()
+    for i in [0]
+        .blog-detail
+            figure
+                a(href="#")
+                    img(src="img/work/" + i + ".jpg" class="img-responsive")
+                figcaption.blog-img-year
+                    a(href="#")
+                        | #{postdate[i]}
+            .blog-detail-caption
+                .bd-mh.mt20.mb15
+                    a(href="#")
+                        h1.text-uppercase #{blogtitles[i]}
+                .bd-sh.mv5
+                    a(href="#")
+                        h5 #{titlesheadings[i]}
+                .bd-ls.mv20
+                    ul.list-inline
+                        li
+                            a(href="#")
+                                i(class="fa fa-user").mr5
+                                span
+                                    |Lorem Shazad
+                        li
+                            a(href="#")
+                                i(class="fa fa-heart").mr5
+                                span.counter 28
+                        li
+                            a(href="#")
+                                i(class="fa fa-comments-o").mr5
+                                span.counter 21
+                        
+                        li
+                            a(href="#")
+                                | investment
+                        li
+                            a(href="#")
+                                | business
+                        li
+                            a(href="#")
+                                | conferences
+                        li
+                            a(href="#")
+                                | events
+
+                .bd-para.mv40
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.ud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+
+                    h2.mv20 Left aligment image
+                    ul.left-alignment.list-unstyled
+                        li.img-post
+                            a(href="#")
+                                img(src="img/work/6.jpg" class="img-responsive")
+                        
+                        li
+                            P
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    
+                    h2.mv20 Right aligment image
+                    ul.right-alignment.list-unstyled
+                        li.img-post
+                            a(href="#")
+                                img(src="img/work/4.jpg" class="img-responsive")
+                        
+                        li
+                            P
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+                    h2.mv20 Quote with full width
+                    ul.left-alignment.list-unstyled
+                        li.quote-post
+                            blockquote
+                                P.quotefull.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        
+                        li
+                            P
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                | consequat. Duis aute irure dolor in reprehenderit
+                                | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    
+
+
+            .blog-comments
+                .bd-cmnt
+                    h2.mv20 comments
+
+
+                for i in [0,1,2]
+                    ul
+                        li
+                            .blog-admin-comment
+                                    figure
+                                        img(src="img/team/" + i + ".jpg")
+                                    .blog-admin-comment-para
+                                        p.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore
+                                        ul
+                                            li
+                                                a(href="#")
+                                                    h5 #[+random_name()]
+                                            li.date-blog
+                                                a(href="#")
+                                                    | #{date[i]}
+                                        a(href="#")
+                                            i.fa.fa-mail-reply
+                                            | reply
+            .blog-comment
+                    h2.mv20.ml15 leave a comment
+                    +contact-form-blog()
+                    .col-md-12
+                        button.btn-primary.btn-lg.btn.pull-right.no-bdr-rad Post comment

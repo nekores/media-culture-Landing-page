@@ -1,0 +1,102 @@
+mixin contacttext1()
+	h2.section-titles get in 
+		span touch
+	p.contact-para Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	h3.contact-me contact me
+
+	.contactinfo
+		p
+			i.fa.fa-clock-o 
+			strong  Monday - Friday 
+			|: 900am - 600pm
+		.seprator-contact 
+		p
+			i.fa.fa-map-marker   
+			|123 Main Street, Your City, State Country.
+		.seprator-contact 
+		p
+			i.fa.fa-phone
+			strong Phone
+			| : 123456789 | 
+			strong Fax
+			| : 123456789
+		.seprator-contact
+		p
+			i.fa.fa-envelope-o
+			a(href="#") some@domain.com 
+		.seprator-contact
+mixin contactinput1()
+	form(role="form" method="get")
+		.input-form
+			input(type="text" class="form-control" placeholder="Your name" required )
+			input(type="text" class="form-control" placeholder="Your phone" required )
+			input(type="email" class="form-control" placeholder="Your email" required )
+			textarea(type="text" rows="4" class ="form-control" placeholder="Enter your message" required )
+			div.mt20
+				button.btn.btn-xlg.btn-c-primary.bdrl5 send
+
+
+//-== maxin for contact form input start here 
+
+mixin contact-form-input()
+	.col-md-4
+		input.input-mesg(type="text" placeholder="Name")
+	.col-md-4
+		input.input-mesg(type="email" placeholder="Email")
+	.col-md-4
+		input.input-mesg(type="text" placeholder="Company")
+	.col-md-12
+		.mv30
+			textarea.input-mesg(rows="10" placeholder="Message")
+	.col-md-12
+		.pull-right
+			button.btn.btn-xlg.btn-c-primary Send
+
+
+		//=== form end here
+
+		.mb100
+//-=== section contacts-us starts here
+
+
+mixin contact-form-reservation()
+	form
+		.input-form
+			.col-md-4
+				input(type="text" class="form-control" placeholder="Your name")
+			.col-md-4
+				input(type="text" class="form-control" placeholder="Your phone")
+			.col-md-4
+				input(type="email" class="form-control" placeholder="Your email")
+			.col-md-4
+				input(type="text" class="form-control" placeholder="reservation date")
+			.col-md-4
+				input(type="text" class="form-control" placeholder="9:00 am")
+			.col-md-4
+				.mt25
+				+slectspeople()
+			.col-md-12.mb60
+				div.mt20.pull-right
+					button.btn.btn-xlg.btn-c-primary submit reservation
+
+mixin contact-form-event()
+	.col-md-4
+		input.input-mesg(type="text" placeholder="Name")
+	.col-md-4
+		input.input-mesg(type="email" placeholder="Email")
+	.col-md-4
+		input.input-mesg(type="text" placeholder="subject")
+	.col-md-12
+		.mv30
+			textarea.input-mesg(rows="6" placeholder="comment")
+
+mixin contact-form-blog()
+	.col-md-4
+		input.input-blog(type="text" placeholder="Name")
+	.col-md-4
+		input.input-blog(type="email" placeholder="Email")
+	.col-md-4
+		input.input-blog(type="text" placeholder="Subject")
+	.col-md-12
+		.mv30
+			textarea.input-blog(rows="6" placeholder="Comment")

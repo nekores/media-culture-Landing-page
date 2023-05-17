@@ -1,0 +1,57 @@
+mixin footer-enthink()
+	section()&attributes(attributes).footer-enthink
+		.container
+			.row
+				.col-md-4.col-sm-12.partition1.mt60.bw-1.bdr-dotted.bdr-primary.no-lbdr.no-tbdr.no-bbdr
+					ul.p40.clr-primary.list-unstyled
+						p.head Our Company
+						li.mv10
+							a.no-dac.center-block(class="media-left" href="#slider")
+								img.center-block(src="img/construction/enthink/logo/enthink.png")
+						li.mt10
+							//- i.fa.fa-check-square-o.clr-primary
+							a.no-dac(href="").para.text-center.clr-primary.mt15.
+								There are many variations of passages of lorem ipsum availiable, but the majority have suffered alteration i some forem there are many variation.
+								<br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing.
+				.col-md-4.col-sm-12.partition1.mt60.bw-1.bdr-dotted.bdr-primary.no-lbdr.no-tbdr.no-bbdr
+					div.p35
+						p.head.
+							Recent Blog Posts
+						for i in [0,1,2]
+							div(class="media")
+								div.no-dac(class="media-left")
+									+flat_icon("icon-frame-inverse-primary icon-flat-md")
+								div(class="media-body").mv10
+									a.para(href="").
+										Mutat definitionem id untamed nekores.
+				.col-md-4.col-sm-12.partition1.mt60
+					ul.p40.list-unstyled
+						p.head.
+							Our Accessibility
+						li.mv10
+							i.fa.fa-location-arrow.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 Nekores Plaza, GB Dubai
+						li.mv10
+							i.fa.fa-envelope.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 nekores@cdoctors.com
+						li.mv10
+							i.fa.fa-phone.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 +92(3129749993)
+						li.mv10
+							i.fa.fa-shield.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 Engineering Mind
+						ul.list-inline
+							li
+								+icon-fa('fa-facebook', 'icon-frame-primary facebook icon-sm')
+							li
+								+icon-fa('fa-twitter', 'icon-frame-primary twitter icon-sm')
+							li
+								+icon-fa('fa-instagram', 'icon-frame-primary instagram icon-sm')
+							li
+								+icon-fa('fa-youtube', 'icon-frame-primary youtube icon-sm')
+		.container-fluid.no-padding.mt50(style="overflow: hidden;")
+			.row.no-padding
+				.col-md-12.no-padding
+					.footer-text.text-center
+						h5.p20.clr-primary Copyright @ 2015 Upack &nbsp;<span class="clr-primary">| Construction Design |</span> &nbsp;   Nekores Contribution

@@ -1,0 +1,106 @@
+.gallery-enthink
+	background-color darken(white, 10%)
+	// mixit up
+	#enthink_gallery-mixitup
+		overflow hidden
+	.mix
+		display none
+	nav
+		// margin-top -50px
+		background-color transparent
+		margin-bottom 30px
+	.portfolio-filter
+		list-style none
+		text-align center
+		li
+			display inline-block
+			a
+				margin-top 10px
+				transition 0.5s all
+				color darken(primary, 40%)
+				border 1px solid primary
+				letter-spacing 2px
+				display block
+				margin-right 10px
+				margin-left 10px
+				font-size 12px
+				line-height normal
+				padding 10px
+				text-transform uppercase
+				&.active
+					background-color primary
+					color white
+					cursor pointer !important
+				&:hover
+					transition 1s all ease-in-out
+					color darken(primary, 50%)
+					cursor pointer !important
+					text-decoration none
+				&:focus , &:visited, &:active
+					box-shadow none
+					text-decoration none
+					outline 0 none
+	figure
+		background-color white
+		position relative
+		overflow hidden
+		&, figcaption
+			transition 1s all
+		figcaption
+			transition 1s all
+			position absolute
+			width 50%
+			height 100%
+			left -100% 
+			background-color alpha(primary, 60%)
+			top 0
+			opacity 0
+		.figcaption1
+			transition 1s all
+			position absolute
+			width 50%
+			height 100%
+			right -100%
+			background-color alpha(gray, 90%)
+			top 0
+			opacity 0
+		.figcaption2
+			transition 1s all
+			position absolute
+			width 100%
+			height 100%
+			opacity 0
+			top 0
+			left 0
+			i
+				transform scale(5)
+				transition 1s all
+				position relative
+				color white
+				top 0
+				left 0
+				line-height 40px
+				font-size 40px
+		&:hover
+			img
+				cursor pointer
+			figcaption
+				// transform rotate(45deg) scale(4)
+				opacity 2
+				border-radius 0
+				cursor pointer
+				left 0
+			.figcaption1
+				// transform rotate(45deg) scale(4)
+				opacity 2
+				cursor pointer
+				border-radius 0
+				right 0
+			.figcaption2
+				opacity 2
+				cursor pointer
+				text-decoration none
+				z-index 5
+				top 0
+				i
+					transform scale(1)

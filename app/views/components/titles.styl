@@ -1,0 +1,52 @@
+
+h1,h2,h3,h4,h5,h6,span
+	padding 0px
+	margin 0px
+h1,h2,h3,h4,h5,h6,p, span, a, small, address, blockquote, button, input
+	letter-spacing 1px
+	line-height 140%
+	word-spacing 2px
+a
+	color #bbb
+	&:hover
+		color primary
+		text-decoration none
+p
+	color #555
+
+// this title use in all components second heading titles
+.comp-titles
+	color #777
+	font-size 20px
+	font-weight 400
+	margin-top 50px
+	margin-bottom 50px
+	text-transform uppercase
+.comp-title
+	font-weight 600
+	text-transform uppercase
+
+
+// -photography
+
+.section-titles
+	position relative
+	margin-top 80px
+	font-weight 900
+	font-size 60px
+	color white
+	text-transform uppercase
+	display block
+	line-height 50%
+	span
+		color primary
+.dark
+	color #777
+	
+@media(max-width: 992px)
+	.section-titles
+		font-size 50px
+@media(max-width: 676px)
+	.section-titles
+		font-size 40px
+		text-align center

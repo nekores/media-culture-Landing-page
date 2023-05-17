@@ -1,0 +1,315 @@
+
+//- APPBOX NAVBAR CODED HERE
+mixin appbox-navbar()
+	div()&attributes(attributes)#header.appbox-nvbar
+		header
+			#navbar
+				nav.navbar.navbar-tranglo.navbar-fixed-top(role="navigation",data-spy="affix",data-offset-top="200")
+					.container
+						.row
+							.col-xs-12.col-sm-2.col-md-1
+								.navbar-header
+									button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+										span.sr-only Toggle navigation
+										span.icon-bar
+										span.icon-bar
+										span.icon-bar
+									a(href="index.html").navbar-brand.center-block
+										img(src="img/logo/mc.png" class="image-responsive")
+							.col-xs-12.col-sm-10.col-md-11
+								.collapse.navbar-collapse#bs-example-navbar-collapse-1
+									ul.nav.navbar-nav.pull-right
+										li.active
+											a.page-scroll(href="#slider-video-mc") Home
+										li
+											a.page-scroll(href="#about") About
+										li
+											a.page-scroll(href="#services") Services
+										li
+											a.page-scroll(href="#portfolio") Portfolio
+										li
+											a.page-scroll(href="#contact") Contact
+
+//- APPBOX SLIDER CODED HERE
+mixin appbox-slider()
+	section()#slider-video-mc&attributes(attributes).mc_vegas_slider
+		//- .bg-alpha
+		.container.hp100
+			.table-1
+				.table-middle-row-1
+					.col-md-12
+						.photography-titles
+							h2 wellcome to 
+								span media culture!
+							.mt50
+								hr
+					.col-md-6.col-md-offset-3.text-center.mt20
+						.mt15
+						+btn-appbox("Find Out More", "#about").page-scroll
+//- APPBOX ABOUT SECTION CODED HERE
+mixin mc-about()
+	div()&attributes(attributes)#about.mc-about
+		.container
+			.row
+				.col-md-12
+					+mc-section-titles("","who we are","Media Culture Audio Visual Motion and Stills is a trend setting events and media company that provides a wide spectrum of services. Over the years we have led where others merely follow by innovating and pushing our boundaries on nothing but perfection in which we now excel.")
+				.col-md-8.col-md-offset-2
+					.content.text-center
+						+btn-appbox("FIND OUT MORE!", "#")#more
+						div(class="morepara" style="display:none;")
+							hr
+							p.
+								Since its inception in early 2010 our team of professionals have been providing audio visual consultation, rental and installation for both corporate and social events. In addition, we are also focused on advertisement, digital photography, video production and post-editing works. With a wealth of experience, we have cultivated a unique group of individuals and incorporated them to create various selections of ideas hence offering our clients endless possibilities. Although each of us possess our own distinctive concept and style, we are always committed to render the same exceptional quality of services.
+								<br>
+								<br>
+								Our creative consultants, are the key representation of our company as their role is to be informative, inventive and always updated to understand the trend of our industry. During the transition of a project, they interact with our clients in an expertly manner by discussing and conceptualising each and every aspects of the details. Once a project has been materialised our clients are carried throughout the entire process, thus building good ethics and rapport during our close interaction.
+								<br>
+								<br>
+								We always believe that our clients should have the necessity needed to complete their project and our ability to produce the results they desire. Above all we invest in encouraging and nurturing by developing our team to provide the very best in our professional services.
+							+btn-appbox("Close up", "#")#close-up
+
+mixin mc-services()
+	div()&attributes(attributes)#services.mc-services
+		.container
+			.row
+				.col-md-12
+					+mc-section-titles("","what we do","")
+				- titles=["Music", "Loud","Line Bars", "Media", "Qaulity", "Head set"]
+				- icons=["flaticon-music-quaver", "flaticon-loudness", "flaticon-music-24", "flaticon-mic-with-long-cable","flaticon-music-28","flaticon-headphones"]
+				div.mb40.text-center
+					.col-md-4
+						.icon-box.mv10
+							.icon
+								i.flaticon-music-quaver
+							.title
+								h5 audio visual
+								hr
+							.description
+								a(href="#") AUDIO MONITOR & MIXER
+								a(href="#") CREW & FACILITIES MANAGEMENT
+								a(href="#") LED DISPLAY & VIDEO WALL EQUIPMENT
+								a(href="#") LIGHTING & STAGING EFFECTS
+								a(href="#") PROJECTOR & PROJECTION SCREEN
+								a(href="#") SOUND CONSOLE EQUIPMENT
+								a(href="#") STAGING & TRUSSING PLATFORM
+								a(href="#") THEME CONCEPTUAL PLANNING & DESGNING
+					.col-md-4
+						.icon-box.mv10
+							.icon
+								i.flaticon-music-24
+							.title
+								h5 motion
+								hr
+							.description
+								a(href="#") 2D MOTION & 3D ANIMATION GRAPHICS
+								a(href="#") AUDIO MIXING & RECORDING
+								a(href="#") CINEMATIC STYLE & EVENTS VIDEOGRAPHY
+								a(href="#") EDITING & POST-PRODUCTION
+								a(href="#") HIGH DEFINITION & 4K MEDIA AUTHORING
+								a(href="#") PRODUCTION TEAM MANAGEMENT
+								a(href="#") LIVESTREAM & REAL-TIME
+								a(href="#") VIDEO PRODUCTION
+					.col-md-4
+						.icon-box.mv10
+							.icon
+								i.flaticon-headphones
+							.title
+								h5 stills
+								hr
+							.description
+								a(href="#") ARTWORKS & ILLUSTRATION DESIGN
+								a(href="#") CUSTOM MADE FRAMES & PHOTOBOOKS
+								a(href="#") GENERIC PHOTOGRAPHY STOCK IMAGES
+								a(href="#") INDOOR & OUTDOOR PORTRAITS
+								a(href="#") MAKEOVER ARTIST & HAIRSYLIST
+								a(href="#") MOBILE STUDIO SET-UP
+								a(href="#") PHOTOBOOTH & INSTANT PRINTING
+								a(href="#") PHOTOJOURNALISTIC STYLE & EVENTS
+//- APPBOX WORK SECTION CODED HERE
+mixin appbox-work()
+	div()&attributes(attributes)#portfolio.appbox-work
+		.container(style="width:100%").no-padding
+			.row.no-margin
+				.col-md-12
+					+mc-section-titles("","Portfolio")
+		.container-fluid#container1.no-padding
+			.row.mt30
+				.col-md-12.col-sm-12.col-xs-12.no-padding
+					nav
+						ul.nav(class="portfolio-filter-gallery" id="filters")
+							li
+								a.active(class="all filter active", data-filter="all") All
+							li
+								a(class="filter ", data-filter=".images") Images
+							li
+								a(class="filter", data-filter=".videos") Videos
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.videos.col-sm-3.no-padding
+								.img-box-portfolio
+									img(src="img/places/" + i + ".jpg" class="img-responsive")
+									.img-content
+									.font-icon
+										.table-1
+											.table-middle-row-1.text-center.center-block
+												ul.list-inline
+													li
+														+icon-fa('fa-share-alt', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+													li.popup-gallery
+														+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/places/' + i + '.jpg')
+						for i in [8,1,6,3,4,2,5,0]
+							.col-md-3.mix.images.col-sm-3.no-padding
+								.img-box-portfolio
+									img(src="img/work/" + i + ".jpg" class="img-responsive")
+									.img-content
+									.font-icon
+										.table-1
+											.table-middle-row-1.text-center.center-block
+												ul.list-inline
+													li
+														+icon-fa('fa-share-alt', 'icon-frame-inverse-white icon-sm rounded-cirlce', '#')
+													li.popup-gallery
+														+icon-fa('fa-search-plus', ' icon-frame-inverse-white icon-sm','img/work/' + i + '.jpg')
+		
+
+		
+//- APPBOX CONTACT SECTION CODED HERE
+mixin appbox-contact()
+	div()&attributes(attributes).mc-contact#contact
+		.container
+			.row
+				.col-md-12
+					+mc-section-titles("","contact")
+				.col-md-6
+					form(role="form")
+						.col-md-12
+							.input-group
+								label
+									h5.mt20 Name*
+								input(type="text" placeholder="Your Name" class="form-control" required)
+						.col-md-6
+
+							.input-group
+								label
+									h5.mt20 Email*
+								input(type="email" placeholder="Your Email" class="form-control" required)
+						.col-md-6
+							.input-group
+								label
+									h5.mt20 Cell #*
+								input(type="number" placeholder="Your Contact" class="form-control" required)
+						.col-md-12
+							.input-group
+								label
+									h5.mt20 Message
+								textarea(type="text" rows="8" placeholder="Your Message" class="form-control" required)
+								
+						.col-md-6
+							+btn-appbox("Submit")
+						.col-md-6.mv15
+							ul.list-inline
+								li
+									+icon-fa('fa-facebook', 'icon-frame-primary facebook icon-sm rounded-circle')
+								li
+									+icon-fa('fa-twitter', 'icon-frame-primary twitter icon-sm rounded-circle')
+								li
+									+icon-fa('fa-instagram', 'icon-frame-primary instagram icon-sm rounded-circle')
+								li
+									+icon-fa('fa-youtube', 'icon-frame-primary youtube icon-sm rounded-circle')
+				.col-md-6
+					.map.mt45
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="335px" src="https://maps.google.com/maps?hl=en&q=gilgit paksita&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://buyproxies.io/">buyproxies.io</a></small></div></iframe>
+				
+
+
+
+//- APPBOX FOOTER CODED HERE
+mixin appbox-footer()
+	div()&attributes(attributes).mc-footer
+		.alpha
+			.container
+				.row
+					.col-md-12.col-sm-12.col-xs-12.partition1.mt60
+						div
+							p.head.
+								our accessbility
+							.line
+
+								hr
+						.col-md-6.col-sm-6.col-xs-12.partition1
+							ul.no-padding.fair_price_list
+								li
+									span.price.fa.fa-home
+										a(href="") address
+									p 22 SIN MING LANE #06-76 MIDIVEW CITY SINGAPORE 573969
+									hr
+								li
+									span.price.fa.fa-phone
+										a(href="") phone
+									p +65 6969 6690
+									hr
+						.col-md-6.col-sm-6.col-xs-12.partition1
+							ul.no-padding.fair_price_list
+								li
+									span.price.fa.fa-envelope
+										a(href="") email
+									p INFO@MEDIACULTURE.COM.SG
+									hr
+								li
+									span.price.fa.fa-globe
+										a(href="") website
+									p WWW.MEDIACULTURE.COM.SG
+									hr
+			.container-fluid.no-padding.mt50(style="overflow: hidden; background-color:white; box-shadow:2px 1px 5px white")
+				.row
+					.col-md-8
+						.footer-text
+							h5.p20 © Copyright Media Culture 2016 | All Right Reserved
+					.col-md-4.mt15
+						<audio controls autoplay loop>
+						<source src="img/audio/1.mp3" type="audio/mpeg">
+						</audio>
+					
+
+
+
+
+//- BUTTONS FOR APPBOX
+mixin btn-appbox(name, link)
+	a.no-decoration(href='#{link}')&attributes(attributes)
+		.btn.btn-appbox&attributes(attributes) #{name}
+
+mixin btn-appbox-glass(name)
+	a.no-decoration(href='#')&attributes(attributes)
+		.btn.btn-appbox-glass&attributes(attributes) #{name}
+
+mixin btn-appbox-icon(name, icon)
+	a.no-decoration&attributes(attributes)
+		.btn.btn-appbox-icon&attributes(attributes) #{name}
+			span.fa.fa-(class=icon)&attributes(attributes).pl10
+
+mixin btn-appbox-icon-glass(name, icon)
+	a.no-decoration&attributes(attributes)
+		.btn.btn-appbox-icon-glass&attributes(attributes) #{name}
+			span.fa.fa-(class=icon)&attributes(attributes).pl10
+
+
+
+
+//- SECITON TITLES APPBOX
+mixin mc-section-titles(before_text,after_text, text_para)
+	div()&attributes(attributes).mc-section-title
+		.container
+			.row
+				.col-md-12
+					ul.list-inline.text-center
+						li.before-text
+							h2 #{before_text}
+						li.after-text
+							h2 #{after_text}
+					hr.hr1
+					hr.hr2
+					.col-md-8.col-md-offset-2.text-center
+						p #{text_para}
+
+
+

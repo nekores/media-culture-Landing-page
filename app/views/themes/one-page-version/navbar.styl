@@ -1,0 +1,112 @@
+.navbar-one-page
+	.navbar
+		transition 0.5s all ease-in
+		&.navbar-appeen
+			background-color transparent
+			// border-bottom 1px solid white
+			height 100px
+			
+
+
+			// navbar nav styles
+			.navbar-nav
+				margin-top 25px
+				transition 0.5s all ease-in
+
+				
+				li
+					a
+						&:link
+							letter-spacing 1px
+							color white
+							text-transform uppercase
+							font-size 14px
+							transition 0.5s all
+							border-radius 10px
+						&:hover,&:focus
+							background-color alpha(black, 0.4)
+							color white
+					&.active, a:visited
+						letter-spacing 1px
+						color white
+						// color darken(white,40%) !important
+						text-transform uppercase
+						font-size 14px
+						transition 0.5s all
+						border-radius 10px
+						background-color darken(primary,40%)
+						
+						
+			// Navbar header
+			
+			.navbar-header						
+				height 100%
+				padding-right 20px
+				color white
+				.navbar-brand
+					position relative
+					top 25px
+					color white
+					text-transform uppercase
+					font-weight 800
+					transition 0.5s all ease-in
+				
+			
+					
+			&.affix
+				background-color alpha(primary, 0.95)
+				color white
+				height 72px
+				border none
+				
+				.navbar-nav
+					color white
+					margin-top 10px
+					
+				.navbar-header
+					border none
+					.navbar-brand
+						// padding-bottom 30px
+						top  10px
+			
+
+			@media(max-width 767px)
+				border-bottom none
+				
+				.container
+					&, .col-xs-12, .row, [class ~="col-"], [class*=' col-'], .navbar-collapse
+						padding 0
+						margin 0
+						border-bottom none
+				&.affix
+					.navbar-header
+						button
+							margin-top 20px
+				.navbar-header
+					border none
+					.navbar-brand
+						display block
+						margin 0 auto
+					button
+						margin-top 35px
+						transition 0.5s all ease-in
+				
+				.navbar-nav
+					background-color primary;
+					display block
+					margin 0
+					margin-top 0 !important
+					width 100%
+					padding 10px
+					border none
+					li
+						a
+							&:hover
+								border-radius 0
+#aboutus-onepage
+#portfolio-onepage
+#services-onepage
+#testimonial-onepage
+#blog-onepage
+	padding-top 70px
+	margin-top -70px

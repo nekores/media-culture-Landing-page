@@ -1,0 +1,117 @@
+.divider
+    margin 40px 0
+    position relative
+    display block
+    min-height 20px
+    border-top 1px solid primary
+
+
+.divider.double-line
+    &::after
+        content ''
+        position absolute
+        top 4px
+        left 0
+        right 0
+        height 0px
+        border-bottom 1px solid primary       
+        
+.dotted-line
+    border-bottom 1px dotted primary
+    
+.divider.divider-left
+    &::after
+        content '\f006'
+        position absolute
+        top -12px
+        left 0
+        padding-right 10px
+        background-color white !important
+        font-family fontawesome
+.divider.divider-right
+    &::after
+        content '\f006'
+        position absolute
+        top -12px
+        right 0
+        padding-left 10px
+        background-color white !important
+        font-family fontawesome
+.divider.divider-center
+    text-align center
+    &::after
+        content '\f006'
+        position absolute
+        top -12px
+        background-color white !important
+        font-family fontawesome
+        padding-left 5px
+        padding-right 5px
+        
+.divider.divider-short
+    width 100%
+    text-align center
+    &::after     
+        content '\f08a'
+        position absolute
+        top -12px
+        padding-left 5px
+        padding-right 5px
+        background-color white !important
+        font-family fontawesome
+ .divider.divider-bdr-lefticon   
+    &::before
+        width 40px
+        height  40px
+        line-height 40px
+        border-radius 50%
+        text-align center
+        content '\f006'
+        position absolute
+        top -20px
+        left 0
+        margin-right 20px
+        background-color #eee
+        font-family fontawesome
+        // bottom 1px solid primary
+.divider.divider-bdr-righticon    
+    &::after
+        width 40px
+        height  40px
+        line-height 40px
+        border-radius 50%
+        text-align center
+        content '\f006'
+        position absolute
+        top -20px
+        right 0
+        background-color #eee
+        font-family fontawesome
+.divider.divider-bdr-centericon
+    text-align center
+    &::after
+        width 40px
+        height  40px
+        line-height 40px
+        border-radius 50%
+        text-align center
+        content '\f006'
+        position absolute
+        top -20px
+        background-color #eee
+        font-family fontawesome
+.divider-bdr-icon-center-short
+    text-align center
+    width 100%
+    &::after
+        width 40px
+        height  40px
+        line-height 40px
+        border-radius 50%
+        content '\f08a'
+        position absolute
+        top -20px
+        background-color #eee
+        font-family fontawesome
+        
+        

@@ -1,0 +1,72 @@
+mixin default-progress()
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar " role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;")
+            span.sr-only 20% Complete
+mixin progress-label()
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;") 20% 
+mixin multiple-progress(width1,width2,width3,width4)
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-success wow fadeInLeft" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: #{width1}")
+            span.sr-only 40% Complete
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: #{width2}")
+            span.sr-only 20% Complete
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:  #{width3}")
+            span.sr-only 60% Complete
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:  #{width4}")
+            span.sr-only 90% Complete
+mixin multiple-progress-label(width1,width2,width3,width4)
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: #{width1}") 40% 
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: #{width2}") 20% 
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:  #{width3}") 60% 
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:  #{width4}") 90%
+
+mixin multiple-progress-strip(width1,width2,width3,width4)
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: #{width1}")
+            span.sr-only 40% Complete
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: #{width2}")
+            span.sr-only 20% Complete
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: #{width3}")
+            span.sr-only 60% Complete
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: #{width4}")
+            span.sr-only 90% Complete
+mixin multiple-progress-strip-label(width1,width2,width3,width4)
+    //=== progressbar start here ===
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: #{width1}") 40% 
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: #{width2}") 20% 
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: #{width3}") 60% 
+    .progress&attributes(attributes)
+        div.wow.fadeInLeft(class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: #{width4}") 90%
+    //=== progressbar start here ===
+mixin skills-icon(icon,title,id)
+    #progressbar&attributes(attributes)
+        .text-center.pv70
+            .progressbar.bdr-rad-circle.bg-white(id="#{id}")
+                strong.percent.pos-a.left-0
+            .icon.pos-r.pv40.clr-primary.text-center.fs20
+                span.pr20(class="fa #{icon}")
+                span.clr-dark-md.ml10 #{title}
+
+
+
+mixin smallest-progressbars(classes,label,wid)
+    //=== single progress bar start here ===
+    div(class="classes")
+        h3.sxx-heading #{label}
+        .progress.progress-xs
+            div.wow.fadeInLeft(class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: #{wid}") 
+    //=== single progress bar end here ===

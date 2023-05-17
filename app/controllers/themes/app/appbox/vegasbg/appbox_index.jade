@@ -1,0 +1,18 @@
+extends ../../../../../views/layout/main.jade
+block main_content
+
+
+    +appbox-navbar()
+
+    +appbox-slider()
+    +mc-about()
+    +mc-services()
+    +appbox-work()
+    +appbox-contact()
+
+    //- FOOTER START HERE
+    +appbox-footer()
+
+    include ../../../../../models/back-to-top/back-to-top.jade
+    include ../../../../../models/loder/loder.jade
+    //- include ../../../../../models/switcher/switcher.jade

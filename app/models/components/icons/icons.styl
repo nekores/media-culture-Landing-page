@@ -1,0 +1,194 @@
+for name, value in settings.colors
+	//=====background colored icons or non-transparent=======
+	.icon-frame-{name}
+		margin 3px
+		background-color value
+		text-align center
+		border 1px solid value
+		transition 0.5s all
+		color white
+		i
+			color white
+		&:hover
+			text-shadow none !important
+			box-shadow none !important
+			text-decoration none !important
+			color value
+			background-color transparent
+			border 1px solid value
+			i
+				color value
+			// &::before
+			// 	text-decoration none !important
+	
+	//======== icon sizes of background color icon=====	
+	.icon-xs
+		height 30px
+		font-size 15px
+		width 30px
+		padding-left 2px
+		line-height 30px
+	.icon-sm
+		height 40px
+		font-size 15px
+		width 40px
+		line-height 40px
+	.icon-md
+		height 50px
+		font-size 24px
+		width 50px
+		line-height 50px
+	.icon-lg
+		height 60px
+		font-size 26px
+		line-height 60px
+		width 60px
+	.icon-xl
+		height 70px
+		line-height 70px
+		font-size 30px
+		width 70px
+		
+	// FLAT ICON SIZES
+	.icon-flat-xs
+		height 30px
+		width 30px
+		padding-top 6px
+		i
+			&::before
+				position relative
+				top -3px
+				left -13px
+				font-size 15px
+			
+	.icon-flat-sm
+		height 40px
+		width 40px
+		padding-top 11px
+		text-decoration none !important
+		i
+			&::before
+				position relative
+				top -3px
+				left -10px
+				font-size 16px
+			
+	.icon-flat-md
+		height 50px
+		width 50px
+		padding-top 12px
+		text-align center
+		i
+			text-align center
+			&::before
+				position relative
+				top 3px
+				left -10px
+				font-size 24px
+			
+	.icon-flat-lg
+		height 60px
+		width 60px
+		padding-top 10px
+		padding-right 15px
+		i
+			&::before
+				position relative
+				top 10px
+				left -6px
+				font-size 30px
+			
+	.icon-flat-xl
+		height 70px
+		width 70px
+		padding-top 10px
+		i
+			&::before
+				position relative
+				top 15px
+				left -9px
+				// font-size 30px
+				font-size 40px
+			
+		
+	//=====inverse icons or transparent=======
+	.icon-frame-inverse-{name}
+		margin 3px
+		background-color transparent
+		text-align center
+		border 1px solid value
+		transition 0.5s all
+		color value
+		i
+			color value
+		&:hover
+			background-color value
+			border 1px solid value
+			color white
+			i
+				color white
+		
+	.facebook
+		border-color #3B5998
+		background-color #3B5998
+		
+		&:hover
+			border-color #3B5998
+			i
+				color #3B5998
+	.facebook-inv
+		background-color transparent
+		&:hover
+			background-color  #3B5998
+			border-color #3B5998 !important
+	.instagram 
+		border-color #517fa4
+		background-color #517fa4
+		
+		&:hover
+			border-color #517fa4
+			i
+				color #517fa4
+	.instagram-inv
+		background-color transparent
+		&:hover
+			background-color #517fa4
+			border-color #517fa4
+	.twitter 
+		border-color #0084b4
+		background-color #0084b4
+		
+		&:hover
+			border-color #0084b4
+			i
+				color #0084b4 !important
+	.twitter-inv
+		background-color transparent
+		&:hover
+			border-color #0084b4 !important
+			background-color #0084b4
+	.gplus-inv
+		background-color transparent
+		&:hover
+			border-color #e74c3c !important
+			background-color #e74c3c	
+	.linkedin 
+		border-color #007bb6
+		background-color #007bb6
+		
+		&:hover
+			border-color #007bb6
+			i
+				color #007bb6 !important
+	.youtube 
+		border-color #bb0000
+		background-color #bb0000
+		
+		&:hover
+			border-color #bb0000
+			i
+				color #bb0000 !important
+	.dark-icon
+		border-color darken(white, 30%)        
+		i
+			color darken(white, 30%)

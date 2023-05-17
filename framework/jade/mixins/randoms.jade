@@ -1,0 +1,25 @@
+mixin random_dbl_string()
+	- v = parseInt(Math.random() * dbl.length)
+	| #{dbl[v]}
+mixin random_sentence()
+	- v = parseInt(Math.random() * sentences.length)
+	| #{sentences[v]}
+
+mixin random_single_string(upcase)
+	- v = parseInt(Math.random() * single.length)
+	- txt = single[v]
+	if(upcase)
+		|	#{txt.toUpperCase()}
+	else
+		|	#{txt.toLowerCase()}
+mixin random_name(upcase)
+	- v = parseInt(Math.random() * names.length)
+	- txt = names[v]
+	if(upcase)
+		| #{txt.toUpperCase()}
+	else
+		| #{txt.toLowerCase()}
+
+mixin random_elegant_icon()
+	- v = parseInt(Math.random() * icons_elegant.length)
+	span(class="icon " + icons_elegant[v])&attributes(attributes)

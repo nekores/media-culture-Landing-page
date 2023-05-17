@@ -1,0 +1,62 @@
+mixin footer()
+	section()&attributes(attributes).footer-envision
+		.container
+			.row
+				.col-md-4th.col-sm-12.partition1.mt60
+					ul.ulist.ph40.bg-gray.clr-primary.list-unstyled
+						p.head Constructions
+						li.mv10
+							i.fa.fa-check-square-o.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15.
+								California Power House
+						li.mv10
+							i.fa.fa-check-square-o.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15.
+								AKHSS Builing Planed
+						li.mv10
+							i.fa.fa-square-o.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15.
+								Bio Reasearch House
+						li.mv10
+							i.fa.fa-check-square-o.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15.
+								Microsoft Tech Cons.
+						li.mv10
+							i.fa.fa-square-o.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15.
+								Chigago NRI Building
+				.col-md-4th.col-sm-12.partition1.mt60
+					div.p35.bg-gray
+						p.head.
+							Recent Blog Posts
+						for i in [0,1,2]
+							div(class="media")
+								div(class="media-left")
+									+flat_icon("icon-frame-inverse-primary icon-flat-sm")
+								div(class="media-body").mv10
+									a.para(href="").
+										Mutat definitionem id untamed.
+				.col-md-4th.col-sm-12.partition1.mt60
+					ul.ulist.ph40.bg-gray.list-unstyled
+						p.head.
+							Our Accessibility
+						li.mv10
+							i.fa.fa-location-arrow.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 Nekores Plaza Dubai
+						li.mv10
+							i.fa.fa-envelope.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 nekores@cdoctors.com
+						li.mv10
+							i.fa.fa-phone.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 +92(3129749993)
+						li.mv10
+							i.fa.fa-shield.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 Engineering Mind
+						li.mv10
+							i.fa.fa-ticket.clr-primary
+							a(href="").pl5.para.text-center.clr-primary.mt15 www.yourdomain.com
+		.container-fluid.no-padding.mt50(style="overflow: hidden;")
+			.row.no-padding
+				.col-md-12.no-padding
+					.footer-text.text-center
+						h5.p20.clr-primary Copyright @ 2015 Upack &nbsp;<span class="clr-primary">| Construction Design |</span> &nbsp;   Nekores Contribution

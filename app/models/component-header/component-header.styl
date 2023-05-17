@@ -1,0 +1,288 @@
+// .breadcrumbs-outer
+//  
+.page-title
+    position relative
+    display block
+    background-color darken(primary, 5%);
+    padding ((100px / 2) /2) 0
+    
+
+    
+    .page-title-heading
+        position relative
+        
+        .heading-text
+            position: relative
+            text-transform uppercase
+            margin 0
+            // color darken(white, 60%)
+            color white
+            
+            small
+                display block
+                font-size 15px
+                text-transform auto
+                line-height 150%
+    
+    .breadcrumbs-outer
+        // Extra small screen size styles
+        @media (max-width 767px )
+            text-align left !important
+            
+            .breadcrumb
+                padding-left 0
+        // Small and up styles
+        .breadcrumb
+            background-color transparent
+            margin 0
+            
+            li:not(.active)
+                a
+                    // color darken(white, 70%);
+                    color white
+                    font-size 15px
+                    text-transform uppercase
+                    
+                    &:hover
+                        color primary
+                        text-decoration none
+            // li.active
+            //  color white
+            //  text-transform uppercase
+
+    &.dark
+        background-color lighten(black, 10%);
+        
+        .page-title-heading
+            position realative
+            
+            .heading-text
+                position: relative
+                text-transform uppercase
+                margin 0
+                color darken(white, 10%)
+                
+                small
+                    display block
+                    font-size 15px
+                    text-transform auto
+                    line-height 150%
+        .breadcrumb
+            background-color transparent
+            margin 0
+            
+            li:not(.active)
+                a
+                    color darken(white, 10%);
+                    font-size 15px
+                    text-transform uppercase
+                    
+                    &:hover
+                        color primary
+                        text-decoration none
+            li.active
+                text-transform uppercase
+
+
+
+// blog header
+
+.page-title-header
+    position relative
+    padding ((200px / 2) /2) 0
+    background url("../img/patterns/footer.png") center
+    background-attachment fixed
+    
+    .alpha-clr
+        height 100%
+        background-color alpha(black , 0.8)
+    h2
+        
+        text-transform uppercase
+        color #333
+    .breadcrumbs-outer-header
+        color #333
+        .breadcrumb
+            background-color transparent
+            margin 0
+            
+            li:not(.active)
+                a
+                    color #333
+                    font-size 15px
+                    text-transform uppercase
+                    
+                    &:hover
+                        color darken(white, 80%);
+                        // color primary
+                        text-decoration none
+            li.active
+                color #333
+                text-transform uppercase
+
+
+
+
+
+
+// pages header
+
+.pages-header
+    position relative
+    background url("../img/header/3.jpg") center
+    background-attachment fixed
+    
+    .alpha-clr-page
+        padding ((300px / 2) /2) 0
+        height 100%
+        background-color alpha(black , 0.7)
+        
+        .heading-title
+            h2
+                text-transform uppercase
+                color #fff
+                font-weight 400
+                line-height 70px
+                font-size 36px
+        .page-breadcrumbs
+            li
+                color #fff
+                text-transform capitalize
+                a
+                    i
+                        color: #fff 
+                        min-width: 19px;
+                        padding: 3px 7px;
+                        margin-right: 5px;
+                        text-align: center;
+                        border: 1px solid #fff;
+                        border-radius 50%
+
+// -page header small
+
+.pages-header-small
+    position relative
+    background url("../img/slider/breadcrumbs.png") center
+    background-attachment fixed
+    border-top: solid 1px
+    border-bottom: solid 1px
+    border-color darken(white, 20%)
+    
+    .alpha-clr-page
+        padding ((100px / 2) /2) 0
+        height 100%
+        background-color alpha(black , 0.1)
+        
+        .heading-title
+            h2
+                text-transform capitalize
+                color #777
+                font-weight 400
+                line-height 70px
+                font-weightsize 22px
+        .page-breadcrumbs
+            .breadcrumb
+                background-color transparent
+            ul
+                
+                margin 20px 0px
+                li:not(.active)
+                    a
+                        color #777
+                        text-transform capitalize
+                li.active
+                    a
+                        text-transform capitalize
+                        color primary
+    @media(max-width 471px)
+        .heading-title
+            h2
+                font-size 18px
+        .breadcrumb
+        ul
+            padding 0px
+                
+            margin 20px 0px
+            li:not(.active)
+                a
+                    font-size 12px
+                    color #777
+                    text-transform capitalize
+            li.active
+                a
+                    font-size 12px
+                    text-transform capitalize
+                    color primary 
+
+
+
+
+
+//- page header xs
+
+.pages-header-xs
+    position relative
+    background url("../img/slider/breadcrumbs.png") center
+    // background-attachment fixed
+    border-top: solid 1px
+    border-bottom: solid 1px
+    border-color darken(white, 20%)
+    
+    .alpha-clr-page
+        // padding ((50px / 2) /2) 0
+        // height 100%
+        background-color alpha(black , 0.1)
+        
+        // .heading-title
+        //     h2
+        //         text-transform capitalize
+        //         color #777
+        //         font-weight 400
+        //         line-height 50px
+        //         font-weightsize 22px
+        .page-breadcrumbs
+            .breadcrumb
+                background-color transparent
+            ul
+                padding 0px
+                margin 10px 0px
+                li:not(.active)
+                    padding 0px
+                    a
+                        color #777
+                        text-transform capitalize
+                li.active
+                    a
+                        text-transform capitalize
+                        color primary
+
+
+
+
+// portfolio header
+
+.portfolio-header
+    position relative
+    background url("../img/header/img1.jpg") no-repeat 
+    background-size cover
+    background-position center center
+    // background-attachment fixed
+    
+    .alpha-clr-page
+        padding ((400px / 2) /2) 0
+        height 100%
+        background-color alpha(black , 0.3)
+        
+        .heading-title
+            h2
+                text-transform uppercase
+                color #fff
+                font-weight 400
+                line-height 70px
+                font-size 36px
+        .page-breadcrumbs
+            li
+                color: #fff
+                font-size: 24px
+                font-weight: 200
+                text-transform: uppercase

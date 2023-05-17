@@ -1,0 +1,90 @@
+switcher-color = {
+	styles: #f49c14,
+	emerald: #40d47e,
+	alizarin: #e74c3c,	
+	carot: #e67e22,
+	peter: #3498db,
+	Dragomir-2: #90c030,
+	Dionysus-Bright-4: #dea333,
+	wet-asphalt : #34495e
+}
+.switcher-upack
+	position fixed
+	width 200px
+	height 220px
+	background #333;
+	right -200px
+	top 27px
+	transition 0.6s all ease-in-out
+	border-left none
+	z-index 1115
+	.switcher-btn
+		position absolute
+		right 100%
+		padding 9px 12px
+		background #333;
+		color primary
+		display inline-block
+		border-left none
+		border-radius 50% 0 0 0
+		.fa
+			color #fff
+			font-size 16px
+		
+
+	.switcher-content
+		position relative
+		padding 20px
+		text-align center
+		text-transform capitalize
+		p
+			color #fff
+		
+		hr
+			width 20%
+			
+		.colors
+			position relative
+			text-align center
+			ul
+				padding 0
+				margin 0
+				
+				li
+					float left
+					width 30px
+					height 30px
+					margin 5px
+					display inline
+					border 2px solid white
+					border-radius 5px
+					transition 0.5s all
+					&:hover
+						cursor pointer
+						transform rotate(2deg)
+							
+	.variations
+		position relative
+		text-align center
+		color white
+		margin-top 15px
+		hr
+			width 20%
+	.demo
+		ol
+			li
+				padding 5px
+				font-size 12
+				a
+					color white
+					&:hover
+						text-decoration none
+	&:hover
+		right 0%
+
+@media(max-width 767px)
+	.switcher-upack
+		display none
+for name, value in switcher-color
+	.switcher-{name}-bg
+		background-color value !important

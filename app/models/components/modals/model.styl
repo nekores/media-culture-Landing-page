@@ -1,0 +1,127 @@
+		
+.modal1, .modal2, .modal3, .modal4, .modal5
+	input
+		border-color primary
+		transition 0.5s all
+		letter-spacing 0.9px
+		&:focus
+			border-color primary
+			background-color alpha(primary, 15%)
+	textarea
+		border-color primary
+		transition 0.5s all
+		letter-spacing 0.9px
+		&:focus
+			border-color primary
+			background-color alpha(primary, 15%)
+	label
+		margin-top 10px
+		letter-spacing 0.9px
+		font-size 15px
+		text-transform capitalize
+		font-weight 400
+	.btn
+		transition 0.5s all
+		letter-spacing 0.9px
+		font-size 16px
+		background-color primary !important
+		border-radius 0
+		color white
+		position relative
+		top 0
+		left 0
+		&:focus
+			outline none
+		&:hover
+			background-color darken(primary, 10%) !important
+	.modal-header
+		background-color primary
+		h4
+			text-transform capitalize
+			color white
+			
+	.modal-dialog-map-custom
+		width 93%
+	.modal-3-bg
+		background-color alpha(black, 50%)
+	.modal-4-bg
+		background url('../img/construction/slider/cons2.jpg')
+		.modal-content
+			background-color alpha(white, 10%)
+		.modal-bodyt
+			padding-left 80px
+			padding-right 80px
+		.modal-header
+			border-bottom-color primary
+			background-color alpha(primary, 30%)
+		.modal-footer
+			background-color alpha(primary, 30%)
+			border-top-color primary
+	.modal-5-bg
+		background url('../img/construction/slider/cons2.jpg')
+		.modal-content
+			background-color alpha(white, 10%)
+		.modal-body
+			padding-left 80px
+			padding-right 80px
+			.btn
+				background-color primary !important
+				color white
+				&:hover
+					background-color darken(primary, 15%) !important
+		.modal-header
+			border-bottom-color primary
+			background-color alpha(primary, 30%)
+		.modal-footer
+			background-color alpha(white, 40%)
+			border-top-color primary
+		label
+			color white !important
+		input
+			background-color transparent
+			color white
+			&:hover
+				background-color alpha(primary, 10%) !important
+			&:focus
+				background-color alpha(primary, 15%) !important
+.modal1, .modal2, .modal3 > .modal-btn
+	transition: 0.5s all;
+	letter-spacing: 0.9px;
+	font-size: 16px;
+	background-color: primary !important;
+	border-radius: 0;
+	box-shadow: inset 0px 3px 5px darken(primary, 30%)
+	color: #fff;
+	position: relative;
+	top: 0;
+	cursor pointer
+	padding-top 10px
+	padding-bottom 10px
+	left: 0;
+	&:focus
+			outline none
+	&:hover
+		background-color darken(primary, 10%) !important
+.modal4, .modal5> .modal-btn
+	transition: 0.5s all;
+	letter-spacing: 0.9px;
+	font-size: 16px;
+	background-color alpha(black, 80%)
+	border-radius: 0;
+	color: #fff;
+	position: relative;
+	top: 0;
+	cursor pointer
+	padding-top 10px
+	padding-bottom 10px
+	left: 0;
+	&:hover
+		background-color alpha(black, 70%)
+			
+.alert1, .alert2, .alert3
+	.alert-custom
+		transition 0.5s all
+		cursor pointer
+		border-radius 0
+		&:hover
+			background-color alpha(primary, 15%)

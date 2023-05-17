@@ -1,0 +1,79 @@
+mixin widgetsheading(head)
+    h6.heading-widget #{head}
+mixin blog-sidebar()
+
+    .blog-widget-heading
+        +widgetsheading("search")
+        .mt50
+        .input-group
+            input(type="text" class="form-control input-search" placeholder="Search for...")
+            span(class="input-group-btn")
+                button.btn.btn-default.no-bdr-rad(type="button") Go!
+                
+    .blog-widget-heading
+        +widgetsheading("connect with me")
+        .contact-widget
+            ul.list-unstyled
+                li
+                    +icon-fa("fa-facebook", "icon-sm icon-frame-inverse-primary dark-icon")
+                li
+                    +icon-fa("fa-twitter", "icon-sm icon-frame-inverse-primary dark-icon")
+                li
+                    +icon-fa("fa-youtube", "icon-sm icon-frame-inverse-primary dark-icon")
+                li
+                    +icon-fa("fa-google-plus", "icon-sm icon-frame-inverse-primary dark-icon")
+                li
+                    +icon-fa("fa-linkedin", "icon-sm icon-frame-inverse-primary dark-icon")
+
+    .blog-widget-heading
+        +widgetsheading("tags")
+        .widgets-tags
+            ul.tags
+                li
+                    a.badge(href="#") business
+                li
+                    a.badge(href="#") light
+                li
+                    a.badge(href="#") photography
+                li
+                    a.badge(href="#") medicael
+                li
+                    a.badge(href="#") construction
+                li
+                    a.badge(href="#") mobile
+                li
+                    a.badge(href="#") medical
+                li
+                    a.badge(href="#") fashion
+                li
+                    a.badge(href="#") life style
+    
+    - time =["5","10","15"]
+    .blog-widget-heading
+        +widgetsheading("twitter feeds")
+        .pt50
+        p
+            <a class="twitter-timeline" href="https://twitter.com/shahzadnagri99" data-widget-id="692009344662138881">Tweets by @shahzadnagri99</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    .blog-widget-heading
+        +widgetsheading("latest posts")
+        .pt40
+        for i in [0,1,2,4]
+            .media.twitts
+                .media-left
+                    .tweet-img
+                        img.img-responsive(src="img/work/" + i + ".jpg")
+                .media-right
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    p.tweet-date.
+                        jan,29 2016
+
+    .blog-widget-heading
+        +widgetsheading("comment box")
+        .pt50
+         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+         <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+         <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1455548170454");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+        <!-- end www.htmlcommentbox.com -->

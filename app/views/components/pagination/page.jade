@@ -1,0 +1,33 @@
+mixin pagenation()
+    section
+        .container
+            .row
+                .col-md-8
+                    h2.comp-title pagination
+                    hr          
+                    h2.comp-titles Default pagination
+                    +defaultpage()
+
+                    h3.comp-titles Disable and active States
+
+                    +activepage()
+
+                    h3.comp-titles Sizing
+                    +sizing()
+                    .mt80
+                    h2.comp-title Pager
+
+
+                    h3.comp-titles Default Pager
+                    +pager()
+                    +pager1()
+                    
+                    h3.comp-titles Linked pager
+                    +linked-pager()
+                    +linked-pager1()
+
+                    h3.comp-titles Disable pager
+                    +disable-pager()
+                    +disable-pager1()
+                .col-md-4
+                    +component-nav()

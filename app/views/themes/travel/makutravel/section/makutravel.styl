@@ -1,0 +1,448 @@
+
+//- BLOG CODED HERE
+.makutravel_blog
+	background url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed
+	background-size cover
+	.alpha
+		background-color alpha(white, 90%)
+	.heading
+		.lower
+			right 54px
+
+//- PORTFOLIO CODED HERE
+.portfolio-makutravel
+	background: url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.alpha
+		background-color alpha(white, 90%)
+	.heading
+		.lower
+			right 45px
+	#container1
+		nav
+			.nav
+				margin-bottom 30px
+				padding 0
+				li
+					a
+						padding 10px
+						background-color #333
+						color primary
+						transition 0.5s all
+						&.active
+							background-color primary
+							color white
+							cursor pointer !important
+						&:hover
+							background-color lighten(primary,20%)
+							color white
+							cursor pointer !important
+							text-decoration none
+						&:focus , &:visited, &:active
+							box-shadow none
+							text-decoration none
+							outline 0 none
+
+//- SERVICES CODED HERE
+.services-makutravel
+	background: url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.heading
+		.title
+			h3
+				color white !important
+			.lower
+				right 48px
+				.slogan
+					span
+						color white
+				.obstacle
+					.line2
+						background-color white
+					.line3
+						background-color white
+	.alpha
+		background-color alpha(#333, 97%)
+		padding-bottom 40px
+		.iconbox-9-inner
+			background-color alpha(primary, 5%)
+			.text
+				.title
+					color primary
+				.title-slogan
+					p
+						color white
+				.description
+					p
+						color white
+		.owl-services
+			.owl-theme
+				.owl-controls
+					.owl-buttons
+						.owl-prev
+							position absolute
+							left 0px
+							bottom -100px
+							font-size 30px
+							padding-left 20px
+							padding-right 20px
+							padding-top 5px
+							padding-bottom 5px
+							background-color alpha(gray, 50%)
+							border 1px solid transparent
+							&:hover
+								background-color primary
+								color white
+								border 1px solid primary
+						.owl-next
+							position absolute
+							left 54px
+							bottom -100px
+							font-size 30px
+							padding-left 20px
+							padding-right 20px
+							padding-top 5px
+							padding-bottom 5px
+							background-color alpha(gray, 100%)
+							border 1px solid alpha(gray, 100%)
+							&:hover
+								background-color primary
+								border 1px solid primary
+								color white
+						div
+							margin-top 30px
+							margin-bottom 30px
+							line-height 40px
+							border-radius 0
+							// background-color 30px
+							// height 40px
+							// width 40px	
+							padding 0
+							color white
+							opacity 1
+							&:hover
+								transition 0.5s all
+								background-color transparent
+								color white
+
+
+//- CONTACT SECTION CODED HERE
+.contact-makutravel
+	background: url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.alpha
+		background-color alpha(#333, 97%)
+	.heading
+		.title
+			h3
+				color white !important
+			.lower
+				right 10px
+				.slogan
+					span
+						color white
+				.obstacle
+					.line2
+						background-color white
+					.line3
+						background-color white
+	form
+		.form-control
+			background-color alpha(primary, 5%)
+			border 1px solid alpha(white, 20%)
+			color white
+			&:focus
+				border-color primary
+		button
+			color white
+			transition 0.5s all
+			background-color primary
+			box-shadow: inset 0px 3px 5px darken(primary, 30%);
+			&:hover
+				color white
+				background-color lighten(primary, 10%)
+//- FOOTER SECTION CODED HERE
+.footer_makutravel
+	background: url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed
+	background-size cover
+	background-position center
+	background-repeat non-repeat
+	.alpha
+		background-color alpha(#2a2a2a, 95%)
+	.col-md-4th
+		width: 25%;
+		margin-left: 48px;
+		float: left;
+		margin-right: 49px;
+	@media(max-width: 1199px)
+		.col-md-4th
+			margin-left: 40px;
+			margin-right: 40px;
+	@media(max-width: 991px)
+		.col-md-4th
+			width 100%
+			margin-left: 0px;
+			margin-right: 0px;
+	.partition1
+		.head
+			// margin-bottom 2px
+			text-transform uppercase
+			padding-left -40px
+			color white
+			// border-bottom 1px solid gray
+			font-weight 500
+			font-size 14px
+		.line
+			hr
+				border-top 1px solid primary
+				width 15%
+				margin 0
+				padding-bottom 10px
+		.para
+			line-height 20px
+			color white
+			font-size 14px
+		
+		ul.fair_price_list
+			list-style none
+			li
+				span
+					font-size 13px
+					text-transform uppercase
+					color primary
+					a
+						padding-left 5px
+						color white
+					&:hover
+						color primary
+						a
+							color primary
+				hr
+					border-color #504E4E
+					margin-top 0
+					margin-bottom 10px
+				p
+					line-height 20px
+					color gray
+					font-size 14px
+		.travel_source
+			padding 0
+			list-style none
+			li
+				padding-top 2px
+				padding-bottom 2px
+				a
+					font-size 14px
+					color white
+					font-weight 300
+					&:hover
+						color primary
+			li:before
+				content: "\f0da";
+				font-family: FontAwesome;
+				color: primary; /* or whatever color you prefer */
+				margin-right: 4px;
+		.gallery-img
+			li
+				padding 0
+				height 70px
+				width 70px
+			.figure
+				position relative
+				.figcaption1
+					position absolute
+					height 100%
+					width 100%
+					top 0
+					left 0
+					opacity 0
+					transition 0.5s all
+					background-color alpha(black, 70%)
+				.figcaption2
+					position absolute
+					height 100%
+					width 100%
+					transition 0.7s all
+					left 21px
+					top 22px
+					opacity 0
+					i
+						position absolute
+						font-size 15px
+						color primary
+						padding 5px
+						border-radius 50%
+						border 1px solid primary
+					
+				&:hover
+					.figcaption1
+						opacity 1
+					.figcaption2
+						opacity 1
+	.footer-text
+		background-color #333
+		h5
+			font-size 14px
+			color white
+			span
+				font-weight 600 !important
+
+
+//- CLIENTS CODED HERE
+.clients-makutravel
+	// padding-bottom 50px
+	background: url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.alpha
+		padding-bottom 100px
+		background-color alpha(#333, 95%)
+	.widget6
+		background-color transparent !important
+	.owl-buttons
+		top: -60px;
+		position: relative;
+	.makutravel-section_title
+		.heading
+			.text
+				.title
+					h3
+						color white
+					.lower
+						right 17px
+						.slogan
+							span
+								color white
+						.obstacle
+							.line2
+								background-color white
+							.line3
+								background-color white
+
+//- CALCULATE CALLOUT
+.calculateform-makutravel
+	background-color: primary
+	padding-bottom: 60px;
+	.makutravel-section_title .heading .text .title h3 span
+		color white
+	.heading
+		.title
+			h3
+				color white !important
+			.lower
+				right 27px
+				.slogan
+					span
+						color white
+				.obstacle
+					&::before
+						color white !important
+					.line1
+						background-color white
+					.line2
+						background-color white
+					.line3
+						background-color white
+	// :before
+	// 	white
+	.input-group
+		width: 100%;
+	label
+		width 100%
+		h6
+			color white
+		select
+			width: 100%;
+			padding: 7px;
+			border: 1px solid white;
+			background-color: transparent;
+			color white
+			cursor pointer
+			option
+				color white
+				background-color primary
+				border 1px solid primary
+					
+		input
+			width: 100%;
+			padding: 7px;
+			border: 1px solid white;
+			background-color: transparent;
+			color: white;
+		input::-webkit-input-placeholder, textarea-webkit-input-placeholder
+			color white
+	.search_button>.btn
+		margin-top 20px
+		background-color transparent
+		color white
+		transition 0.5s all
+		border-radius 0
+		border 1px solid white
+		&:hover, &:focus
+			background-color white
+			color primary
+			outline none
+
+
+//- ABOUT MAKUTRAVEL CODED HERE
+.about-makutravel
+	background: url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed !important
+	background-size cover
+	.alpha
+		background-color alpha(white, 90%)
+	.makutravel-section_title
+		.heading
+			.text
+				.title
+					.lower
+						right 25px
+	.introduction_makutravel
+		h1.title
+			color #333
+			margin-top	20px
+			font-size: 20px;
+			font-weight: 700;
+			padding-top: 10px;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+		hr
+			margin-top 5px
+			border-color primary
+			width 100px
+			margin-left 0
+		p.para
+			font-size 16px
+			letter-spacing 0.8px
+			word-spacing 0.5px
+			line-height 23px
+			font-weight 300
+	.big_icons
+		i::before
+			font-size 220px
+			color primary
+	.widget
+		.container
+			width 100% !important
+			
+			.tab6
+				width 100%
+				position relative
+				top -41px
+		@media (min-width: 1200px)
+			.container {
+				width: 100% !important;
+			}
+		@media (min-width: 992px)
+			.container {
+				width: 100% !important;
+		}
+		@media (min-width: 768px)
+			.container {
+				width: 100% !important;
+			}

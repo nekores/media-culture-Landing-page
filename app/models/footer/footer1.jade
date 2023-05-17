@@ -1,0 +1,90 @@
+mixin inline-form-glass(type , placeholder , clas , label)
+    input.input-glass(type="#{type}" placeholder="#{placeholder}:" class="#{clas}")
+-t = ['fa-facebook', 'fa-twitter', 'fa-google-plus', 'fa-youtube', 'fa-viber', 'fa-instagram', 'fa-linkedin'];
+
+
+
+mixin footer-1()
+    // === footer section start here ===
+    section.page-footer
+        .container
+            .row.mv30
+                .col-md-3.col-sm-6
+                    .col-md-12
+                        div.mv25
+                            h4.title Follow us
+                            .separater-100
+                            .mt30
+                            p.para.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                            .mt20
+                        div
+                            a.social-icon(href="#")
+                                i.fa.fa-facebook
+                            a.social-icon(href="#")
+                                i.fa.fa-google-plus
+                            a.social-icon(href="#")
+                                i.fa.fa-twitter
+                            a.social-icon(href="#")
+                                i.fa.fa-skype
+                .col-md-3.col-sm-6
+                    .col-md-12
+                        div.mv25
+                            h4.title Get Updates!
+                            .separater-100
+                            .mt40
+                                +inline-form-glass("email" , "Enter your email", " ")
+                            .mt35
+                                button.btn.btn-c-primary
+                                    i.fa.fa-envelope &nbsp
+                                    |Get Updates
+                .col-md-3.col-sm-6
+                    .col-md-12
+                        div.mv25
+                            h4.title Information
+                            .separater-100
+                            .mt30
+                            div.links
+                                ul.list-inline
+                                    li
+                                        a(href="#") Our Works So far
+                                    <br>
+                                    li
+                                        a(href="#") Recent Projects Till now
+                                    <br>
+                                    li
+                                        a(href="#") Privacy Policy
+                                    <br>
+                                    li
+                                        a(href="#") Terms and Conditions
+                                    <br>
+                                    li
+                                        a(href="#") More to do
+                .col-md-3.col-sm-6
+                    .col-md-12
+                        div.mv25
+                            h4.title Recent posts
+                            .separater-100
+                            .mv30
+                            div.links
+                                ul.list-inline
+                                    li
+                                        a(href="#") The Wonderful Art Crafts
+                                    <br>
+                                    li
+                                        a(href="#") Paypal
+                                    <br>
+                                    li
+                                        a(href="#") The Thunderstorm Company
+                                    <br>
+                                    li
+                                        a(href="#") The Miserable Town
+                                    <br>
+                                    li
+                                        a(href="#") The More You do You win
+        
+        .container-fluid
+            .row.copyright
+                .col-md-12
+                    p &copy; Copyright 2015 | Uconnect
+    // === footer section start here ===

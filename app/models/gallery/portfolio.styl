@@ -1,0 +1,111 @@
+#container1
+    overflow: hidden;
+
+.mix
+    display none
+.port-para
+    text-align center
+    background-color darken(white, 2%)
+    border-top 1px solid 
+    border-bottom 1px dotted
+    border-color #bbb
+    padding 18px 10px
+    margin-bottom 30px
+    margin-top 5px
+.portfolio-filter-photo
+    list-style none
+    // padding 0
+    padding-top 5px
+    // background-color darken(white, 5%)
+    li
+        display inline-block
+        a
+            padding 20px 10px
+            color #aaa
+            display block
+            font-size 16px
+            line-height normal
+            text-transform uppercase
+            cursor pointer
+            
+            &.active
+                border-bottom-color #777
+                color primary
+            &:hover
+                color primary
+                text-decoration none
+            
+            &:focus , &:visited, &:active
+                box-shadow none
+                text-decoration none
+                outline 0 none
+        &:before
+            content ""
+            position absolute
+            border-top 1px dotted
+            border-color #bbb
+            width 70%
+            left 50px
+.isotope-item
+  z-index: 2
+.isotope-hidden.isotope-item
+  pointer-events: none
+  z-index: 1
+  
+
+  //  gallery img-box styl
+
+.img-box
+    position relative
+    overflow hidden
+    img
+        height 100% !important
+        width  100% !important
+    &, .img-content, img, ::before , ::after
+        transition .6s all ease-in-out
+    .img-content
+        position absolute
+        width 100%
+        height 100%
+        top 0
+        right 0%
+        text-align center
+        overflow hidden
+        opacity 0
+        &::after
+            content ''
+            position absolute
+            height 100%
+            width 100%
+            right -100%
+            // top 0
+            background-color alpha(black, 0.6)
+        
+    .font-icon
+        top 40%
+        margin 0 41%
+        position absolute
+        text-align center
+        color #ddd
+        display block
+        width 50px
+        height 50px
+        border-radius 25%
+        z-index 111
+        i
+            margin-top 12px
+            z-index 456789
+            letter-spacing 1px
+            font-weight 800
+            text-transform uppercase
+            color darken(white,10%)
+            font-size 24px
+    &:hover, &:active
+        .img-content
+            opacity 1
+            &::after
+                left 0
+            &::before
+                right 0
+        img
+            transform scale(1.2)

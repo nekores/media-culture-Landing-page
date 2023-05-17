@@ -1,0 +1,15 @@
+mixin boxltr(classes,number,time)
+	div(class=classes)
+		.sq
+			span #{time}
+			h1 #{number}
+mixin boxctr(classes,ids,time)
+	div(class=classes)
+		.sqctr
+			h1(id=ids)
+			span #{time}
+mixin boxrtl(classes,number,time)
+	div(class='classes')
+		.sqrtl
+			h1 #{number}
+				span #{time}

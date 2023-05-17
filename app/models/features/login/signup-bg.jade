@@ -1,0 +1,48 @@
+mixin signup-account1()
+	//=== signup account start here ====
+	section.signup-section
+		.container.pv40
+			.row
+				.col-md-6.col-md-offset-3
+					.reg-page&attributes(attributes)
+						form(role="form" method="get") 
+							.reg-header
+								h2 Sign up
+							ul.list-inline.text-center
+								li.no-padding
+									+icon-fa("fa-facebook","icon-sm icon-frame-inverse-primary rounded-circle")
+								li.no-padding
+									+icon-fa("fa-twitter","icon-sm icon-frame-inverse-primary rounded-circle")
+								li.no-padding
+									+icon-fa("fa-linkedin","icon-sm icon-frame-inverse-primary rounded-circle")
+								li.no-padding
+									+icon-fa("fa-youtube","icon-sm icon-frame-inverse-primary rounded-circle")
+								p.mv20 Already Signed Up? Click 
+									a(href="") Sign In 
+									span to login your account.
+								hr
+							.input-group.mb20
+								span.input-group-addon
+									i.fa.fa-user
+								input(type="text" placeholder="Username" class="form-control" required)
+							.input-group.mb20
+								span.input-group-addon
+									i.fa.fa-envelope
+								input(type="Email" placeholder="Email" class="form-control" required)
+
+							.input-group.mb20
+								span.input-group-addon
+									i.fa.fa-lock
+								input(type="password" placeholder="Password" class="form-control" required)
+							.input-group.mb20
+								span.input-group-addon
+									i.fa.fa-key
+								input(type="text" placeholder="Confirm Password" class="form-control" required)
+							hr
+							.checkbox
+								label 
+									input(type="checkbox" required)
+									|I read 
+									a(href="") Terms and Conditions
+							+btn-theme-lg("btn-c-primary btn-block","Register")
+	//=== signup account end here ====

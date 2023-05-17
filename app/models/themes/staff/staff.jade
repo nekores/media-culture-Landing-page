@@ -1,0 +1,25 @@
+mixin staffnew()
+	section&attributes(attributes).staff
+		.container
+			.row
+				- imgmedical=["medical/doc/22.jpg", "medical/doc/11.jpg","medical/doc/33.jpg","medical/doc/44.jpg"]
+				- doctorname=['GAVIN BURCHALL',"MARTIN JOHN","ANJUM MONA","SHERIA" ]
+				- specialist = ['Diabetologist','Orthotist','phychetratist','prosthtic']
+				for i in [0,1,2,3]
+					.col-md-3.col-sm-6.pv30
+						.img-box-medical.text-center
+							figure.gallery
+								img(src="img/#{imgmedical[i]}" class="img-responsive")
+								figcaption
+									.table-custom
+										.table-middle-row-custom
+											a.no-outline(href="img/#{imgmedical[i]}")
+												+icon-fa('fa-link','icon-md icon-frame-primary rounded-circle ma')
+							.img-content.pv30
+								h5.ph20.pv10 #{specialist[i]}
+								h4 #{doctorname[i]}
+								p.ph20.staff-para.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor.
+								a.no-dac(href="#") Read More
+									span.fa.fa-angle-right.pl30

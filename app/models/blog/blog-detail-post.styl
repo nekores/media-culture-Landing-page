@@ -1,0 +1,141 @@
+.blog-detail
+    .left-alignment
+        float left
+        .quote-post
+            &:before
+                content "\f10d"
+                position absolute
+                color darken(white, 60%)
+                font-style italic
+                font-family fontAwesome
+                font-size 17px
+                padding-left 20px
+                // padding-top 40px
+            blockquote
+                border-left: 5px solid
+                border-color darken(white, 60%)
+                p.quotefull
+                    padding-top 10px
+                    font-style italic
+                    color darken(white, 95%)
+                    font-size 18px
+                p.quoteleft
+                    padding-top 10px
+                    font-style italic
+                    color darken(white, 95%)
+                    font-size 18px
+                    
+    
+        .img-post
+            padding-top 0px
+            margin-top 15px
+            margin-right 25px
+            float left
+            
+        
+        li
+            p
+                padding-top 0px
+                
+            // float left
+            // width 100%
+            a
+                img
+                    width 300px
+                    height 250px
+        
+    .right-alignment
+        float left
+        .quote-post
+            p.quote
+                color red
+                pull right
+                padding-top 0px
+                margin-top 15px
+                margin-left 15px
+                margin-right 10px
+                float right
+        .img-post
+            pull right
+            padding-top 0px
+            margin-top 15px
+            margin-left 15px
+            margin-right 10px
+            float right
+        li
+            p
+                padding-top 0px
+                
+            // float left
+            // width 100%
+            a
+                img
+                    width 300px
+                    height 250px
+    
+    .blog-comments
+        .bd-cmnt
+            margin-right 40px
+            h2
+                text-transform capitalize
+                // margin 30px 0px
+                padding-left 15px
+        ul
+            // margin 0
+            // padding 0
+            li
+                list-style none
+                float left
+                
+                .blog-admin-comment
+                    float left
+                    width 100%
+                    margin-bottom 50px
+                    position relative
+                    figure
+                        float left
+                        width 92px
+                        img
+                            width 100%
+                            height auto
+                            border-radius 6px
+                    .blog-admin-comment-para
+                        float none
+                        padding 5px 0 0 110px
+                        
+                        p
+                            color darken(white, 70%)
+                            line-height 22px
+                            font-size 15px
+                        ul
+                            padding 0px
+                            float left
+                            
+                            li
+                                float left
+                                position relative
+                                line-height 15px
+                                a
+                                    border-left 1px solid #333
+                                    text-decoration none
+                                    display block
+                                    color #333
+                                    padding 0px 18px
+                                    
+                                    h5
+                                        font-weight 500
+                            .date-blog
+                                font-weight 500
+                            li:first-child a
+                                border-left none
+                                padding-left 0px
+                        a
+                            float right
+                            padding 0px 20px
+                            text-transform capitalize
+                            text-decoration none
+                            i
+                                padding-right 5px
+    .blog-comment
+        h2 
+            text-transform capitalize

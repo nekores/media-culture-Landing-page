@@ -1,0 +1,41 @@
+mixin brands-6-grid()
+    // === brands6 grid start here ===
+    section()&attributes(attributes)
+        .container
+            .row
+                .col-md-12
+                    if block
+                        block
+                    else
+                        h3.comp-titles brands grid: 6 columns
+                        +brands-6-colum("brands","imgclasses")
+        // === brands6 grid end here ===
+        hr.mt70
+
+                    
+mixin brands-5-grid()
+    +brands-6-grid().brands-5-grid&attributes(attributes)
+        // === brands5 grid start here ===
+        h3.comp-titles brands grid: 5 columns
+        +brands-5-colum("brands","imgclasses")
+        // === brands5 grid end here ===
+
+mixin brands-4-grid()
+    +brands-6-grid().brands-6-grid&attributes(attributes)
+        h3.comp-titles brands grid: 4 columns
+        +brands-4-colum("brands","imgclasses")
+mixin brands-owl()
+    +brands-6-grid().brands-owl-slider&attributes(attributes)
+        // === brand owl slider maxin start here    
+        h3.comp-titles brands owl slider
+        +brands-owl-carosel("brands","imgclasses")
+
+        // === brand owl slider maxin end here    
+
+mixin brands-owl-swiper()
+    +brands-6-grid().brands-owl-slider&attributes(attributes)
+        // === brand owl slider swiper maxin start here    
+        h3.comp-titles brands owl swapper
+        +brands-owl-carosel-swiper("brands","imgclasses")
+
+        // === brand owl slider swiper maxin end here    

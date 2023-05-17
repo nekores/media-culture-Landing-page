@@ -1,0 +1,6 @@
+mixin navbar-simple(links)
+	+navbar()&attributes(attributes).navbar-default
+		ul.nav.navbar-nav.navbar-right
+			for i in ['home','portfolio', 'faqs', 'testimonials', 'contact']
+				li(class=this_page == i ? 'active' : '')
+					a(href=i + '.html') #{i}

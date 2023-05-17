@@ -1,0 +1,35 @@
+mixin contact-makustravel(sec_desc, sec_title)
+	div()&attributes(attributes)#contact-makutravel.contact-makutravel
+		//- +widget3()
+		.alpha
+			.container
+				.row
+					.col-md-12
+						+makutravel-section_title("we love to hear from you","contact", "travelon")
+				.col-md-8
+					.contain
+						.row
+							form
+								.col-md-6.mt40
+									.contact-parent
+										.contact-field-heads
+											h6.clr-primary Your Name
+										input(type="text" role="text" class="form-control bg-clr-glass  bg-transparent").p20.no-bdr-rad
+								.col-md-6.mt40.mb20
+									.contact-parent
+										.contact-field-heads
+											h6.clr-primary Your Email
+										input(type="email" role="email " class="form-control bg-clr-glass bg-transparent").p20.no-bdr-rad
+								.col-md-12.mb20
+									.contact-parent
+										.contact-field-heads
+											h6.clr-primary Message
+										textarea(type="text" rows="6" class="form-control bg-clr-glass bg-transparent").p20.no-bdr-rad
+								.col-md-6.mb30
+									button.btn.btn-m-primary.btn-lg.no-bdr-rad(type="submit" value="submit") Send Message
+										span.pl10.fa.fa-send
+				.col-md-4.mt60.mb20
+					.map
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="242px" src="https://maps.google.com/maps?hl=en&q=gilgit paksita&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://buyproxies.io/">buyproxies.io</a></small></div></iframe>
+					.map-thumbnail-view.mb30.mt15
+						+modal3()

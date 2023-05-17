@@ -1,0 +1,19 @@
+include ../../config/jade.jade
+include ../includes.jade
+doctype html
+html(lang="en")
+	head
+		block title
+			title #{theme_name}
+
+		// CSS INCLUDES
+		for i in css
+				link(type='text/css' rel ='stylesheet' href = i)
+			
+	// === START : BODY ===
+	body
+		block main_content
+		
+		// JS INCLUDES
+		for s in js
+			script(type='text/javascript' src=s)

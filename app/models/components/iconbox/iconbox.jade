@@ -1,0 +1,212 @@
+
+mixin iconbox-1(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-1
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-1-inner
+					.ib-icon-1.pull-left
+						+fa_icon("icon-lg icon-frame-primary")
+					.text.mt60
+						.title.text-center.pv10.ls2.fw600
+							+random_single_string("upcase ls1")
+						.description.text-center
+							p.lh20.ls1.lw2.p10.mb20.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-1.text-center
+							a.no-decoration(href="#") Read More...
+								span.fa.fa-angle-right
+			- i = i + 1
+
+	//=== icon box end here ===
+
+mixin iconbox-2(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-2
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-2-inner
+					.ib-icon-2
+						ul.list-inline
+							li
+								+fa_icon("icon-lg icon-frame-inverse-primary fs30")
+							li
+					.text.m20
+						.title.text-center.pv10.fw600
+							+random_single_string("upcase ls1")
+						.description.text-center
+							p.lh20.ls1.lw2.p10.mb20.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-2.text-center.mb30.ls1
+							a.no-decoration(href="#") Read More...
+								span.fa.fa-angle-right
+			- i = i + 1
+	//=== icon box end here ===
+
+mixin iconbox-3(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-3
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-3-inner
+					.ib-icon-3.pull-right
+						+fa_icon("icon-lg icon-frame-primary")
+					.text.mt60
+						.title.text-center.pv10.ls2.fw600
+							+random_single_string("upcase ls1")
+						.description.text-center
+							p.lh170.ls1.p10.mb40.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-3.text-center
+							a.no-decoration(href="#") Read More...
+								span.fa.fa-angle-right
+			- i = i + 1
+	//=== icon box end here ===
+
+mixin iconbox-4(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-4
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-4-inner
+					.ib-icon-4.text-center
+						+fa_icon("icon-lg icon-frame-inverse-primary fs30")
+					.text.m20
+						.title.text-center.pv10.fw600
+							+random_single_string("upcase ls1")
+						.description.text-center
+							p.lh20.ls1.lw2.p10.mb20.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-4.text-center.mb30.ls1
+							a.no-decoration(href="#") Read More...
+								span.fa.fa-angle-right
+			- i = i + 1
+
+	//=== icon box end here ===
+
+mixin iconbox-5(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-5
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-5-inner.text-center
+					.ib-icon-5
+						+fa_icon("icon-lg icon-frame-primary rounded-circle ma","")
+					.text.mt30
+						.title.pv10.ls2.fw600
+							+random_single_string("upcase ls1")
+						.description.text-center
+							p.lh-p150.ls1.p10.mb40.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+						.ib-button-5
+							a.no-decoration(href="#") Read More
+								span.fa.fa-angle-right.pl40
+			- i = i + 1
+	//=== icon box end here ===
+
+
+mixin iconbox-6(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-6
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-6-inner
+					.ib-icon-6
+						+fa_icon("icon-lg icon-frame-primary fs30 ma")
+					.slide
+					.slide1
+					.text.m20
+						.title.text-center.pv10.fw600
+							+random_single_string("upcase ls1")
+						.description.text-center
+							p.lh20.ls1.lw2.p10.mb20.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-6.text-center.mb30.ls1
+							a.no-decoration(href="#") Read More...
+								span.fa.fa-angle-right
+			- i = i + 1
+	//=== icon box end here ===
+//- CONSTRUCTION ICON BOX1
+mixin iconbox-7(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-7
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-7-inner
+					.ib-icon-7.text-center
+						+flat_icon("icon-frame-inverse-primary icon-flat-lg")
+					.text.m20
+						.title.text-center.mt70.fw600
+							+random_single_string("upcase ls1")
+						.description.text-center
+							p.lh20.ls1.lw2.p10.mb60.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-7.text-center.mb30.ls1
+							+btn-theme-lg("btn-default no-bdr-rad pv10","learn more")
+			- i = i + 1
+	//=== icon box end here ===
+//- CONSTRUCTION ICON BOX2
+mixin iconbox-8(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-8
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-8-inner
+					.ib-icon-8.text-center.ma
+						+flat_icon("icon-frame-primary icon-flat-lg ma")
+					.text.m20.text-center
+						.title.text-center.fw600.fs-title.ls1.clr-primary
+							+random_single_string("upcase")
+						.title-slogan.text-center
+							p.
+								Anabulem antr esta agoe ait
+						.description.text-center
+							p.lh20.ls1.lw2.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-8.ls1.p10
+							button(class="btn btn-primary btn-md").pos-r Read more
+								span.pos-a.pl10.fa.fa-angle-double-right
+			- i = i + 1
+	//=== icon box end here ===
+
+
+//- CONSTRUCTION ICON BOX2
+mixin iconbox-9(classes, max, folder, imgclasses)
+	//=== icon box start here ===
+	div()&attributes(attributes).iconbox-9
+		- i = 1
+		while i <= max
+			div(class=classes)
+				.iconbox-9-inner.pv40
+					.ib-icon-9.text-center.ma
+						i.flaticon-clock
+					.text.m20.text-center
+						.title.text-center.fw600.fs-title.ls1.clr-primary
+							+random_single_string("upcase")
+						.title-slogan.text-center
+							p.
+								Anabulem antr esta agoe ait
+						.description.text-center
+							p.lh20.ls1.lw2.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor.
+						.ib-button-9.ls1.p10
+							button(class="btn btn-primary btn-md").pos-r Read more
+								span.pos-a.pl10.fa.fa-angle-double-right
+			- i = i + 1
+	//=== icon box end here ===

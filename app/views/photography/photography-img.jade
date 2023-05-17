@@ -1,0 +1,63 @@
+mixin photographystaticimg()
+    +static-photography()
+
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+
+                    +photopassion()
+                    +testimonial1()
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +whatwedo()
+                    
+                    +countup2()
+
+    section
+        .container-fluid.no-padding
+            .col-md-12
+                h2.section-titles.text-center.dark.mb60 our 
+                    span portfolio
+            .col-md-12.no-padding
+
+                    +portfolio1()
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+
+                    +peoplesay1()
+    section.pricetables
+        .container
+
+            .row
+                .col-md-12
+                    h2.section-titles.text-center.dark price 
+                        span packages
+                .col-md-12.mt70.mb100
+                    +price3()
+    
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +contactform1()
+    section
+        - post =["","event expert","photographer expert","bridal shoot expert"]
+        .container
+            .col-md-12
+                h2.section-titles.text-center.dark about 
+                    span us
+            .col-md-12
+
+                    +about-us(post)
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +footer-2()
+    include ../../models/back-to-top/back-to-top.jade
+    include ../../models/loder/loder.jade

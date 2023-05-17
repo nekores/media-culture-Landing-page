@@ -1,0 +1,153 @@
+mixin circle-glass-icon(icons,title,subtitle)
+    // === Count Up Starts here === 
+    i.glass-icon.fa(class=icons)
+    h3.counter  #{title}
+    p #{subtitle}
+    // === Count Up end here === 
+
+
+mixin counter-2(countclass,title,subtitle)
+    .counter2
+        .countsup(class=countclass)
+            h3.counter  #{title}
+            p #{subtitle}
+
+mixin counter-3(icons,title,subtitle)
+    .counter-box1
+        i.glass-icon.fa(class=icons)
+        p #{subtitle}
+        h3.counter  #{title}
+mixin counter-box2(icons,title,subtitle)
+    .counter-box2.counter-box1
+        i.glass-icon.fa(class=icons)
+        p #{subtitle}
+        h3.counter  #{title}
+mixin counstruction-counter(icons,title,subtitle)
+    .counter-boxflat.counter-boxflat.flat-icon
+        i.glass-icon(class=icons)
+        p #{subtitle}
+        h3.counter  #{title}
+mixin enthink-counter(icons,title,subtitle)
+    .counter-boxflat-enthink.counter-boxflat.flat-icon
+        i.glass-icon(class=icons).rounded-circle.pv35.ph10
+        p.pt30.pb10 #{subtitle}
+        h3.counter  #{title}
+
+
+
+
+mixin countup1()
+    // === fullwidth counter start here ===
+    section().countup1&attributes(attributes)
+        .counter-bg-image
+            .bg-alpha
+                 .container
+                    .row.mv50
+                        .col-md-10.col-md-offset-1.no-padding
+                            if block
+                                block
+                            else
+                                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                                    +circle-glass-icon('fa-users','200' ,'happy clients')
+                                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                                    +circle-glass-icon('fa-code','1469','line of code')
+
+                                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                                    +circle-glass-icon('fa-facebook','1200','facebook')
+
+                                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                                    +circle-glass-icon('fa-twitter','3045','twitter')
+    // === fullwidth counter end here ===
+
+
+mixin countup2()
+    // === fullwidth counter 2 start here ===
+    +countup1().countup2#counter2&attributes(attributes)
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            +counter-2('','10' ,'Year of Experiences')
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            +counter-2("contbdr",'469','Happy Clients')
+
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            +counter-2('contbdr','1753','Seasons of photographed')
+
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            +counter-2('contbdr','6735','Comercials photographs')
+
+
+
+        // === fullwidth counter 2 end here ===
+
+mixin countup3()
+    // === fullwidth counter 3 start here ===
+    .section()&attributes(attributes)
+        .container
+            .col-md-8
+
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-3('fa-diamond','10' ,'projects')
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-3('fa-users','469','Clients')
+
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-3('fa-cloud-download','1753','downloads')
+
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-3('fa-share','6735','shares')
+    // === fullwidth counter 3 end here ===
+mixin countup4()
+    // === fullwidth counter 4 start here ===
+    .section
+        .container
+            .col-md-8
+
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-box2('fa-diamond','10' ,'projects')
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-box2('fa-users','469','Clients')
+
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-box2('fa-cloud-download','1753','downloads')
+
+                .col-md-3.col-lg-3.col-sm-6.col-xs-12
+                    +counter-box2('fa-share','6735','shares')
+    // === fullwidth counter 4 end here ===
+mixin countup5()
+    // == fullwidth counter 5 start here ===
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-construction14','10' ,'projects')
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-handy','469','Clients')
+
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-triangular46','1753','downloads')
+
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-hammer26','6735','shares')
+
+mixin countup6()
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-construction14','10' ,'projects')
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-handy','469','Clients')
+
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-triangular46','1753','downloads')
+
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +counstruction-counter('flaticon-hammer26','6735','shares')
+    // === fullwidth counter 5 end here ===
+mixin enthink-counter-1()
+    // ===  enthink counter start here ===
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +enthink-counter('flaticon-construction14','10' ,'projects')
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +enthink-counter('flaticon-handy','469','Clients')
+
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +enthink-counter('flaticon-triangular46','1753','downloads')
+
+    .col-md-3.col-lg-3.col-sm-6.col-xs-12
+        +enthink-counter('flaticon-hammer26','6735','shares')
+
+    // ===  enthink counter end here ===

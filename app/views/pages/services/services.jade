@@ -1,0 +1,97 @@
+mixin services-page1()
+	section
+		.container
+			.row.mv60
+				.col-md-12
+					.text-center
+						+heading('our','services','people says about us')
+					.mt30
+						+iconbox-5('col-md-4 col-sm-4 col-xs-12 mv40', 3)
+
+		+countup1()
+		+call-out-btn-right()
+		+footer-2()
+
+mixin services-page2()
+	section
+		.container
+			.row.mv60
+				.col-md-12
+					.text-center
+						+heading('our','services','people says about us')
+					.mt30
+						+iconbox-7('col-md-4 col-sm-4 col-xs-12 mv40', 6)
+
+		+countup2()
+		.mt70
+			.text-center.mb30
+				+heading('recent','work','we do great design')
+			+portfolio1()
+		+call-out-btn-right()
+		+footer-2()
+
+
+
+
+mixin services-page3()
+	section
+		.container
+			.row.mv60
+				.col-md-12
+					.text-center
+						+heading('our','services','people says about us')
+					.mt30
+						+iconbox-2('col-md-4 col-sm-4 col-xs-12 mv40', 6)
+
+		+countup2()
+	section
+		.container
+			.row.mv70
+				.col-md-12.no-padding
+					.text-center.mb40
+						+heading('about','us','who we are')
+				.col-md-6
+					+collapse2()
+				.col-md-6
+					+smallest-progressbars("col-md-4","html - 90%","90%")
+					+smallest-progressbars("col-md-4","css - 80%","80%")
+					+smallest-progressbars("col-md-4","jqure - 30%","30%")
+					+smallest-progressbars("col-md-4","photoshop - 20%","20%")
+					+smallest-progressbars("col-md-4","php - 50%","50%")
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+testimonial1()
+			+brands-5-colum("brands")
+		+footer-2()
+
+
+
+mixin services-page4()
+	//- +slider()
+	section
+		.container
+			.row.mv60
+				.col-md-12
+					.text-center
+						+heading('our','services','people says about us')
+					.mt30
+						+iconbox-3('col-md-4 col-sm-4 col-xs-12 mv40', 3)
+
+		+countup1()
+		.mv70
+			.text-center.mb30
+				+heading('recent','news','')
+	section
+		.container
+			.row
+				.col-md-12
+					+bloggrid-3-column("col-md-4 col-sm-4 col-xs-12", 3)
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+testimonial1()
+			+brands-owl-carosel-swiper("brands")
+		+footer-2()

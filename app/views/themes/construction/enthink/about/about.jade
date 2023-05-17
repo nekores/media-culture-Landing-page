@@ -1,0 +1,10 @@
+mixin about-enthink()
+	div()&attributes(attributes)#about-enthink.about-enthink
+		.container-fluid
+			.row
+				.col-md-12
+					+section_title("who we are","", "about us")
+				.col-md-12.mb10.pv30
+					+construction-iconboxx1()
+mixin construction-iconboxx1()
+	+iconbox-8('col-md-4 col-sm-4 col-xs-12 mv20', 3)&attributes(attributes)

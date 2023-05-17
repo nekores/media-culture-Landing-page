@@ -1,0 +1,89 @@
+-t = ['fa-facebook', 'fa-twitter', 'fa-google-plus', 'fa-youtube', 'fa-viber', 'fa-instagram', 'fa-linkedin'];
+mixin footer-2()
+	// === start footer section ===
+	section.page-footer2
+		.bg-cover.bg-center(style="background: url(img/footer/footer.png)").bg-fixed
+			.bga-black-8
+				.container
+					.row.m-t-30
+						.col-md-3.col-sm-6
+							.col-md-12
+								div.mv25
+									h4.title About us
+									.separater-100
+									.mt30
+									p.para.
+										Lorem ipsum dolor sit amet, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+									p.para.
+										Eiusmod.ullamco laboris nisi ut aliquip.
+						.col-md-3.col-sm-6
+							.col-md-12
+								div.mv25
+									h4.title our portfolio
+									.separater-100
+									.mt20
+							.gallery
+								ul.img-footer.list-inline
+									for i in [1,2,3,4,5,6,7,8]
+										li
+											a(href="img/work/" + i + ".jpg")
+												img(src="img/work/" + i + ".jpg" class="img-responsive")
+						.col-md-3.col-sm-6
+							.col-md-12
+								div.mv25
+									h4.title Recent Posts
+									.separater-100
+									.mt30
+									div.links
+										ul.list-inline.text-lowercase
+											li 
+												a(href="#") The Wonderful Art Crafts
+											<br>
+											li 
+												a(href="#") Paypal
+											<br>
+											li 
+												a(href="#") The Thunderstorm Company
+											<br>
+											li 
+												a(href="#") The Miserable Town
+											<br>
+											li 
+												a(href="#") The More You do You win
+
+						.col-md-3.col-sm-6
+							.col-md-12
+								div.mv25
+									h4.title Address
+									.separater-100
+									.mv30
+									.adress-link
+										p.addr 1234 north main street
+										p.phone Phone: 
+											span.
+												123-456-7889
+										p.fax Fax
+											span.
+												+123-456-7889
+
+										p.mail email: 
+											span.
+												some@gmail.com
+				.container
+					.row.copysection
+						.col-md-6.col-sm-6.col-xs-12
+							.col-md-12.col-sm-12
+								p.copyright &copy; Copyright 2015 | Uconnect
+						.col-md-6.col-sm-6
+							.col-md-12.col-sm-12
+								div.social-group
+									a.social-icon(href="#")
+										i.fa.fa-facebook
+									a.social-icon(href="#")
+										i.fa.fa-google-plus
+									a.social-icon(href="#")
+										i.fa.fa-twitter
+									a.social-icon(href="#")
+										i.fa.fa-skype
+		// === end footer section ===

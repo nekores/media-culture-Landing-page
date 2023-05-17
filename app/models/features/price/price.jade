@@ -1,0 +1,97 @@
+mixin prices(classes,title,dollar,month,para1,para2,para3,para4,para5,para6)
+	//=== price table start here ===
+	div(class=classes)
+		.pricing-table-comp-1
+			.title
+				h2 #{title}
+			.circle
+				h3 #{dollar}
+					small #{month}
+			.para
+				hr(style="margin-top:0px;")
+				p #{para1}
+				hr
+				p #{para2}
+				hr
+				p #{para3}
+				hr
+				p #{para4}
+				hr
+				p #{para5}
+				hr
+				p #{para6}
+				hr
+			+btn-theme-lg("btn-c-primary btn-block","Buy Now")
+	//=== price table end here ===
+mixin prices22(classes,title,sup,amount,month,icon,discription,icon1,discription1,icon2,discription2,icon3,discription3,icon4,discription4)
+	//=== price table start here ===
+	div(class=classes)
+		.pricing-table-comp-2
+			.title
+				h2 #{title}
+			.amount-dis
+				h2
+				sup #{sup}&nbsp;
+				|#{amount}
+				sub #{month}
+			.text-center.mt20
+				+btn-theme-md-inv("btn-c-primary","And Get Free Month")
+		.sec-block
+			ul.list-inline
+				li
+					i.fa(class=icon)
+				li
+					p #{discription}
+			hr
+			ul.list-inline
+				li
+					i.fa(class=icon1)
+				li
+					p #{discription1}
+			hr
+			ul.list-inline
+				li
+					i.fa(class=icon2)
+				li
+					p #{discription2}
+			hr
+			ul.list-inline
+				li
+					i.fa(class=icon3)
+				li
+					p #{discription3}
+	//=== price table end here ===
+mixin prices33(classes,title,amount,icon,bold,light,bold1,light1,bold2,light2,bold3,light3,individual)
+	//=== price table start here ===
+	div(class=classes)
+		.pricing-table-comp-3
+			.main-head
+				h2 #{title}
+				strong #{amount}
+			.icon
+				i.fa(class=icon)
+			.discription
+				ul.list-inline
+					li
+						strong #{bold}
+					li
+						p #{light}
+				ul.list-inline
+					li
+						strong #{bold1}
+					li
+						p #{light1}
+				ul.list-inline
+					li
+						strong #{bold2}
+					li
+						p #{light2}
+				ul.list-inline
+					li
+						strong #{bold3}
+					li
+						p #{light3}
+				p #{individual}
+			.text-center.mv20
+				+btn-theme-lg("btn-c-primary","Sign Up")
+	//=== price table end here ===

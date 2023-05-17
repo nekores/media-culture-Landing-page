@@ -1,0 +1,36 @@
+mixin login-account2()
+	//=== login account start here ===
+	.col-md-6.col-md-offset-3
+		.reg-page&attributes(attributes)
+			form(role="form" method="get") 
+				.reg-header
+					h2 Register a new account
+					p Already Signed Up? Click 
+						a(href="") Sign In 
+						span to login your account.
+				hr
+				label First Name
+				input.mb15(type="text" class="form-control" required)
+				label Last Name
+				input.mb15(type="text" class="form-control" required)
+				label Email Address
+				input.mb15(type="Email" class="form-control" required)
+				.row
+					.col-sm-6
+						label Password
+						input(type="password" class="form-control" required)
+					.col-sm-6
+						label Confirm Password
+						input(type="password" class="form-control" required)
+				hr
+				.row
+					.col-lg-6
+						.checkbox
+							label 
+								input(type="checkbox" required)
+								|I read 
+								a(href="") Terms and Conditions
+					.col-lg-6
+						.text-right
+							+btn-theme-md("btn-c-primary","Submit")
+	//=== login account end here ===

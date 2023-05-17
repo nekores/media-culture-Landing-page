@@ -1,0 +1,39 @@
+.no-bdr-rad
+    border-radius 0px !important
+.btn
+    text-transform capitalize !important
+.btn-transparent
+    color #777
+    background-color transparent
+    border-radius 0px
+    border-color #777
+.btn-xlg
+    padding 15px 50px
+    font-size 20px
+for name, value in settings.colors
+    .btn-c-{name}
+        background-color value
+        color #fff
+        position relative
+        border 1px solid value
+        transition all 0.5s
+        border-radius 0px
+        &:hover
+            background-color transparent
+            color value
+        &:focus
+            text-decoration none
+            color white
+            if(name != black)
+                outline none
+                outline-color darken(value, 20%)
+                background-color darken(value,20%)
+
+    &.inv
+        color #777
+        border-color #999
+        background-color transparent
+        &:hover
+            color #777
+            background-color value !important
+                

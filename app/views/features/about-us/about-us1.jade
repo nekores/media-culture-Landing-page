@@ -1,0 +1,33 @@
+//- about us1
+mixin about-us1()
+    +about-default("who we are", "about us")
+    +team-default("Behind Our Company", "Our Team")
+    //- +call-out-btn-right()
+    +footer-2()
+
+mixin about-us2()
+    +about-enthink()
+    +countup1()
+    section
+        .container
+            .row.mv70
+                .col-md-12.no-padding
+                    .text-center.mb40
+                        +heading('why','choose us','')
+                .col-md-6
+                    +collapse2()
+                .col-md-6
+                    +smallest-progressbars("col-md-4","html - 90%","90%")
+                    +smallest-progressbars("col-md-4","css - 80%","80%")
+                    +smallest-progressbars("col-md-4","jqure - 30%","30%")
+                    +smallest-progressbars("col-md-4","photoshop - 20%","20%")
+                    +smallest-progressbars("col-md-4","php - 50%","50%")
+    // GALLERY START HERE
+    //+gallery-enthink()
+    // features starts here
+    +features-enthink()
+
+    // team SECTION
+    +team-enthink()
+    +call-out-btn-right()
+    +footer-2()

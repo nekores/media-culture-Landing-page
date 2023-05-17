@@ -1,0 +1,42 @@
+
+//- navbar header mixin
+mixin navbar-header(target, include_brand)
+	div.navbar-header
+		button(type='button', class='navbar-toggle', data-toggle='collapse', date-target=target)
+			span(class='sr-only') Toggle navigation
+			if is_fa == true
+				span.fa.fa-bars
+			else
+				for i in [1,2,3]
+					span.icon-bar
+		if(include_brand == true)
+			a.navbar-brand(href= brand_link_active ? home-link : '#') #{navbar_brand}
+
+//- Layout for navbar. You can extend it if you want.
+mixin headered-navbar()
+	header()&attributes(attributes)
+		.container
+			.row
+				.col-xs-12.col-sm-12.col-md-2
+					if(brand_type == 'img')
+						a(href='#').navbar-brand
+							img(src= navbar_brand)
+					else
+						a(href='#').navbar-brand
+							|	#{navbar_brand}
+				.col-xs-12.col-sm-12.col-md-10
+					nav(class="navbar", role="navigation")
+						+navbar-header('.main-navbar')
+
+					.collapse.navbar-collapse.main-navbar
+							block
+mixin navbar()
+	nav(class="navbar", role="navigation")&attributes(attributes)
+		.container
+			+navbar-header('.main-navbar', true)
+			.collapse.navbar-collapse.main-navbar
+				block
+
+mixin navbar-nav-link(title)
+	li(class= title==current_page ? 'active' :'')
+		a()&attributes(attributes)

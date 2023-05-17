@@ -1,0 +1,643 @@
+//- APPBOX NAVBAR CSS
+.appbox-nvbar
+	.icon-bar
+		background-color white
+	
+	.navbar
+		transition 0.5s all ease-in
+		border none
+		&.navbar-tranglo
+			background-color transparent
+			height 72px
+			
+			.navbar-nav
+				margin-top: 19px;
+				transition 0.5s all ease-in				
+				li
+					a
+						font-size 14px
+						color #969696
+						padding-top: 7px;
+						padding-bottom: 7px;
+						padding-left 15px
+						padding-right 15px
+						border-radius 0
+						&:link, &:visited
+							letter-spacing 1px
+							color #333
+							text-transform uppercase
+							font-size 12px
+							transition 0.5s all
+							border-radius 0
+						&:hover, &:focus
+							background-color transparent
+							border-radius 0
+							color #333
+					&.active, a:visited
+						border-radius 300px
+						background-color primary
+						a
+							color white
+			// brand customization
+			.navbar-brand
+				img
+					top -52px
+					position relative	
+			// Navbar header
+			.navbar-header
+				height 100%
+				button
+					border-color white
+				.navbar-brand
+					position relative
+					top 25px
+					transition 0.5s all ease-in
+			&.affix
+				background-color white
+				transition 0.8s all
+				height 50px
+				border none
+				box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+				
+				.navbar-nav
+					transition 0.8s all
+					margin-top 8px
+					font-size 9px !important
+					li
+						transition 0.8s all
+						a
+							color #404040
+						&.active, a:visited
+							a
+								color white
+				.navbar-header
+					transition 0.8s all
+					border none
+					.navbar-brand
+						transition 0.8s all
+				.navbar-brand
+					transition 0.8s all
+					img
+						transition 0.8s all
+						top -45px
+						height 55px
+						position relative
+			
+
+			@media(max-width 767px)
+				.container
+					&, .col-xs-12, .row, [class ~="col-"], [class*=' col-'], .navbar-collapse
+						padding 0
+						margin 0
+					.navbar-nav
+						background-color #333
+						li
+							border-radius 0
+					.navbar-header
+						button
+							border-color primary
+							background-color primary
+							border-color primary
+				&.affix
+					.navbar-header
+						button
+							border-color primary
+							background-color primary
+							border-color primary
+							margin-top 8px
+					.navbar-nav
+						background-color #333
+						li
+							border-radius 0
+							a
+								background-color transparent
+				.navbar-header
+					border 0
+					.navbar-brand
+						display block
+						margin 0 auto
+						img
+							width: 138px;
+							top: -41px;
+					button
+						margin-top 20px
+						transition 0.5s all ease-in
+				
+				.navbar-nav
+					background-color rgb(128, 128, 128)
+					display block
+					margin 0 !important
+					width 100%
+					padding 10px
+					li
+						a
+							// background-color #8C272F
+							color white !important
+							&:hover
+								background-color transparent
+								border-radius 0
+							&:focus
+								background-color transparent
+						&.active, a:visited
+							border-left 1px solid white
+							background-color transparent
+							border-top 0
+							border-right 0
+							border-bottom 0
+
+//- APPBOX SLIDER CSS
+
+.mc_vegas_slider
+	position relative
+	width 100%
+	height 100%
+	.btn-c-primary
+		border-radius 300px
+	h2
+		text-align center
+		font-weight 500
+		font-size 68px
+		color #333
+		text-transform uppercase
+		
+		span
+			text-align center
+	hr
+		border 2px solid primary
+		width 10%
+	.btn-appbox
+		font-size: 19px;
+		margin-top 20px
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-transform uppercase !important
+		background-color: primary !important;
+		border-radius: 300px !important;
+		transition: 0.5s all ease-in-out;
+		color: #fff;
+		font-weight: 500
+		&:focus
+			background-color darken(primary, 20%)
+	@media(max-width 466px)
+		h2
+			font-size 35px
+
+//- APBOX ABOUT CSS
+.mc-about
+	background-attachment fixed !important
+	background-size cover
+	padding-bottom 60px
+	background-color #9C1521
+	.mc-section-title
+		.after-text
+			h2	
+				color white
+		.hr1
+			border-color white
+		.hr2
+			border-color white
+		p
+			color white
+			font-weight 100
+			font-size 16px
+			line-height 1.5
+			
+	.content
+		h2
+			font-size 29px
+			font-weight 400
+			margin-bottom 10px
+		hr
+			border: 1px solid white;
+			width: 12%;
+			margin-top: 20px;
+			margin-bottom: 16px;
+		p
+			font-size 16px
+			line-height 1.5
+			font-weight 100
+			color white
+		.btn-appbox
+			border-radius 300px
+			background-color white
+			color #333
+			&:hover
+				box-shadow inset 5px 1px 10px alpha(#333, 60%)
+	.icon-box
+		&:hover
+			transition 0.5s all ease-in-out
+			.icon
+				i
+					border-color primary !important
+					color primary !important
+		.icon
+			position relative
+			i
+				color alpha(#333, 60%)
+				margin-top 40px
+				margin-bottom 20px
+				font-size 30px
+				border-radius 50%
+				background-color transparent
+				transition 0.5s all ease-in-out
+				&::before
+					font-size 100px
+				&:hover
+					border-color primary !important
+					color primary !important
+					cursor pointer
+		.title
+			position relative
+			h5
+				font-size 20px
+				font-weight 300 !important
+				letter-spacing 0.8px
+				color #333
+				margin-top 5px
+				text-transform uppercase
+		.description
+			p
+				line-height 25px
+				font-weight 300
+				margin-top 15px
+				letter-spacing 0.8px
+				color #333
+.mc-services
+	// background url('../img/bg/5.jpg')
+	background-size cover
+	background-attachment fixed !important
+	padding-bottom 60px
+	cursor pointer
+	.icon-box
+		background-color rgba(175, 171, 171, 0.31)
+		background-size cover
+		background-attachment fixed !important
+		padding-bottom: 47px;
+		padding-top 15px
+		transition 0.5s all ease-in-out
+		border 1px solid transparent
+		a
+			color #333
+			display block
+			font-size 14px
+			line-height 28px
+			transition 0.5s all
+			&:hover
+				background-color primary
+				color white
+		&:hover
+			transform scale(1.1)
+			border-color primary
+			.icon
+				i
+					color primary
+		.icon
+			position relative
+			i
+				color alpha(#333, 60%)
+				margin-top 40px
+				margin-bottom 20px
+				font-size 30px
+				border-radius 50%
+				background-color transparent
+				transition 0.5s all ease-in-out
+				&::before
+					font-size 100px
+				&:hover
+					border-color primary !important
+					color primary !important
+					cursor pointer
+		.title
+			position relative
+			h5
+				font-size 25px
+				font-weight 300 !important
+				letter-spacing 0.8px
+				color #333
+				margin-top 5px
+				// background red
+				// margin-bottom 10px
+				text-transform uppercase
+			hr
+				border: 1px solid #842129;
+				width: 12%;
+				margin-top: 5px;
+				margin-bottom: 14px;
+		.description
+			p
+				line-height 25px
+				font-weight 300
+				margin-top 15px
+				letter-spacing 0.8px
+				color #333
+//- APPBOX WORK CSS
+.appbox-work
+	// background url('../img/bg/6.jpg')
+	background-size cover
+	background-attachment fixed !important
+	padding-bottom 60px
+	// mixit up
+	#container1
+		nav
+			.nav
+				margin-bottom 30px
+				padding 0
+				li
+					a
+						padding 10px
+						background-color grey
+						color white
+						transition 0.5s all
+						border-radius 300px
+						&.active
+							background-color primary
+							color white
+							cursor pointer !important
+						&:hover
+							background-color lighten(primary,20%)
+							color white
+							cursor pointer !important
+							text-decoration none
+						&:focus , &:visited, &:active
+							box-shadow none
+							text-decoration none
+							outline 0 none
+		figure
+			position relative
+			overflow hidden
+			figcaption
+				transition 0.5s all
+				position absolute
+				background-color alpha(#333, 30%)
+				height 100%
+				width 100%
+				top 0
+				left 0
+				opacity 0
+			.figcaption1
+				position absolute
+				background-color primary
+				height 100%
+				width 60px
+				top 0
+				left -100%
+				opacity 0
+				transition 0.9s all
+			.figcaption2
+				position absolute
+				height 50%
+				width 50%
+				top 0
+				left 0
+				opacity 0
+				transition 0.5s all
+				i
+					color white
+					width 100%
+					texrt-align center
+					
+			&:hover
+				figcaption
+					opacity 1
+				.figcaption1
+					opacity 1
+					left 0
+				.figcaption2
+					opacity 1
+					left 0
+	.share-button
+		background-color transparent
+		border-color transparent
+		&:focus
+			outline none
+		.entypo-export
+			&::before
+				color red
+				background-color transparent
+			span
+				display none
+				
+				
+
+//- APPBOX CONTACT CSS
+.mc-contact
+	// background url('../img/bg/4.jpg')
+	background-size cover
+	background-attachment fixed !important
+	padding-bottom 60px
+	form
+		.input-group
+			width 100%
+		label
+			width 100%
+		.form-control
+			border 1px solid darken(white, 30%)
+			// background url('../img/bg/5.jpg')
+			background-size cover
+			background-attachment fixed !important
+			border-radius 0
+			&:focus
+				border-color primary
+	
+		.btn-appbox
+			margin-top 20px
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			/* box-shadow: inset 0 3px 5px rgba(0,0,0,0.3); */
+			background-color: primary !important;
+			border-radius: 300px !important;
+			transition: 0.5s all ease-in-out;
+			color: #fff;
+			font-weight: 300;
+		input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+			color #333
+	.address
+		margin-top 10px
+		h4
+			
+.mc-footer
+	// background: url('../img/travel/makutravel/background/0.jpg')
+	background-attachment fixed
+	background-size cover
+	background-position center
+	background-color #9c1521
+	background-repeat non-repeat
+	.col-md-4th
+		width: 25%;
+		margin-left: 48px;
+		float: left;
+		margin-right: 49px;
+	@media(max-width: 1199px)
+		.col-md-4th
+			margin-left: 40px;
+			margin-right: 40px;
+	@media(max-width: 991px)
+		.col-md-4th
+			width 100%
+			margin-left: 0px;
+			margin-right: 0px;
+	.partition1
+		.head
+			text-transform uppercase
+			padding-left -40px
+			color white
+			font-weight 500
+			font-size 14px
+		.line
+			hr
+				border-top 1px solid #A5A2A2
+				width 10%
+				margin 0
+				padding-bottom 10px
+		.para
+			line-height 20px
+			color white
+			font-size 14px
+		
+		ul.fair_price_list
+			list-style none
+			li
+				span
+					font-size 13px
+					text-transform uppercase
+					color white
+					font-size 20px
+					transition 0.5s all
+					a
+						padding-left 5px
+						font-size 14px
+						transition 0.5s all
+						color white
+				&:hover
+					span
+						color darken(white, 40%)
+						a
+							color darken(white, 40%)
+				hr
+					border-color #A5A2A2
+					margin-top 0
+					margin-bottom 10px
+				p
+					line-height 20px
+					color #CCC8C8
+					text-transform lowercase
+					font-size 14px
+		
+	.footer-text
+		h5
+			font-size 14px
+			color #333
+			span
+				font-weight 600 !important
+@media(max-width 400px)
+	.mc-footer
+		audio
+				width: 254px;
+
+.mc-section-title
+	padding-top 60px
+	margin-bottom 40px
+	.before-text
+		position relative
+		left 10px
+		top -15px
+		h2
+			font-size 15px
+			font-weight 600
+			letter-spacing 0.8px
+			color primary
+			text-shadow: 1px 1px 5px #333;
+			
+			text-transform uppercase
+	.after-text
+		h2
+			font-size 55px
+			font-weight 300
+			letter-spacing 0.8px
+			color #333
+			text-transform uppercase
+	.hr1
+		width 10%
+		border 1px solid primary
+	.hr2
+		width 8%
+		margin-top -16px
+		border 1px solid primary
+	p
+		font-size: 19px;
+		line-height: 24px;
+		font-weight 100
+		// letter-spacing: 1.5px;
+	@media(max-width 350px)
+		.after-text
+			h2
+				font-size 37px
+
+
+//- BUTTON APPBOX
+.btn-appbox
+	padding-left 25px
+	padding-right 25px
+	padding-top 15px
+	padding-bottom 15px
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.300);
+	background-color primary
+	border-radius 0
+	transition 0.5s all ease-in-out
+	color white
+	font-weight 300
+	&:hover, &:visited, &:active
+		color white
+		background-color darken(primary, 15%)
+.btn-appbox-glass
+	padding-left 25px
+	padding-right 25px
+	padding-top 15px
+	padding-bottom 15px
+	background-color transparent
+	border 1px solid primary
+	border-radius 0
+	transition 0.5s all ease-in-out
+	color primary
+	font-weight 300
+	&:hover
+		box-shadow: inset 0 3px 5px rgba(0,0,0,.300);
+		background-color primary
+		color white
+.btn-appbox-icon
+	border none
+	letter-spacing 1.5px
+	padding-left 25px
+	padding-right 25px
+	padding-top 15px
+	padding-bottom 15px
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.300);
+	background-color primary
+	border-radius 0
+	color white
+	font-weight 300
+	transition 0.5s all ease-in-out
+	&:hover, &:visited, &:active, &:focus
+		color white
+		background-color lighten(primary, 15%)
+.btn-appbox-icon-glass
+	padding-left 25px
+	padding-right 25px
+	padding-top 15px
+	padding-bottom 15px
+	background-color transparent
+	border 1px solid primary
+	transition 0.5s all ease-in-out
+	border-radius 0
+	color primary
+	font-weight 300
+	&:hover
+		box-shadow: inset 0 3px 5px rgba(0,0,0,.300);
+		background-color primary
+		color white
+.no-decoration
+	text-decoration none

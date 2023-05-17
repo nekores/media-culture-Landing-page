@@ -1,0 +1,44 @@
+-para1=["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut" , "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt" , "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor"]
+-title1 = ["wedding Expert", "event Expert" , "fashion Expert"]
+
+
+mixin testimonial1()
+	// === section testimonials starts here ===
+	section
+		.saying-people
+			.bg-alpha
+				.container
+					.row.m-v-50
+						.col-md-8.col-md-offset-2
+							div.owlCarousel(id="team")
+								for i in [0,1,2]
+									div.mv50
+										img(src="img/team/" + i + ".jpg").img-responsive.img-team
+										.client-content
+											p.team-para
+												i #{para1[i]}
+
+											h4.team-heading #{title1[i]}
+	// === section testimonials end here ===
+
+mixin testimonial2(testititle2)
+	// === section testimonials start here ===
+	section
+		.saying-people
+			.bg-alpha
+				.container
+					.row.m-v-50
+						.col-md-8.col-md-offset-2
+							div.owlCarousel(id="team")
+								for i in [0,1,2]
+									div.mv50
+										img(src="img/team/" + i + ".jpg").img-responsive.img-team
+										.client-content
+											p.team-para
+												i #{para1[i]}
+
+											h4.team-heading 
+												+random_name()
+
+
+	// === section testimonials end here ===

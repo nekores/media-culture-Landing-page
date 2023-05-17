@@ -1,0 +1,18 @@
+mixin appointment()
+	// appointment form start here
+	section&attributes(attributes).appointment-custom
+		form(role="form" method="get")
+			input.appoiment-form(type='text', placeholder="Name*" required)
+
+			input.appoiment-form(type='email', placeholder="Email*" required)
+		
+			input.appoiment-form(type='number', placeholder="Phone*" required)
+
+			input.appoiment-form(type='date' required)
+		
+			textarea.appoiment-form(type="text", placeholder="Message", rows="5" required)
+			.mt10.pull-right
+				.button-appointment
+				+btn-theme-md("btn-c-primary","MAKE AN APPOINTMENT")
+		
+		// appointment form ends here

@@ -1,0 +1,155 @@
+mixin footerpage()
+    +slider()
+    section
+        .container
+            .row.mv70
+                .text-center
+                    .col-md-12
+                        +heading('our','services','people says about us')
+                    .col-md-12
+                        +iconbox-5('col-md-4 col-sm-4 col-xs-12 mv40', 3)
+
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +call-out-btn-right-icon()
+    
+    +footer-1()
+
+
+
+
+mixin footerpage2()
+    +slider()
+    section
+        .container-fluid
+            .row.mt70
+                .text-center
+                    .col-md-12.no-padding
+
+                        +heading('our','portfolio','')
+                        .mt70
+                        +portfolio1()
+                    +call-out-btn-right-icon()
+    
+    +footer-2()
+
+
+
+
+
+mixin footerpage3()
+    +slider()
+    section
+        .container
+            .row.mv70
+                .text-center
+                    .col-md-12
+                        +heading('our','services','people says about us')
+                    .col-md-12
+                        +iconbox-5('col-md-4 col-sm-4 col-xs-12 mv40', 3)
+    section.medical-footer
+        .container
+            .row
+                .col-md-2
+                    .main-head.mt70
+                        h4.mb20 PATIENTS
+                        hr.w40
+                        +medical-footer()
+                .col-md-2
+                    .main-head.mt70
+                        h4.mb20 RESEARCH
+                        hr.w40
+                        +medical-footer1()
+                .col-md-3
+                    .main-head.mt70
+                        h4.mb20 EDUCATION
+                        hr.w40
+                        +medical-footer2()
+                .col-md-2
+                     .main-head.mt70
+                        h4.mb20 INSTITUTION
+                        hr.w40
+                        +medical-footer3()
+                .col-md-3
+                    .border4
+                        .main-head.mt100
+                            +medical-footer4()
+            hr
+    section.lower-footer
+        .container
+            .row
+                .col-md-9
+                    .row
+                        .col-md-5
+                            .row
+                                .col-md-4.no-padding.ml10
+                                    a(href="#") Privacy Policy |
+                                .col-md-4.no-padding
+                                    a(href="#") Terms of use |
+                                .col-md-3.no-padding
+                                    a(href="#") Sitemap |
+                        .col-md-7
+                .col-md-3
+                    .footer-para.no-padding.no-margin
+                        p For more information, please call us at
+                        P
+                            span(href="#").fa.fa-phone.pv10.inline-block.pr10
+                            a(href="#") +44-12-3456-7890
+                    +lower-footer()
+
+
+
+
+//- footer 4 construction  start here
+
+mixin footerpag4()
+    +slider()
+    section
+        .container
+            .row.mv70
+                .text-center
+                    .col-md-12
+                        +heading('our','services','people says about us')
+                    .col-md-12
+                        +iconbox-7('col-md-4 col-sm-4 col-xs-12 mv40', 3)
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +gallery-enthink()
+
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +call-out-btn-right-icon()
+    
+    +footer()
+
+//- footer 4 construction  end here
+
+mixin footerpag5()
+    +slider()
+    section
+        .container
+            .row.mv70
+                .text-center
+                    .col-md-12
+                        +heading('our','services','people says about us')
+                    .col-md-12
+                        +iconbox-2('col-md-4 col-sm-4 col-xs-12 mv40', 3)
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +features-enthink()
+
+    section
+        .container-fluid
+            .row
+                .col-md-12.no-padding
+                    +call-out-btn-right-icon()
+    
+    +footer-enthink()

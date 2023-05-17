@@ -1,0 +1,72 @@
+mixin enthink_navbar()
+	section()&attributes(attributes).navbar-enthink
+		.wrapper
+			// top bar starts
+			.topbar
+				.container
+					.row
+						// Contact and Address column starts
+						.col-md-6.col-sm-6.col-xs-6
+							.row
+								div(class='col-xl-4 col-md-12 col-sm-12 hidden-xs')
+									.contact
+										p.topbar-text
+											div(class="media media-left")
+												div.media-left
+													a(href="#")
+														+fa_icon("icon-sm icon-frame-inverse-primary rounded-circle fs30")
+												div(class="media-body")
+													//- .media-text.mt10
+													p.p1.clr-white.
+														CALL CENTER
+														
+													p.p2.clr-white.
+														+92(3457992873)
+											div(class="media media-left")
+												div.media-left
+													a(href="#")
+														+fa_icon("icon-sm icon-frame-inverse-primary rounded-circle fs30")
+												div(class="media-body")
+													//- .media-text.mt10
+													p.p1.clr-white.
+														email
+														
+													p.p2.clr-white.
+														info@yourdomain.com
+								
+						// Contact and Address row ends here
+						.col-md-4.col-sm-4.col-sm-offset-2.col-xs-12
+							.search_bar
+								ul.list-inline.pull-right.mv20
+									li
+										form.input-search
+											.input-group
+												input(type="text" class="form-control bdr-primary bg-transparent" placeholder="Search")
+												span.input-group-btn
+													button.btn.btn-primary.bdr-primary.bg-primary.no-bdr-rad search
+		header.bg-transparent.pos-a.no-bdr
+			#navbar
+				nav.navbar.navbar-enthink.navbar-fixed-top(role="navigation",data-spy="affix",data-offset-top="5")
+					.container
+						.row
+							.col-xs-12.col-sm-2.col-md-1
+								.navbar-header
+									button(type="button" class="navbar-toggle collapsed bdr-primary" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+										i.fa.fa-th-list.fs20.clr-primary
+									a(href="index.html").navbar-brand.center-block
+										img(src="img/construction/enthink/logo/enthink.png" class="image-responsive")
+							.col-xs-12.col-sm-10.col-md-11
+								.collapse.navbar-collapse#bs-example-navbar-collapse-1
+									ul.nav.navbar-nav.pull-right#nav
+										li.active
+											a(href="#slider") Home
+										li
+											a(href="#about-enthink") About
+										li
+											a(href="#team-enthink") Team
+										li
+											a(href="#services-enthink") Services
+										li
+											a(href="#gallery-enthink") Works
+										li
+											a(href="#contact-enthink") Contact

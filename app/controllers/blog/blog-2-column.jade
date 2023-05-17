@@ -1,0 +1,15 @@
+extends ../../views/layout/main.jade
+block main_content
+	+navbar-pack().navbar-fixed-top.custom-navbar.navbar-default.navbar-white
+	- pagesmainheading = ("blog")
+	- directionheading= ("blog")
+	- activepage = ("2column")
+	+pages-header()
+	.mt60
+	+blog2column()
+	+footer-1()
+	include ../../../models/switcher/switcher.jade
+	include ../../../models/back-to-top/back-to-top.jade
+	include ../../../models/loder/loder.jade
+
+	

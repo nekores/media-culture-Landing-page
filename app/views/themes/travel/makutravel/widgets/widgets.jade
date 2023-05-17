@@ -1,0 +1,29 @@
+mixin travel_search_widget()
+	section&attributes(attributes)#widgets.travel_search_widget
+		.container
+			.row
+				.col-md-12
+					div.owl-tweeter
+						div.owl-carousel(id="owl-tweeter")
+							- trave_source =['flights', 'train', 'bus', 'car', 'hotel']
+							- travel_source_shapes =['fa-tags', 'fa-tags', 'fa-tags', 'fa-tags', 'fa-tags']
+							for i in [0,1,2,3,4]
+								div
+									.col-md-4.title
+										p.pt10 #{trave_source[i]}
+										i.fa(class=travel_source_shapes[i])
+									.col-md-8.col-sm-8.col-sm-offset-2.col-xs-12
+										//- .text.mt20
+										.title
+											a(href="#") Nearby Hotel
+												input.mr30(type="checkbox"  id="inlineCheckbox1" value="option1" style="float:left; margin-right:5px;" checked)
+											.form-inline.mv15
+												.form-group
+													.input-group
+														label
+															h6 Restaurant
+															input(type="text" placeholder="L'Arpège")
+														label.ml15
+															h6 Country
+															input(type="text" placeholder="Paris")
+											button(type="submit" class="btn btn-default") Search

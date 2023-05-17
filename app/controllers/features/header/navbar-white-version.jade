@@ -1,0 +1,14 @@
+extends ../../../views/layout/main.jade
+block main_content
+	+navbar-pack().navbar-fixed-top.navbar-default.navbar-white
+	+vsliders()
+	section
+		.container-fluid
+			.row
+				.col-md-12
+					+brands-5-colum("brands","imgclasses")
+	//- +call-out-bg-image()
+	+footer-2()
+	include ../../../models/switcher/switcher.jade
+	include ../../../models/back-to-top/back-to-top.jade
+	include ../../../models/loder/loder.jade

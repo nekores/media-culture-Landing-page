@@ -1,0 +1,47 @@
+mixin progress()
+    section&attributes(attributes)
+        .container
+            .row
+                .col-md-8
+                    h2.comp-title progress bars
+                    hr
+                    h2.comp-titles Default Progress Bar                 
+                    +default-progress()
+
+
+                    h2.comp-titles Progress bar with label
+                    +progress-label()
+
+
+                    h2.comp-titles Contextual Alternatives
+                    +multiple-progress("50%","10%","60%","90%")
+
+
+                    h2.comp-titles Contextual Alternatives with label
+                    +multiple-progress-label("50%","10%","60%","90%")
+
+
+                    h2.comp-titles Stripped
+                    +multiple-progress-strip("10%","20%","40%","90%")
+
+
+                    h2.comp-titles Stripped with label
+                    +multiple-progress-strip-label("50%","10%","60%","90%")
+                    h2.comp-titles small progress bars
+                    +smallest-progressbars("","","50%")
+                    +smallest-progressbars("","","30%")
+                    +smallest-progressbars("","","70%")
+
+                .col-md-4
+                    +component-nav()
+            .row
+                .col-md-12
+                    .col-md-3.col-sm-6
+                        +skills-icon('fa fa-briefcase','Enterprise solutions','circle1')
+                    .col-md-3.col-sm-6
+                        +skills-icon('fa fa-shopping-cart','Marketing','circle2')
+                    .col-md-3.col-sm-6
+                        +skills-icon('fa fa-globe','Target information','circle3')
+                    .col-md-3.col-sm-6
+                        +skills-icon('fa fa-globe','Target information','circle4')
+

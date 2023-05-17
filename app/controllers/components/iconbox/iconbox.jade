@@ -1,0 +1,18 @@
+extends ../../../views/layout/main.jade
+block main_content
+	+navbar-pack().navbar-fixed-top.custom-navbar.navbar-default.navbar-white
+	- directionheading= ("components")
+	- activepage = ("iconboxs")
+	+pages-header-xs()
+	.mb50
+	+iconbox-default-1()
+	+iconbox-default-2()
+	+iconbox-default-3()
+	+iconbox-default-4()
+	+iconbox-default-5()
+	+iconbox-default-6()
+	+iconbox-default-7()
+	+footer-1()
+	include ../../../models/back-to-top/back-to-top.jade
+	include ../../../models/loder/loder.jade
+	include ../../../models/switcher/switcher.jade

@@ -1,0 +1,115 @@
+
+//-=== bootstrap smsll buttons start===
+
+mixin btn-bootstrap-sm(classs,name)
+    button.btn.btn-sm(class=classs)&attributes(attributes) #{name}
+    
+//-=== bootstrap small buttons end===
+
+mixin btn-bootstrap-md(classs,name)
+    button.btn(class=classs)&attributes(attributes) #{name}
+
+mixin btn-bootstrap-lg(classs,name)
+    button.btn.btn-lg(class=classs)&attributes(attributes) #{name}
+
+
+
+//-=== TRANSITION BUTTONS MAXIN START HERE ===
+
+
+mixin btn-transition-sm(classs,name)
+    button.btn.btn-transparent.btn-sm(class=classs)&attributes(attributes) #{name}
+
+
+mixin btn-transition-md(classs,name)
+    button.btn.btn-transparent(class=classs)&attributes(attributes) #{name}
+
+
+mixin btn-transition-lg(classs,name)
+    button.btn.btn-transparent.btn-lg(class=classs)&attributes(attributes) #{name}
+
+
+mixin btn-transition-xlg(classs,name)
+    button.btn.btn-transparent.btn-xlg(class=classs)&attributes(attributes) #{name}
+
+
+//-=== TRANSITION BUTTONS MAXIN END HERE ===
+
+
+
+//- THEME BUTTONS START HERE
+
+mixin btn-theme-sm(classs,name)
+    button.btn.btn-sm(class=classs)&attributes(attributes) #{name}
+
+mixin btn-theme-md(classs,name)
+    button.btn(class=classs)&attributes(attributes) #{name}
+
+mixin btn-theme-lg(classs,name)
+    button.btn.btn-lg(class=classs)&attributes(attributes) #{name}
+
+mixin btn-theme-xlg(classs,name)
+    button.btn.btn-xlg(class=classs)&attributes(attributes) #{name}
+
+
+//-=== THEME BUTTONS END HERE ===
+
+
+//-=== THEME INVERSE BUTTONS START HERE ===
+
+
+mixin btn-theme-sm-inv(classs,name)
+    button.btn.btn-sm.inv(class=classs)&attributes(attributes) #{name}
+
+mixin btn-theme-md-inv(classs,name)
+    button.btn.btn-md.inv(class=classs)&attributes(attributes) #{name}
+
+mixin btn-theme-lg-inv(classs,name)
+    button.btn.btn-lg.inv(class=classs)&attributes(attributes) #{name}
+
+mixin btn-theme-xlg-inv(classs,name)
+    button.btn.btn-xlg.inv(class=classs)&attributes(attributes) #{name}
+
+//-=== THEME INVERSE BUTTONS END HERE ===
+
+
+//-=== THEME ICON BUTTONS START HERE ===
+
+mixin btn-icon-sm(classs,name,icon)
+    button.btn.btn-sm(class=classs)&attributes(attributes) 
+        i.fa(class=icon)
+        |&nbsp; #{name}
+
+mixin btn-icon-md(classs,name,icon)
+    button.btn(class=classs)&attributes(attributes) 
+        i.fa(class=icon)
+        |&nbsp; #{name}
+
+mixin btn-icon-lg(classs,name,icon)
+    button.btn.btn-lg(class=classs)&attributes(attributes) 
+        i.fa(class=icon)
+        |&nbsp; #{name}
+
+mixin btn-icon-xlg(classs,name,icon)
+    button.btn.btn-xlg(class=classs)&attributes(attributes) 
+        i.fa(class=icon)
+        |&nbsp; #{name}
+
+
+
+//-=== THEME ICON BUTTONS END HERE ===
+
+//-=== SPLIT BUTTONS MAXIN START HERE
+
+
+mixin btn-split-sm(classs, name)
+    .btn-group
+        button.btn.btn-sm(class=classs)&attributes(attributes) #{name}
+        button.btn.btn-sm.dropdown-toggle(class=classs data-toggle=dropdown aria-expanded="false")&attributes(attributes)
+            span.caret
+            span.sr-only Toggle Dropdown
+        ul.dropdown-menu(role="menu")
+            li.dropdown-header(role="presentation") hellow
+
+
+//-=== SPLIT BUTTONS MAXIN END HERE

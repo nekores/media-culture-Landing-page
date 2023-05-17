@@ -1,0 +1,14 @@
+extends ../../../views/layout/main.jade
+block main_content
+	+navbar-pack().navbar-fixed-top.custom-navbar.navbar-default.navbar-white
+	- directionheading= ("components")
+	- activepage = ("typography")
+	+pages-header-xs()
+	.mt50
+	+typo-main-heading()
+	.mt50
+	+call-out-bg-image()
+	+footer-1()
+	include ../../../models/back-to-top/back-to-top.jade
+	include ../../../models/loder/loder.jade
+	include ../../../models/switcher/switcher.jade

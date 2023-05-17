@@ -1,0 +1,27 @@
+mixin contacts()
+	section
+		.container
+			.row
+				.col-md-12
+					+contact("col-md-8")
+
+mixin contacts-default-page()
+	section
+		.container
+			.row.mb80
+				.col-md-12
+					.text-center
+						+heading('contact','us','get in touch with us', '')
+				.col-md-12
+					+contact-default()
+		+footer-2()
+mixin contacts-default-page2()
+	section
+		.container
+			.row.mb80
+				.col-md-12
+					.text-center
+						+heading('contact','us','get in touch with us', '')
+				.col-md-12
+					+contact-simple()
+		+footer-2()

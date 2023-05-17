@@ -1,0 +1,227 @@
+
+
+.bdr-color-primary
+    border 1px solid #fff !important
+.timer{
+    position: relative;
+    margin-top: 40px;
+    background-color transparent
+    border-color transparent
+    
+    .time-box{
+        width: 160px;
+        height: 160px;
+        border: 1px solid white;
+        padding: 35px;
+        cursor pointer
+        margin: 0px auto;
+
+        @media(max-width: 1200px) {
+            
+            width: 150px;
+            height: 150px;
+            padding: 30px;
+        }
+
+        @media(max-width: 992px) {
+            
+            width: 140px;
+            height: 140px;
+        }
+        @media(max-width: 768px) {
+            margin-top: 10px;
+            width: 130px;
+            height: 130px;
+        }
+        .tick{
+            font-size 30px
+            
+
+
+        }
+        hr{
+            margin: 0px;
+            border-color: #fff !important;
+
+        }
+        .title{
+           // .responsive-font(@clockTitleXs, @clockTitleSm, @clockTitleMd);
+            font-size 36px
+           letter-spacing: 1px;
+           font-weight: 300;
+           color #fff
+           padding-top 10px
+        }
+
+        // remove the margin left on xs min
+
+    }
+    @media(max-width: 319px){
+        text-align: center;
+        .col-xs-6{
+           clear : both;
+           display: inline-block !important;
+           margin: 0px auto;
+
+        }
+    }
+}
+// circle
+.circle{
+    .time-box{
+        border-radius 75%;
+        border 1px solid #fff
+        width: 165px;
+        height: 165px;
+        .tick{
+            position relative
+            // margin-left 200px
+            // left 20px
+            text-align center
+        }
+
+       
+        @media(max-width: 1200px) {
+            
+            width: 148px;
+            height: 148px;
+        }
+
+         @media(max-width: 992px) {
+            
+            width: 126px !important;
+            height: 126px !important;
+            padding-top: 0px;
+        } 
+        hr{
+            width: 80%;
+            margin: 3px auto;
+
+        }
+        @media(max-width: 768px) {
+            width: 150px;
+            height: 150px;
+
+            .tick{
+                top: 15px;
+            }
+        }
+    }
+}
+//** border right
+
+.border-right{
+    .time-box{
+        border: none;
+        border-right: 1px solid #fff;
+        padding-right: 0px;
+    }
+}
+
+//** border left
+
+.border-left{
+    .time-box{
+        border: none;
+        border-left: 1px solid #fff;
+        padding-left: 0px;
+    }
+}
+
+// border top
+.border-top{
+    .time-box{
+        border: none;
+        border-top: 1px solid #fff;
+        // padding-top: 0px;
+    }
+}
+
+// border top
+.no-border{
+    .time-box{
+        border: none;
+        
+        // padding-top: 0px;
+    }
+}// border top
+.all-border{
+    .time-box{
+        border: 1px solid #fff !important;
+        
+        // padding-top: 0px;
+    }
+}
+.all-border-rotate{
+    // transform rotate(45deg)
+    .time-box{
+        transform rotate(45deg)
+        border: 1px solid #fff !important;
+        .tick{
+            padding-top 0
+            transform rotate(-45deg)
+            padding-bottom 10px
+            padding-right 40px
+        }
+        hr{
+            transform rotate(-45deg)
+
+        }
+        .title{
+            margin-left 30px
+            transform rotate(-45deg)
+        }
+        
+        // padding-top: 0px;
+    }
+}
+
+// MASHUP COUNTUP
+.mash
+    width 400px
+    text-align center
+    margin auto
+    position relative
+    height 500px
+    top 70px
+.mash1
+    position absolute !important
+    top -120px
+    left 75px
+.mash2
+    position absolute !important
+    left -45px 
+.mash3
+    position absolute !important
+    left 195px 
+.mash4
+    position absolute !important
+    top 120px
+    left 75px
+@media(max-width 450px)
+    .mash
+        width 100%
+        position relative !important
+        top 0
+        left 0
+    .mash1
+        width 100%
+        position relative !important
+        top 0
+        left 0
+    .mash2
+        width 100%
+        position relative !important
+        top 0
+        left 0
+    .mash3
+        width 100%
+        position relative !important
+        top 0
+        left 0
+    .mash4
+        width 100%
+        position relative !important
+        top 0
+        left 0
+        

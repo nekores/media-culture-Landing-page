@@ -1,0 +1,133 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 08/05/2016 00:55
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-basic-microphone:before { content: "\f100"; }
+.flaticon-classic-microphone:before { content: "\f101"; }
+.flaticon-dj-at-party:before { content: "\f102"; }
+.flaticon-hand-holding-up-a-microphone:before { content: "\f103"; }
+.flaticon-headphones:before { content: "\f104"; }
+.flaticon-headset:before { content: "\f105"; }
+.flaticon-loudness:before { content: "\f106"; }
+.flaticon-mic-with-long-cable:before { content: "\f107"; }
+.flaticon-music:before { content: "\f108"; }
+.flaticon-music-1:before { content: "\f109"; }
+.flaticon-music-10:before { content: "\f10a"; }
+.flaticon-music-11:before { content: "\f10b"; }
+.flaticon-music-12:before { content: "\f10c"; }
+.flaticon-music-13:before { content: "\f10d"; }
+.flaticon-music-14:before { content: "\f10e"; }
+.flaticon-music-15:before { content: "\f10f"; }
+.flaticon-music-16:before { content: "\f110"; }
+.flaticon-music-17:before { content: "\f111"; }
+.flaticon-music-18:before { content: "\f112"; }
+.flaticon-music-19:before { content: "\f113"; }
+.flaticon-music-2:before { content: "\f114"; }
+.flaticon-music-20:before { content: "\f115"; }
+.flaticon-music-21:before { content: "\f116"; }
+.flaticon-music-22:before { content: "\f117"; }
+.flaticon-music-23:before { content: "\f118"; }
+.flaticon-music-24:before { content: "\f119"; }
+.flaticon-music-25:before { content: "\f11a"; }
+.flaticon-music-26:before { content: "\f11b"; }
+.flaticon-music-27:before { content: "\f11c"; }
+.flaticon-music-28:before { content: "\f11d"; }
+.flaticon-music-29:before { content: "\f11e"; }
+.flaticon-music-3:before { content: "\f11f"; }
+.flaticon-music-30:before { content: "\f120"; }
+.flaticon-music-4:before { content: "\f121"; }
+.flaticon-music-5:before { content: "\f122"; }
+.flaticon-music-6:before { content: "\f123"; }
+.flaticon-music-7:before { content: "\f124"; }
+.flaticon-music-8:before { content: "\f125"; }
+.flaticon-music-9:before { content: "\f126"; }
+.flaticon-music-quaver:before { content: "\f127"; }
+.flaticon-musician:before { content: "\f128"; }
+.flaticon-party-dj:before { content: "\f129"; }
+.flaticon-singer:before { content: "\f12a"; }
+.flaticon-singer-with-microphone:before { content: "\f12b"; }
+.flaticon-sound-bars:before { content: "\f12c"; }
+.flaticon-video:before { content: "\f12d"; }
+.flaticon-woman-playing-guitar:before { content: "\f12e"; }
+    
+    $font-Flaticon-basic-microphone: "\f100";
+    $font-Flaticon-classic-microphone: "\f101";
+    $font-Flaticon-dj-at-party: "\f102";
+    $font-Flaticon-hand-holding-up-a-microphone: "\f103";
+    $font-Flaticon-headphones: "\f104";
+    $font-Flaticon-headset: "\f105";
+    $font-Flaticon-loudness: "\f106";
+    $font-Flaticon-mic-with-long-cable: "\f107";
+    $font-Flaticon-music: "\f108";
+    $font-Flaticon-music-1: "\f109";
+    $font-Flaticon-music-10: "\f10a";
+    $font-Flaticon-music-11: "\f10b";
+    $font-Flaticon-music-12: "\f10c";
+    $font-Flaticon-music-13: "\f10d";
+    $font-Flaticon-music-14: "\f10e";
+    $font-Flaticon-music-15: "\f10f";
+    $font-Flaticon-music-16: "\f110";
+    $font-Flaticon-music-17: "\f111";
+    $font-Flaticon-music-18: "\f112";
+    $font-Flaticon-music-19: "\f113";
+    $font-Flaticon-music-2: "\f114";
+    $font-Flaticon-music-20: "\f115";
+    $font-Flaticon-music-21: "\f116";
+    $font-Flaticon-music-22: "\f117";
+    $font-Flaticon-music-23: "\f118";
+    $font-Flaticon-music-24: "\f119";
+    $font-Flaticon-music-25: "\f11a";
+    $font-Flaticon-music-26: "\f11b";
+    $font-Flaticon-music-27: "\f11c";
+    $font-Flaticon-music-28: "\f11d";
+    $font-Flaticon-music-29: "\f11e";
+    $font-Flaticon-music-3: "\f11f";
+    $font-Flaticon-music-30: "\f120";
+    $font-Flaticon-music-4: "\f121";
+    $font-Flaticon-music-5: "\f122";
+    $font-Flaticon-music-6: "\f123";
+    $font-Flaticon-music-7: "\f124";
+    $font-Flaticon-music-8: "\f125";
+    $font-Flaticon-music-9: "\f126";
+    $font-Flaticon-music-quaver: "\f127";
+    $font-Flaticon-musician: "\f128";
+    $font-Flaticon-party-dj: "\f129";
+    $font-Flaticon-singer: "\f12a";
+    $font-Flaticon-singer-with-microphone: "\f12b";
+    $font-Flaticon-sound-bars: "\f12c";
+    $font-Flaticon-video: "\f12d";
+    $font-Flaticon-woman-playing-guitar: "\f12e";

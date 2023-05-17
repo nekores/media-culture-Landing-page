@@ -1,0 +1,63 @@
+mixin tab-1()
+	section()&attributes(attributes).tab-1
+		.container
+			.row
+				.col-md-8
+					h2.comp-title Tabs Components
+					hr
+					.icons.mt40
+						.content-top-heading
+							h4.comp-titles Tab - I
+					+tab1()
+
+					// TAB -2 CODED HERE
+					.icons.mt40
+						.content-top-heading
+							h4.comp-titles Tab - II
+					+tab2()
+					hr
+				.col-md-4
+					+component-nav()
+mixin tab-2()
+	section()&attributes(attributes).tab-2
+		.container
+			.row
+
+	// TAB -3 CODED HERE
+mixin tab-3()
+	section()&attributes(attributes).tab-3
+		.container
+			.row
+				.col-md-12
+					.icons.mt40
+						.content-top-heading
+							h4.comp-titles Tab - III
+				.col-md-8
+					+tab3()
+					hr
+
+	// TAB -4 CODED HERE
+mixin tab-4()
+	section()&attributes(attributes).tab-4
+		.container
+			.row
+				.col-md-12
+					.icons.mt40
+						.content-top-heading
+							h4.comp-titles Tab - IV
+				.col-md-8
+					+tab4()
+					hr
+
+	// TAB -5 CODED HERE
+mixin tab-5()
+	section()&attributes(attributes).tab-5
+		.container
+			.row.mb50
+				.col-md-12
+					.icons.mt40
+						.content-top-heading
+							h4.comp-titles Tab - V
+				.col-md-8
+					+tab5()
+					hr

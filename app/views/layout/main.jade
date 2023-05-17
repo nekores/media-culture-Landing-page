@@ -1,0 +1,21 @@
+include ../../config/jade.jade
+include ../includes.jade
+doctype html
+html(lang="en")
+	head
+		block title
+			title #{theme_name}
+
+		// CSS INCLUDES
+		for i in css
+			link(type='text/css' rel ='stylesheet' href = i)
+		//- <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet", type="text/css", href="css/styles.css" id='switcher-target'>
+			
+	// === START : BODY ===
+	body
+		block main_content
+		
+		// JS INCLUDES
+		for s in js
+			script(type='text/javascript' src=s)

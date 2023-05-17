@@ -1,0 +1,57 @@
+mixin medical-slider()
+	section#vegas-slider-medical.vegas-medical
+		.bga-black-6.hp100
+			.container.hp100
+				.table-med
+					.table-med-row
+						.col-md-10.col-md-offset-1
+							.intro-text
+								h1 our goal is to provide 
+									span(class="rotate-head") high quality health care solution,medical services you can trust and relay on,easy solution to complex problem
+								p.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								+btn-theme-lg("btn-c-primary","MAKE AN APPOINTMENT")
+mixin medical-slider-owl()
+	section#owl-medical.owl-carousel.owl-theme&attributes(attributes)
+		for i in [1,2]
+			img.bga-primary-4(src="img/medical/slider/" + i + ".jpg" class="img-responsive")
+		//- .bga-black-5.hp100
+		//- 	.container.hp100
+		//- 		.table-med
+		//- 			.table-med-row
+		//- 				.col-md-8.col-md-offset-2
+		//- 					.intro-text
+		//- 						h1 
+		//- 							span(class="rotate-head") Creating a bright future together
+		//- 						p
+		//- 							span(class="rotate-para").
+		//- 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+		//- 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+		//- 						+btn-theme-lg-inv("btn-c-primary","MAKE AN APPOINTMENT")
+
+	//- div(id="owl-medical" class="owl-carousel owl-theme")
+		//- .container-fluid.no-padding
+		//- 	.row.no-padding
+		//- 		.col-md-12
+		//- 			.slider-img1
+		//- 				img(src="img/medical/1.jpg" class="img-responsive")
+		//- 		.madical-slider-text.pos-r.pv20
+		//- 			h1.pos-a.text-uppercase
+		//- 				span(class="rotate-head") We care for your
+		//- 			p.pos-a
+		//- 				span(class="rotate-para") Lorem ipsum dolor sit amet consectetur adipisicing elit.
+		//- 			.slider-btn.pos-a
+		//- 				+btn-theme-lg-inv("btn-c-primary","MAKE AN APPOINTMENT")
+			//- .row.no-padding
+			//- 	.col-md-12.no-padding
+			//- 		.table
+			//- 			.table-middle-row
+			//- 				img(src="img/medical/2.jpg" class="img-responsive")
+			//- 	.madical-slider-text1.pos-r
+			//- 		h1.pos-a.text-uppercase.ph80
+			//- 			span(class="rotate-head") Creating a bright future together
+			//- 		p.pos-a.ph80.pv20
+			//- 			span(class="rotate-para") Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet.
+			//- 		.slider-btn1.pos-a
+			//- 			+btn-theme-lg-inv("btn-c-primary","MAKE AN APPOINTMENT")

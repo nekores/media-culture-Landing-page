@@ -1,0 +1,27 @@
+/**
+* @author ejoo.
+*/
+helper-generator( class_name, block)
+	.{class_name}
+		{block}
+loop-helper-generator(setting_name, class_name, unit, properties = null)
+	for index in ranger(setting_name) //(read-min(setting_name), read-max(setting_name), read-step(setting_name))
+		.{class_name}-{index}
+			if(type(properties) == 'object')
+				each property in properties
+					property unit(index, unit)
+			else
+				properties unit(index, unit)
+// reading settings helper functions.
+read-max(setting)
+	ss = settings[setting]
+	ss['max']
+read-min(setting)
+	ss = settings[setting]
+	ss['min']
+read-step(setting)
+	ss = settings[setting]
+	ss['step']
+// ranger helper function.
+ranger(setting_name)
+	range(read-min(setting_name), read-max(setting_name), read-step(setting_name))

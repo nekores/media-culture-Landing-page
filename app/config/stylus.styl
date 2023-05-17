@@ -1,0 +1,251 @@
+/**
+* @author Ejoo
+* @description configurations for current app.
+*/
+
+/**
+*   Booleans:
+*   Booleans allow you to control which helper classes should be generated for your theme
+*   just type true or false to control. 
+*   Note* You can also change settings for each of the helpers. 
+*/
+
+ themename = 'Lovex'
+
+booleans = {
+    // typography
+    scaffolding: true,
+    typography: true,
+    
+    // SECTION MARGINS.
+    margins: true, // when true, will generate helper classes for margins. mv20, mv15, ml10, mr30 etc.
+    paddings: true, 
+    line-heights: true, // line-heights will be generated in percentages. from 100-200. i.e. lh100, lh110
+    
+    // SECTION BORDERS
+    border-radius: true, // border-radius helpers.
+    border-widths: true, 
+    border-styles: true,
+        // border colors are in colors section.
+        
+
+    // SECTION COLORS
+    colors: true, // will generate classes for colors.
+    
+    text-color: true,
+    color-hover: true,
+    background-color: true,
+    background-color-hover: true,
+    border-color: true,
+    background-alpha: true,
+    color-alpha: true,
+    alpha-source: 'colors',
+
+    // SECTION POSITIONS
+    
+    positions: true,
+
+    //SECTION BACKGROUNDS
+    backgrounds: true,
+
+    // SECTION DISPLAYS
+    
+    displays: true,
+
+    // SECTION FONTS
+    
+    font-sizes: true,
+    font-weights: true,
+    letter-spacing: true,
+    word-spacing: true,
+
+    //SECTION PATTERNS - note* you may need to set an array for pattern images in settings variables below.
+    
+    patterns: true,
+
+    // SECTION RESETS - resets will create reset classes. i.e. to reset background color it will r-bg.
+    resets: true, // if set false will not create resets even if below settings are set to true.
+    reset-background: true,
+    reset-borders: true,
+    reset-border-radius: true,
+    reset-margin: true,
+    reset-padding: true,
+    transparent-borders: true,
+    transparent-backgrounds: true,
+    // SECTION SIZING - sizing classes will be created. w-20 -> width: 20px or wp-20 : width: 20%
+    
+    sizing: true,
+
+    // Opacity
+    opacity: true,
+    // 
+    
+    width: true,
+    width-percent: true,
+    height: true,
+    height-percent: true,
+
+
+}
+
+
+/**
+*   SETTINGS__
+*   
+*/
+
+commons = {
+    min: 5,
+    max: 80, 
+    step: 5,
+    unit: px,
+}
+
+settings = {
+    margin:     {
+        min: 5,
+        max: 100,
+        step: 5,
+        unit: px,
+    },
+    padding:    commons, // use same as margins.
+    
+    // Line Height Settings
+    line-height: {
+        unit: '%',
+        min: 100,
+        max: 180,
+        step: 10
+        
+    },
+
+
+    border-widths: {
+        min: 1,
+        max: 15,
+        step: 1,
+
+    },
+    
+    font-sizes: {
+        min: 12,
+        max: 36,
+        step: 1,
+        unit: 'px'
+    },
+
+    font-weights: {
+        min: 100,
+        max: 900,
+        step: 100,
+    },
+
+    letter-spacing: {
+        min: 1,
+        max: 3,
+        step: 1,
+    },
+
+    word-spacing: {
+        min: 1,
+        max: 7,
+        step: 1,
+    },
+
+
+    // variable name where patterns are stored. You need to put these in resources.styl
+    patterns: 'patterns', 
+
+    // sizings
+    width: commons,
+    width-percent: {
+        min: 25,
+        max: 100,
+        step: 25
+        unit: '%'
+    },
+    height: commons,
+    height-percent: {
+        min: 25,
+        max: 100,
+        step: 25,
+        unit: '%'
+    },
+    // COLORS
+    colors : {
+        primary: primary, 
+        secondary: #1bbc9d,
+        blue: #2a80b9,
+        green: #2fcc71,
+        black:#000,
+        gray: #333,
+        white: #fff,
+        
+
+    },
+    
+    // opacity
+    opacity: {
+        min: 0,
+        max: 0.9,
+        step: 0.1,
+    },
+
+    // typography
+    
+    typography: {
+        heading: {
+            h1: {
+                font-size: 1.6rem,
+                font-weight: 800,
+                color: #000,
+            },
+            h2: {
+                font-size: 1.4rem
+                font-weight: 600,
+            },
+            h3: {
+                font-size: 1.2rem
+            },
+            h4: {
+                font-size: 1.1rem
+            },
+            h5: {
+                font-size: 1rem
+            },
+            h6: {
+                font-size: 0.9rem
+            },
+            
+        }
+        p: {
+            font-size: 1.2rem,
+            letter-spacing: 0.4px,
+            color: #666
+        }
+        
+    },
+
+    scaffolding: {
+        html: {
+            position: relative,
+            height: 100%,
+            font-size: 16px,
+            font-family:'Avenir',
+            // font-family: 'Raleway',
+        },
+        body: {
+            position: relative,
+            height: 100%,
+            font-family:'Avenir',
+            // font-size: 1rem,
+            // font-family: 'Raleway',
+            // font-family: 'Raleway', sans-serif
+            
+        },
+    }
+}
+
+
+
+// googleFonts = []

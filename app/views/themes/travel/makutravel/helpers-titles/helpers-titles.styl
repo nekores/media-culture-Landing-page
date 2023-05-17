@@ -1,0 +1,114 @@
+.makutravel-section_title
+	.heading
+		text-align left
+		padding-top: 80px;
+		height: 150px;
+		width: 100%;
+		z-index: 1;
+		.text
+			font-weight 100
+			.title
+				margin auto
+				height 20px
+				width 400px
+				position relative
+				text-align center
+				h3
+					font-size 25px
+					color darken(gray, 50%)
+					text-transform uppercase
+					span
+						font-weight 700
+						font-size 25px
+						color darken(primary, 10%)
+						text-transform uppercase
+				.lower
+					position relative
+					.slogan
+						padding-left 2px
+						padding-right 2px
+						font-size 12px
+						position absolute
+						top -2px
+						text-align center
+						right 75px
+						height 20px
+						color #333
+						font-weight 100
+					.obstacle
+						margin auto
+						position relative
+						right 60px
+						top 21px
+						&::before
+							width 40px
+							height  40px
+							line-height 40px
+							text-align center
+							content: "\f130";
+							position absolute
+							font-size 15px
+							top -15px
+							right -12px
+							color primary
+							font-family: Flaticon;
+					.line1
+						margin auto
+						height 1px
+						width 75px
+						position absolute
+						background-color primary
+						top 4px
+						right 19px
+					.line2
+						margin auto
+						height 1px
+						width 63px
+						position absolute
+						background-color alpha(#333, 60%)
+						top 8px
+						right 19px
+					.line3
+						margin auto
+						height 1px
+						width 100px
+						top 0
+						right 19px
+						position absolute
+						background-color #333
+	@media(max-width 400px)
+		.heading
+			.text
+				.title
+					text-align center
+					width 200px
+					h3
+						font-size 16px
+						padding 0
+						span
+							font-size 16px
+							color primary
+					.lower
+						.slogan
+							font-size 11px
+							height 15px
+							position relative
+							border-color transparent
+							right -18px
+						.obstacle
+							margin auto
+							right 0
+							width 100%
+							position relative
+							top 0px
+				
+.no-dac
+	text-decoration none !important
+.ts
+	text-shadow 1px 0px 1px black
+.fs-title
+	font-size 17px !important
+.ma
+	margin auto !important
+.bs
+	box-shadow .6px .6px .8px .1px black

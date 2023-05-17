@@ -1,0 +1,67 @@
+mixin one-page-version()
+	+slider-photography()
+	section#aboutus-onepage
+		.container-fluid
+			.row.mv70
+				.col-md-12
+					.text-center.mb40
+						+heading('about','us','who we are')
+				.col-md-6
+					.mr50.ml30
+						+collapse2()
+				.col-md-6
+					.mr30
+						+smallest-progressbars("col-md-4","html - 90%","90%")
+						+smallest-progressbars("col-md-4","css - 80%","80%")
+						+smallest-progressbars("col-md-4","jqure - 30%","30%")
+						+smallest-progressbars("col-md-4","photoshop - 20%","20%")
+						+smallest-progressbars("col-md-4","php - 50%","50%")
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+testimonial2()
+	section#portfolio-onepage
+		.container-fluid
+			.row.mt60
+				.col-md-12.no-padding
+					.text-center
+						+heading('recent','work','we do great design')
+						.mt50
+						+nospacefullwidth4column()
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+countup2()
+	section#services-onepage
+		.container
+			.row.mv60
+				.col-md-12
+					.text-center
+						+heading('our','services','what our clients expect from us')
+						+iconbox-2('col-md-4 col-sm-4 col-xs-12 mv40', 3)
+	section.one-page-team-section#testimonial-onepage
+		.bg-team-img
+			.bga-black-6
+				.container
+					.row.mv50
+						.col-md-12
+							.one-page-team
+								+heading('our','team','We build your website to realise your vision and we deliver the ready product')
+							.clr-white
+								+our-team2()
+	section#blog-onepage
+		.container
+			.row.mv60
+				.col-md-12.no-padding
+					.text-center
+						+heading('latest','new','We Deliver The Ready Product')
+					.mt50
+					+bloggrid-3-column("col-md-4", 3)
+
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+footer-2()

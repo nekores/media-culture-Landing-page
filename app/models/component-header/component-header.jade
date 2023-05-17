@@ -1,0 +1,114 @@
+mixin comp-header()
+    //=== page-title start here ===
+    .page-title.mb50
+        .container
+            .row
+                .col-md-12.no-padding
+                    .breadcrumbs-outer
+                        ol.breadcrumb
+                            li
+                                a(href='index.html') Home
+                            li.active #{pagetitle}
+    //=== page-title end here ===
+mixin comp-header-blog()
+    //=== page-title start here ===
+    .page-title-header.mb50
+        .container
+            .row
+                .col-md-6.no-padding
+                    h2 #{pageheader}
+                .col-md-6.no-padding.text-right
+                    .breadcrumbs-outer-header
+                        ol.breadcrumb
+                            li
+                                a(href='index.html') Home
+                            li.active #{pageheader}
+    //=== page-title end here ===
+
+
+
+mixin pages-header()
+    //=== page-title start here ===
+    .pages-header
+        .alpha-clr-page
+            .container 
+                .row
+                    .col-md-12.text-center
+                        .heading-title
+                            h2 #{pagesmainheading}
+                        ul.page-breadcrumbs.list-inline
+                            li
+                                a(href="index.html")
+                                    i.rounded-x.fa.fa-angle-right
+                                    | home
+                            li
+                                a(href="#")
+                                    i.rounded-x.fa.fa-angle-right
+                                    | #{directionheading}
+                            li.active
+                                a(href="#")
+                                    i.rounded-x.fa.fa-angle-right
+                                    | #{activepage}
+    //=== page-title end here ===
+mixin pages-header-sm()
+    //=== page-title-small start here ===
+    .pages-header-small
+        .alpha-clr-page
+            .container 
+                .row
+                    .col-md-6.col-sm-6.col-xs-5
+                        .heading-title
+                            h2 #{pagesmainheading}
+                    .col-md-6.col-sm-6.col-xs-7
+                        .page-breadcrumbs.pull-right
+                            ul.breadcrumb.list-inline
+                                li
+                                    a(href="index.html")
+
+                                        | home
+                                li
+                                    a(href="#")
+
+                                        | #{directionheading}
+                                li.active
+                                    a(href="#")
+
+                                        | #{activepage}
+    //=== page-title-small end here ===
+mixin pages-header-xs()
+    //=== page-title-xs start here ===
+    .pages-header-xs
+        .alpha-clr-page
+            .container 
+                .row
+                    .col-md-12
+                        .page-breadcrumbs
+                            ul.breadcrumb.list-inline
+                                li
+                                    a(href="index.html")
+
+                                        | home
+                                li
+                                    a(href="#")
+
+                                        | #{directionheading}
+                                li.active
+                                    a(href="#")
+
+                                        | #{activepage}
+    //=== page-title-xs end here ===
+
+mixin portfolio-header()
+    
+    //=== page-title start here ===
+    .portfolio-header
+        .alpha-clr-page
+            .container 
+                .row
+                    .col-md-12.text-center
+                        ul.page-breadcrumbs.list-inline
+                            li
+                                | #{pagesmainheading}
+                        .heading-title
+                            h2 #{directionheading}
+    //=== page-title end here ===

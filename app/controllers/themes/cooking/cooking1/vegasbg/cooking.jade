@@ -1,0 +1,32 @@
+extends ../../../../../views/layout/main.jade
+block main_content
+
+    // slider starts here
+    //- +slider-owl2()
+
+    // menu SECTION
+    +cooking_menu()
+    
+    +appbox-counter()
+    // ABOUT SECTION
+    +cooking_about()
+    
+    +quote-widget-coooking()
+    // GALLERY START HERE
+    +cooking_portfolio()
+
+    // CLIENT START HERE
+    +cooking_client()
+
+    // CONTACT START HERE
+    +cooking_contact()
+
+
+    // CALCULATE FORM
+    +cooking_calculate()
+
+    // FOOTER START HERE
+    +cooking_footer()
+    //- include ../../../../../models/back-to-top/back-to-top.jade
+    //- include ../../../../../models/loder/loder.jade
+    include ../../../../../models/switcher/switcher.jade

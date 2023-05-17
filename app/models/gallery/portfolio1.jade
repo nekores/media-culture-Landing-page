@@ -1,0 +1,93 @@
+//-=== section portfolio starts here
+
+mixin portfolio1()
+	// === gallery nav star here ===
+	section
+		.container-fluid#container-sidebar1
+			.row
+				.col-md-2.col-sm-2.col-xs-12
+					nav
+						ul(class=" portfolio-filter-photo" id="filters")
+							li
+								a(class="filter ", data-filter=".webdesign") Design
+							li
+								a(class="filter", data-filter=".places") places
+							li
+								a(class="filter", data-filter=".wedding") wedding
+							li
+								a(class="filter", data-filter=".portrait") portrait
+							li
+								a(class="filter", data-filter=".event") events
+							br
+							li
+								a(class="filter", data-filter=".food") food
+							br
+							li
+								a(class="filter", data-filter=".lifestyle") life style
+
+				// === gallery nav end here ===
+				//=== gallery starts here ===
+				.col-md-10.col-sm-10.col-xs-12.no-padding
+					P.port-para Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua.
+					.gallery
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.webdesign.col-sm-4.no-padding
+								.img-box
+									a(href="img/work/" + i + ".jpg")
+										img(src="img/work/" + i + ".jpg" class="img-responsive")
+										.img-content
+											.font-icon
+												i.fa.fa-search-plus
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.places.col-sm-4.p-v-10.no-padding
+								.img-box
+									a(href="img/work/" + i + ".jpg")
+										img(src="img/work/" + i + ".jpg" class="img-responsive")
+										.img-content
+											.font-icon
+												i.fa.fa-search-plus
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.wedding.col-sm-4.p-v-10.no-padding
+								.img-box
+									a(href="img/wedding/" + i + ".jpg")
+										img(src="img/wedding/" + i + ".jpg" class="img-responsive")
+										.img-content
+											.font-icon
+												i.fa.fa-search-plus
+						
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.portrait.col-sm-4.p-v-10.no-padding
+								.img-box
+									a(href="img/work/" + i + ".jpg")
+										img(src="img/work/" + i + ".jpg" class="img-responsive")
+										.img-content
+											.font-icon
+												i.fa.fa-search-plus
+						
+
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.event.col-sm-4.p-v-10.no-padding
+								.img-box
+									a(href="img/work/" + i + ".jpg")
+										img(src="img/work/" + i + ".jpg" class="img-responsive")
+										.img-content
+											.font-icon
+												i.fa.fa-search-plus
+						for i in [5,1,2,3,4,5,6,1]
+							.col-md-3.mix.food.col-sm-4.no-padding
+								.img-box
+									a(href="img/food/" + i + ".jpg")
+										img(src="img/food/" + i + ".jpg" class="img-responsive")
+										.img-content
+											.font-icon
+												i.fa.fa-search-plus
+						for i in [0,1,2,3,4,5,6,7]
+							.col-md-3.mix.lifestyle.col-sm-4.p-v-10.no-padding
+								.img-box
+									a(href="img/work/" + i + ".jpg")
+										img(src="img/work/" + i + ".jpg" class="img-responsive")
+										.img-content
+											.font-icon
+												i.fa.fa-search-plus
+
+				// === gallery end here ===

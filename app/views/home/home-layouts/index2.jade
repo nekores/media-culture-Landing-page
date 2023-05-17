@@ -1,0 +1,47 @@
+mixin index2()
+	+rslider1()
+	section
+		.container
+			.row.mv70
+				.col-md-12.no-padding
+					.text-center.mb40
+						+heading('about','us','')
+				.col-md-6
+					+collapse2()
+				.col-md-6
+					+smallest-progressbars("col-md-4","html - 90%","90%")
+					+smallest-progressbars("col-md-4","css - 80%","80%")
+					+smallest-progressbars("col-md-4","jqure - 30%","30%")
+					+smallest-progressbars("col-md-4","photoshop - 20%","20%")
+					+smallest-progressbars("col-md-4","php - 50%","50%")
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+testimonial1()
+	section
+		.container-fluid
+			.row.mt60
+				.col-md-12.no-padding
+					.text-center
+						+heading('recent','work','')
+						.mt50
+						+portfolio2columnnospacefullwidth()
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+countup2()
+	section
+		.container
+			.row.mv60
+				.col-md-12
+					.text-center
+						+heading('our','prices','list about prices')
+						+price11()
+
+	section
+		.container-fluid
+			.row
+				.col-md-12.no-padding
+					+footer-2()

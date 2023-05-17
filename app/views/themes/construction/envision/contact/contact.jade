@@ -1,0 +1,33 @@
+
+	div()&attributes(attributes)#contact-envision.contact-envision
+		//- +widget3()
+		.container(style="margin-left: 0px; padding-left:0px;")
+			.row.pos-r
+				.heading
+					.text
+						.upper
+							span #{sec_desc}
+						.lower
+							h3 #{sec_title}
+				.col-md-10
+					.contain
+						.row
+							form
+								.col-md-5.mt40
+									.contact-parent.bw-1.bdr-solid.p5.pos-r.no-bdr-rad
+										.contact-field-heads.pos-a
+											h5.bg-white Your Name
+										input(type="text" role="text" placeholder="Your Name" class="form-control bg-clr-glass bdr-transparent bg-transparent clr-primary")
+								.col-md-5.mv40
+									.contact-parent.bw-1.bdr-solid.p5.pos-r.no-bdr-rad
+										.contact-field-heads.pos-a
+											h5.bg-white Your Email
+										input(type="email" role="email " placeholder="Your Email" class="form-control bg-clr-glass bdr-transparent bg-transparent clr-primary")
+								.col-md-10.mb10
+									.contact-parent.bw-1.bdr-solid.p5.pos-r.no-bdr-rad
+										.contact-field-heads.pos-a
+											h5.bg-white Your Message
+										textarea(type="text" rows="6" placeholder="Your Message..." class="form-control bg-clr-glass bdr-transparent bg-transparent clr-primary")
+								.col-md-6.mb80
+									button.btn.btn-m-primary.btn-lg.no-bdr-rad(type="submit" value="submit") Send Message
+										span.pl10.fa.fa-send

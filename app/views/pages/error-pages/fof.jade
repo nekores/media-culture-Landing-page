@@ -1,0 +1,18 @@
+mixin error1()
+	section()&attributes(attributes).error
+		.container.hp100
+			.row.hp100
+				.table-med
+					.table-med-row
+						.col-md-12
+							.text-center
+								+fof('fa-warning','error','404','page not found')
+mixin error2()
+	section&attributes(attributes).error
+		.container.hp100
+				.table-med
+					.table-med-row
+						.row
+							.col-md-12
+								.text-center
+									+fof1("fa-exclamation","error","404","file not found")

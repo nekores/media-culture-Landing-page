@@ -1,0 +1,64 @@
+.medical-services
+	padding 30px 0
+	.section-title
+		hr
+			@extends .w80,.h20
+			border-top 2px solid primary		
+	.seperater
+		position relative
+		display block
+		width 60px
+		height 60px
+		line-height 60px
+		border-top 5px solid primary
+		text-align center
+		min-height 20px
+		
+	.icon-box
+		// margin-bottom 20%
+		&:hover
+			// transition 0.5s all ease-in-out
+			.icon
+				i
+					// transition 0.5s all ease-in-out
+					// transform rotate(45deg)
+					color white
+					background-color primary
+					cursor pointer
+		.icon
+			position relative
+			i
+				// box-shadow 0px 0px 10px 1px primary
+				color primary
+				margin-top 40px
+				margin-bottom 20px
+				font-size 30px
+				border-radius 50%
+				padding 20px 20px 20px 20px
+				border 1px solid primary
+				&:hover
+					// transform rotate(0deg)
+					color white
+					background-color primary
+					cursor pointer
+		.title
+			position relative
+			h5
+				padding 10px
+				font-weight 600 !important
+				letter-spacing 0.8px
+				margin-bottom 20px
+				margin-top 20px
+				color lighten(black,50%)
+				text-transform uppercase
+		.description
+			p
+				font-weight 100
+				margin-top 30px
+				font-size 14px
+				color lighten(black,60%)
+			a
+				color lighten(black,60%)
+				&:hover
+					color primary
+					text-decoration none	

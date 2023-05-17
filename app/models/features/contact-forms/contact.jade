@@ -1,0 +1,41 @@
+mixin contact(classes)
+	div(class=classes)
+		.reg-page1&attributes(attributes)
+			form(role="form" method="get")
+				.login-head
+					h2 Contact Form
+					hr
+				.col-md-6
+					label Name
+					.input-group.mb20
+						input(type="text" class="form-control" required)
+						span.input-group-addon
+							i.fa.fa-user
+				.col-md-6
+					label Email
+					.input-group.mb20
+						input(type="email" class="form-control" required)
+						span.input-group-addon
+							i.fa.fa-envelope
+				.col-md-12
+					label Subject
+					.input-group.mb20
+						input(type="text" class="form-control" required)
+						span.input-group-addon
+							i.fa.fa-pencil
+				.col-md-12
+					label Message
+					.input-group.mb20
+						textarea(type="text" class="form-control" rows="5" required)
+						span.input-group-addon
+							i.fa.fa-comment
+				.col-md-12
+					label Enter characters shown below
+					.input-group.mb20
+						img(src="img/medical/cap.png" class="img-responsive")
+						input(type="text" class="form-control" maxlength="6" name="captcha"  id="captcha" required)
+				.checkbox
+					label 
+						input(type="checkbox" required)
+						|Send a copy to my email address
+				+btn-theme-md("btn-c-primary","Send message")

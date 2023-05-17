@@ -1,0 +1,38 @@
+mixin team-default(sec_desc, sec_title)
+	div()&attributes(attributes)#team-envision.team-envision
+		.container(style="margin-left: 0px; padding-left:0px;")
+			.row.pos-r
+				.heading
+					.text
+						.upper
+							span #{sec_desc}
+						.lower
+							h3 #{sec_title}
+				.col-md-10
+					.contain
+						.row
+							- construction_team_rank =["Designer", "Engineer", "Holder","Engineer","Enigneer","Enigneer"]
+							- construction_team_name =["U-Nekores", "Dienel Ram", "Shahzaad","Shakeela","Naviyaan","Azlaan"]
+							div.owl-team.mr80
+								div.owl-carousel.no-padding.no-margin(id="constructionowl")
+									for i in [0,1,2,3,4,5]
+										.col-md-12
+											.img
+												img.mb20.center-block.img-responsive(src='img/construction/team'+ '/team' + i + '.jpg')
+												.layer1
+													ul.list-unstyled.mt25.ml5
+														li.mb10
+															+icon-fa("fa-facebook","icon-sm icon-frame-primary facebook")
+														li.mb10
+															+icon-fa("fa-twitter","icon-sm icon-frame-primary twitter")
+														li.mb10
+															+icon-fa("fa-linkedin","icon-sm icon-frame-primary linkedin")
+														li.mb10
+															+icon-fa("fa-instagram","icon-sm icon-frame-primary instagram")
+												.text-box
+													.team-text
+														.upper.clr-white
+															span #{construction_team_rank[i]}
+														.lower.clr-white
+															h3 #{construction_team_name[i]}
+		+widget4()

@@ -1,0 +1,86 @@
+mixin contact-default(classes)
+	div(class=classes)
+		.contact-default&attributes(attributes)
+			form(role="form" method="get")
+				.col-md-6
+					label Name
+					.input-group.mb20
+						input(type="text" class="form-control" required)
+						span.input-group-addon
+							i.fa.fa-user
+				.col-md-6
+					label Email
+					.input-group.mb20
+						input(type="email" class="form-control" required)
+						span.input-group-addon
+							i.fa.fa-envelope
+				.col-md-12
+					label Subject
+					.input-group.mb20
+						input(type="text" class="form-control" required)
+						span.input-group-addon
+							i.fa.fa-pencil
+				.col-md-12
+					label Message
+					.input-group.mb20
+						textarea(type="text" class="form-control" rows="5" required)
+						span.input-group-addon
+							i.fa.fa-comment
+				.col-md-12
+					label Enter characters shown below
+					.input-group.mb20
+						img(src="img/medical/cap.png" class="img-responsive")
+						input(type="text" class="form-control" maxlength="6" name="captcha"  id="captcha" required)
+				.col-md-12
+					.checkbox
+						label 
+							input(type="checkbox" required)
+							|Send a copy to my email address
+					+btn-theme-md("btn-c-primary","Send message")
+mixin contact-simple(classes)
+	div(class=classes)
+		.contact-simple&attributes(attributes)
+			form(role="form" method="get")
+				.col-md-4
+					label Address
+					.location
+						ul.list-inline.float-left
+							li
+								i.fa.fa-map-marker
+								| 1234 north main street
+							br
+
+							li
+								i.fa.fa-phone
+								| 09212381021
+							br
+							li
+								i.fa.fa-hdd-o
+								|+123-456-7889
+							br
+							li
+								i.fa.fa-envelope
+								a(href="3") some@gmail.com
+							br
+				.col-md-4
+					label Name
+					.input-group.mb20
+						input(type="text" class="form-control" required)
+					label Email
+					.input-group.mb20
+						input(type="email" class="form-control" required)
+					label Phone
+					.input-group.mb20
+						input(type="text" class="form-control" required)
+					.mt30
+						+btn-theme-md("btn-c-primary","Send message")
+				.col-md-4
+					label Comments
+					.input-group.mb20
+							textarea(type="text" class="form-control" rows="5" required)
+					.col-md-4.no-padding
+						label Security
+						img.img-security(src="img/medical/cap.png" class="img-responsive")
+					.col-md-8.no-padding
+						.input-group.mv20
+							input(type="text" class="form-control" maxlength="6" name="captcha"  id="captcha" required)

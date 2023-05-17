@@ -1,0 +1,121 @@
+mixin shop()
+    section.shop1
+        .container
+            .row
+                .col-md-12
+                        form(role="form" class="form-horizontal" id="billing-information")
+                    .row
+                        .col-lg-3
+                            .info
+                                h3 Personal Info
+                        .col-lg-8.col-lg-offset-1
+                            .form-group.mv20
+                                label(for="billingFirstName" class="col-md-2 control-label") First Name
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input(type="text" class="form-control" id="billingFirstName" value="First Name")
+                                        span.input-group-addon
+                                            i.fa.fa-user
+                            .form-group
+                                label(for="billingLasstName" class="col-md-2 control-label") Last Name
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billiongLastName" value="Last Name")
+                                        span.input-group-addon
+                                            i.fa.fa-user
+                            .form-group
+                                label(for="billingtel" class="col-md-2 control-label") Telephone
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billiongtel" value="telephone")
+                                        span.input-group-addon
+                                            i.fa.fa-phone
+                            .form-group
+                                label(for="billingmobile" class="col-md-2 control-label") Mobile
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingmobile" value="mobile")
+                                        span.input-group-addon
+                                            i.fa.fa-mobile
+                            .form-group
+                                label(for="billingfax" class="col-md-2 control-label") Fax
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingfax" value="fax")
+                                        span.input-group-addon
+                                            i.fa.fa-fax
+                            .form-group
+                                label(for="billingemail" class="col-md-2 control-label") Email
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingemail" value="email")
+                                        span.input-group-addon
+                                            i.fa.fa-envelope
+
+                    .row
+                        .col-lg-3
+                            .info
+                                h3 Your Address
+                        .col-lg-8.col-lg-offset-1
+                            .form-group
+                                label(for="billingaddress1" class="col-md-2 control-label") Address1
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingaddress1" value="address1")
+                                        span.input-group-addon
+                                            i.fa.fa-home
+                            .form-group
+                                label(for="billingaddress2" class="col-md-2 control-label") Address2
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingaddress2" value="address2")
+                                        span.input-group-addon
+                                            i.fa.fa-building
+                            .form-group
+                                label(for="billingcity" class="col-md-2 control-label") City
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingcity" value="city")
+                                        span.input-group-addon
+                                            i.fa.fa-home
+                            .form-group
+                                label(for="billingcountry" class="col-md-2 control-label") Country
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingcountry" value="country")
+                                        span.input-group-addon
+                                            i.fa.fa-globe
+                            .form-group
+                                label(for="billingPostalCode" class="col-md-2 control-label") Zip Code
+                                    small *
+                                .col-md-10
+                                    .input-group.mb20
+                                        input.mb20(type="text" class="form-control" id="billingaddress2" value="Postal Code")
+                                        span.input-group-addon
+                                            i.fa.fa-home
+                    .row
+                        .col-lg-3
+                            .info
+                                h3 Additional Info
+                        .col-lg-8.col-lg-offset-1
+                            .form-group
+                                .col-md-12
+                                    textarea(class="form-control" rows="4")
+                    .row.mv20
+                        .col-md-12
+                            .pull-right
+                                +btn-theme-md("btn-c-primary","Back to cart")
+                                +btn-theme-md("btn-c-primary","Next step")
+
+
+

@@ -1,0 +1,51 @@
+mixin brands-6-colum(folder , imgclasses)
+    div()&attributes(attributes)
+        ul.row.list-inline.brands
+            for i in [1,2,4,5,6,7,7,8,9,10,11,12]
+                li.col-md-2.col-sm-2.col-xs-6.no-padding.brands-company
+                    a(href="#")
+                        img.img-responsive(src='img/' + folder + '/' + i + '.png', class=imgclasses)
+
+
+
+mixin brands-5-colum(folder , imgclasses)
+    div()&attributes(attributes)
+        ul.row.list-inline.brands
+            for i in [1,2,4,5,6,7,7,8,9,10]
+                li.col-md-5th.col-sm-5th.col-xs-6.no-padding.brands-company
+                    a(href="#")
+                        img.img-responsive(src='img/' + folder + '/' + i + '.png', class=imgclasses)
+
+
+
+
+mixin brands-4-colum(folder , imgclasses)
+    div()&attributes(attributes)
+        ul.row.list-inline.brands
+            for i in [1,2,4,5,6,7,7,8]
+                li.col-md-3.col-sm-3.col-xs-6.no-padding.brands-company
+                    a(href="#")
+                        img.img-responsive(src='img/' + folder + '/' + i + '.png', class=imgclasses)
+
+
+
+mixin brands-owl-carosel(folder , imgclasses)
+    div()&attributes(attributes)
+        div
+            div.owl-carousel(id="brands")
+                for i in [1,2,4,5,6,7,7,8,9,10,11,12]
+                    div
+                        img.img-responsive(src='img/' + folder + '/' + i + '.png', class=imgclasses)
+
+
+
+
+
+
+mixin brands-owl-carosel-swiper(folder , imgclasses)
+    div()&attributes(attributes)
+        div
+            div.owl-carousel(id="owlswiper")
+                for i in [1,2,4,5,6,7,7,8,9,10,11,12]
+                    div
+                        img.img-responsive(src='img/' + folder + '/' + i + '.png', class=imgclasses)

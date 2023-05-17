@@ -1,0 +1,81 @@
+- profession = ["","","","","","","","","","designer","developer","marketing","backend developer"]
+mixin our-team1()
+	//=== our team start here ===
+	section&attributes(attributes).our-team1
+		ul.list-unstyled
+			for i in [9,10,11,12]
+				.col-md-3.col-sm-6.col-xs-6.mv30
+					li.team-list
+						.team1-img
+							figure
+								img(src="img/team/" + i + ".jpg" class="img-responsive")
+								figcaption
+									.table-1
+										.table-middle-row-1.text-center.center-block
+											ul.list-inline
+												li
+													+icon-fa('fa-facebook', 'facebook-inv icon-frame-inverse-primary icon-sm rounded-cirlce', '#')
+												li
+													+icon-fa('fa-google-plus', 'gplus-inv icon-frame-inverse-primary icon-sm','')
+												li
+													+icon-fa('fa-twitter', 'twitter-inv icon-frame-inverse-primary icon-sm','')
+							.img-team-content
+								h3
+									+random_name("uppercase")
+								h4 #{profession[i]}
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+	//=== our team end here ===
+mixin our-team2()
+	//=== our team start here ===
+	section&attributes(attributes).our-team2
+		ul.list-unstyled
+			for i in [9,10,11,12]
+				.col-md-3.col-sm-6.col-xs-6.mv30
+					li.team-list
+						.team1-img
+							figure
+								img(src="img/team/" + i + ".jpg" class="img-responsive")
+								figcaption
+									.table-1
+										.table-middle-row-1.text-center.center-block
+											ul.list-inline
+												li
+													+icon-fa('fa-facebook', 'facebook-inv icon-frame-inverse-primary icon-sm rounded-cirlce', '#')
+												li
+													+icon-fa('fa-google-plus', 'gplus-inv icon-frame-inverse-primary icon-sm','')
+												li
+													+icon-fa('fa-twitter', 'twitter-inv icon-frame-inverse-primary icon-sm','')
+							.img-team-content
+								h3
+									+random_name("uppercase")
+								h4 #{profession[i]}
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit
+	//=== our team end here ===
+
+mixin our-team3()
+	//=== our team start here ===
+	section&attributes(attributes).our-team3
+		ul.list-unstyled
+			for i in [9,10,11,12]
+				.col-md-3.col-sm-6.col-xs-6.mv30
+					li.team-list
+						.team1-img
+							figure
+								img(src="img/team/" + i + ".jpg" class="img-responsive")
+								figcaption
+									.table-1
+										.table-middle-row-1.text-center.center-block
+											ul.list-inline
+												li
+													+icon-fa('fa-facebook', 'facebook-inv icon-frame-inverse-primary icon-sm rounded-cirlce', '#')
+												li
+													+icon-fa('fa-google-plus', 'gplus-inv icon-frame-inverse-primary icon-sm','')
+												li
+													+icon-fa('fa-twitter', 'twitter-inv icon-frame-inverse-primary icon-sm','')
+							.img-team-content
+								h3
+									+random_name("uppercase")
+								h4 #{profession[i]}
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit
+	//=== our team end here ===

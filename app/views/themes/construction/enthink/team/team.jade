@@ -1,0 +1,23 @@
+mixin team-enthink(sec_desc, sec_title)
+	div()&attributes(attributes)#team-enthink.team-enthink
+		.container
+			.row
+				.col-md-12
+					+section_title("Whome we are, meet to our members", "our", "team")
+				.col-md-12
+					.row.mv40
+						- construction_team_rank =["Designer", "Engineer", "Holder","Engineer","Enigneer","Enigneer", "Holder","Engineer","Enigneer","Enigneer","Engineer","Enigneer","Enigneer","Engineer","Enigneer","Enigneer","Engineer","Enigneer","Enigneer"]
+						- construction_team_name =["U-Nekores", "Dienel Ram", "Shahzaad","Shakeela","Naviyaan","Azlaan"]
+						div.owl-team.mb60
+							div.owl-carousel(id="enthink-team")
+								for i in [0,1,2,3,4]
+									.col-md-12
+										.img
+											img.center-block.img-responsive(src='img/construction/enthink/team'+ '/' + i + '.png')
+											.text-box.pv20
+												.team-text
+													.lower.text-center.clr-white
+														h3.ls1
+															+random_name("upcase")
+													.upper.text-center.clr-white.ls1
+														span #{construction_team_rank[i]}

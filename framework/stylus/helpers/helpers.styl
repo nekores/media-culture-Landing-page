@@ -1,0 +1,293 @@
+// -------------------- SCAFOLDING ------------//
+if booleans['scaffolding']
+	/*!
+	*	Scaffolding.
+	*/
+	for tag, value in settings.scaffolding
+		{tag}
+			{value}
+
+// -------------------- TYPOGRAPHY ------------//
+
+if booleans['typography']
+	/*!
+	*	TYPOGRAPHY
+	*/
+	p =  settings.typography.p
+	for tag, value in settings.typography.heading
+		{tag}, .{tag}
+			{value}
+
+	p, .p
+		{p}
+
+// ------------- SIZING --------------//
+
+if booleans['sizing'] == true
+	
+
+	if booleans['margins']
+		/*!
+		*	Margin Classes Starts
+		*/
+		for i in ranger('margin')
+			unit = settings.margin.unit
+			.m{i}
+				margin unit(i, unit)
+			.mv{i}
+				margin-top unit(i, unit)
+				margin-bottom unit(i, unit)
+			.mh{i}
+				margin-left unit(i, unit)
+				margin-right unit(i, unit)
+			.mr{i}
+				margin-right unit(i, unit)
+			.ml{i}
+				margin-left unit(i, unit)
+			.mb{i}
+				margin-bottom unit(i, unit)
+			.mt{i}
+				margin-top unit(i, unit)
+			
+				
+	if booleans['paddings']
+		/*!
+		*	Padding Classes Starts
+		*/
+		for i in ranger('padding')
+			unit = settings.padding.unit
+			.p{i}
+				padding unit(i, unit)
+			.pv{i}
+				padding-top unit(i, unit)
+				padding-bottom unit(i, unit)
+			.ph{i}
+				padding-left unit(i, unit)
+				padding-right unit(i, unit)
+			.pr{i}
+				padding-right unit(i, unit)
+			
+			.pl{i}
+				padding-left unit(i, unit)
+			.pb{i}
+				padding-bottom unit(i, unit)
+			.pt{i}
+				padding-top unit(i, unit)
+
+	if booleans['line-heights']
+		/*!
+		*	Padding Classes Starts
+		*/
+		for i in ranger('line-height')
+			unit = settings.line-height.unit
+			.lh-p{i}
+				line-height unit(i, unit)
+
+if booleans['colors']	
+	/**
+	*	Colors Classes
+	*/
+	for name, value in settings.colors
+		if booleans['text-color']
+			.clr-{name}
+				color value
+		if booleans['color-hover']
+			.clr-{name}-hvr:hover
+				color value
+		if booleans['background-color']
+			.bg-{name}
+				background-color value
+		if booleans['background-color-hover']
+			.bg-{name}-hvr:hover
+				background-color value
+		if booleans['border-color']
+			.bdr-{name}
+				border-color value
+		if booleans['background-alpha']
+			for i in 1..9
+				.bga-{name}-{i}
+					background-color alpha(value, (i / 10))
+				.bga-{name}-{i}-hover:hover
+					background-color alpha(value, (i / 10))
+
+if booleans['positions']
+	/*!
+	*	Position helper classes.
+	*/	
+	.pos-r
+		position relative !important
+	.pos-a
+		position absolute !important
+	.pos-s
+		position static !important
+	.pos-f
+		position fixed !important
+
+if booleans['border-radius']
+	/*!
+	*	Position helper classes.
+	*/	
+	.rounded
+		border-radius 5px
+	.rounded-2x
+		border-radius 10px
+	.rounded-3x
+		border-radius 15px
+	.rounded-4x
+		border-radius 15px
+	.rounded-5x
+		border-radius 25px
+	.rounded-circle
+		border-radius 75%
+	// coming soon...
+if booleans['border-widths']
+	/*!
+	*	Padding Classes Starts
+	*/
+	for i in ranger('border-widths')
+		.bw-{i}
+			border-width unit(i, px)
+
+if booleans['border-styles']
+	.bdr-solid
+		border-style solid
+	.bdr-dotted
+		border-style dotted
+	.bdr-dashed
+		border-style dashed
+if booleans['displays']
+	.block
+		display block
+	.inline
+		display inline
+	.flex
+		display flex
+	.table
+		display table
+	.table-row
+		display table-row
+	.table-middle-row
+		display table-cell
+		vertical-align middle
+	.table-100
+		display table
+		height 100%
+if booleans['resets']
+	/*!
+	*	Reset Helper Classes.
+	*/
+	if booleans['reset-backgrounds']
+		.no-bg
+			background none !important
+	if booleans['transparent-backgrounds']
+		.bg-transparent
+			background-color transparent !important
+	if booleans['reset-borders']
+		.no-bdr
+			border none !important
+		.no-lbdr
+			border-left none !important
+		.no-rbdr
+			border-left none !important
+		.no-bbdr
+			border-bottom none !important
+		.no-tbdr
+			border-top none !important
+	if booleans['transparent-borders']
+		.bdr-transparent
+			border-color transparent !important
+		.lbdr-transparent
+			border-left-color transparent !important
+		.rbdr-transparent
+			border-right-color transparent !important
+		.tbdr-transparent
+			border-top-color transparent !important
+		.bbdr-transparent
+			border-bottom-color transparent !important
+		
+		.no-padding
+			padding 0 !important
+		.no-margin
+			margin 0 !important
+		
+		
+if booleans['opacity']
+	/*!
+	*	Opacity Helper Classes.
+	*/
+	for i in ranger('opacity')
+		.opacity-{floor(i * 10)}
+			opacity i
+	.opacity-10
+		opacity 1
+
+
+
+//------------------------fonts------------------------//
+
+if booleans['font-sizes']
+	/*!
+	*	Font size helper classes.
+	*/
+	unit = settings.font-sizes.unit	
+	for i in ranger('font-sizes')
+		
+		.fs{i}
+			font-size unit(i, unit)
+		
+if booleans['font-weights']
+	/*!
+	*	Font weights helper classes.
+	*/
+	for i in ranger('font-weights')
+		
+		.fw{i}
+			font-weight i
+	.fw-normal
+		font-weight normal
+	.fw-bold
+		font-weight bold
+	.fw-bolder
+		font-weight bolder	
+
+if booleans['letter-spacing']
+	/*!
+	*	Letter Spacing helper classes.
+	*/
+	unit = settings.font-sizes.unit	
+	for i in ranger('letter-spacing')
+		
+		.ls{i}
+			letter-spacing unit(i, unit)
+if booleans['word-spacing']
+	/*!
+	*	Word Spacing helper classes.
+	*/
+	unit = settings.font-sizes.unit	
+	for i in ranger('word-spacing')
+		
+		.ls{i}
+			word-spacing unit(i, unit)
+
+// -------------- WIDTHS and HEIGHTS -------------//
+if booleans['width']
+	unit = settings.width.unit	
+	for i in ranger('width')
+		.w{i}
+			width unit(i, unit)
+if booleans['width-percent']
+	unit = settings.width-percent.unit	
+	for i in ranger('width-percent')
+		.wp{i}
+			width unit(i, unit)
+if booleans['height']
+	unit = settings.height.unit	
+	for i in ranger('height')
+		.h{i}
+			height unit(i, unit)
+
+if booleans['height-percent']
+	unit = settings.height-percent.unit	
+	for i in ranger('height-percent')
+		.hp{i}
+			height unit(i, unit)

@@ -1,0 +1,197 @@
+.navbar-envision
+	.wrapper
+		z-index 2000
+		transition 1s all
+		opacity 9
+		width 100%
+		left 0
+		top 0
+		position absolute
+		// font-family "Raleway-Regular", sans-serif
+		font-weight 400
+		.topbar
+			position absolute
+			// background-color alpha(#333, 70%)
+			min-height 110px
+			width 100%
+			z-index 100
+			top 0
+			.topbar-text
+				position relative
+				margin-top 14px
+				color #999
+				letter-spacing 0.8px
+				font-size 14px
+				font-weight 400
+				a
+					color #999
+					text-decoration none
+					letter-spacing 0.5px
+			.media
+				.media-body
+					.p1
+						margin-top 5px
+						text-transform uppercase
+						font-size 13px !important
+						color primary
+						letter-spacing 0.6px
+						margin-bottom 5px
+					.p2, p
+						font-size 15px !important
+						margin-top -5px
+		.search_bar
+			width 100%
+			position relative
+			ul
+				input
+					color primary
+					&:hover
+						border-color primary
+						outline none
+					&.active, &:focus
+						border-color primary
+				.input-group-btn
+					.btn-primary
+						&:hover
+							border-color primary
+							background-color darken(primary, 20%)
+						&:focus
+							border-color primary
+							background-color darken(primary, 20%)
+							outline none
+						&:active
+							border-color primary
+							background-color darken(primary, 20%)
+	&.topbar-two
+		.wrapper
+			background-color #fcfcfc !important 
+	&.topbar-dark
+		.wrapper
+			background-color #394245 !important
+	@media(max-width: 369px)
+		.wrapper
+			z-index 0 !important
+			display none
+	.navbar
+		margin-left 20px
+		margin-right 20px
+		transition 0.5s all ease-in
+		top 70px
+		position fixed
+		border none
+		&.navbar-tranglo
+			background-color #333
+			height 100px
+			.navbar-nav
+				margin-top 25px
+				transition 0.5s all ease-in				
+				li
+					a
+						border-radius 0
+						&:link, &:visited
+							letter-spacing 1px
+							color white
+							text-transform uppercase
+							font-size 12px
+							transition 0.5s all
+							border-radius 0
+						&:hover, &:focus
+							background-color transparent
+							border-radius 0
+							color primary
+					&.active, a:visited
+						border-bottom 1px solid primary
+						border-radius 0
+			// brand customization
+			.navbar-brand
+				img
+					top -40px
+					position relative	
+			// Navbar header
+			.navbar-header
+				.navbar-brand
+					position relative
+					top 25px
+					color primary
+					text-transform uppercase
+					transition 0.5s all ease-in
+			.navbar-toggle
+				i
+					position relative
+					top 2px
+			&.affix
+				z-index 3000 !important
+				margin-left 0px
+				margin-right 0px
+				background-color #333 !important
+				// color primary
+				transition 0.8s all
+				height 72px
+				border none
+				position fixed
+				top 0px
+				.navbar-nav
+					transition 0.8s all
+					margin-top 6px
+					font-size 9px !important
+					li
+						transition 0.8s all
+						a
+							color white
+							&:hover
+								color primary
+				.navbar-header
+					transition 0.8s all
+					border none
+			
+
+			@media(max-width 767px)
+				// top 0
+				margin-right 0
+				margin-left 0
+				.container
+					&, .col-xs-12, .row, [class ~="col-"], [class*=' col-'], .navbar-collapse
+						padding 0
+						margin 0
+				&.affix
+					.navbar-header
+						top 0
+						button
+							margin-top 20px
+				.navbar-header
+					border 0
+					.navbar-brand
+						display block
+						margin 0 auto
+					button
+						margin-top 35px
+						transition 0.5s all ease-in
+				
+				.navbar-nav
+					background-color primary
+					display block
+					margin 0 !important
+					width 100%
+					padding 10px
+					li
+						a
+							padding-bottom 5px
+							padding-top 5px
+							color white !important
+							&:hover
+								background-color transparent
+								border-radius 0
+							&:focus
+								background-color transparent
+								// border-left 1px solid white
+						&.active, a:visited
+							border-left 1px solid white
+							background-color transparent
+							border-top 0
+							border-right 0
+							border-bottom 0
+			@media(max-width: 369px)
+				top 0
+				.navbar-brand
+					img
+						top -15px
